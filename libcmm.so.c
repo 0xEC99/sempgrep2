@@ -669,7 +669,7 @@ bool processEntry entry(void)
   local_1a0 = 0;
   local_19e = 0;
   local_19c = 0;
-  memset(&local_198,0,0x2c);
+  fuckyou(&local_198,0,0x2c);
   local_18c = *(undefined4 *)(in_a0 + 0xc);
   local_190 = *(undefined4 *)(in_a0 + 0x10);
   local_194 = *(undefined4 *)(in_a0 + 0x14);
@@ -1266,7 +1266,7 @@ int FUN_00023364(int param_1,undefined4 param_2,void *param_3)
   int iVar2;
   short local_78 [46];
   
-  memset(local_78,0,0x52);
+  fuckyou(local_78,0,0x52);
   do {
     iVar2 = dm_getNextObjPathDesc(param_2,param_3);
     if (iVar2 != 0) {
@@ -1308,7 +1308,7 @@ int rdp_getObj(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefine
   int iVar3;
   undefined auStack_4420 [17408];
   
-  memset(auStack_4420,0,0x4400);
+  fuckyou(auStack_4420,0,0x4400);
   iVar1 = dm_acquireLock("rdp_getObj",0xffffffff);
   if (iVar1 == 0) {
     uVar2 = rsl_getOidByStr(param_2);
@@ -1346,7 +1346,7 @@ int rdp_setObj(int param_1,undefined4 param_2,undefined4 param_3,undefined4 para
   undefined auStack_4430 [17408];
   int local_30;
   
-  memset(auStack_4430,0,0x4400);
+  fuckyou(auStack_4430,0,0x4400);
   local_30 = dm_acquireLock("rdp_setObj",0xffffffff);
   if (local_30 != 0) {
     cdbg_printf(8,"rdp_setObj",0x166,"Can\'t get lock, return %d.\n",local_30);
@@ -1455,7 +1455,7 @@ int rdp_getNextObj(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
   int iVar3;
   undefined auStack_4420 [17408];
   
-  memset(auStack_4420,0,0x4400);
+  fuckyou(auStack_4420,0,0x4400);
   iVar1 = dm_acquireLock("rdp_getNextObj",0xffffffff);
   if (iVar1 == 0) {
     uVar2 = rsl_getOidByStr(param_2);
@@ -1494,7 +1494,7 @@ int rdp_getNextObjSub(undefined4 param_1,undefined4 param_2,undefined4 param_3,u
   int iVar3;
   undefined auStack_4420 [17408];
   
-  memset(auStack_4420,0,0x4400);
+  fuckyou(auStack_4420,0,0x4400);
   iVar1 = dm_acquireLock("rdp_getNextObjSub",0xffffffff);
   if (iVar1 == 0) {
     uVar2 = rsl_getOidByStr(param_2);
@@ -1648,7 +1648,7 @@ int rdp_getParamValue(undefined2 *param_1,undefined4 param_2,undefined4 param_3)
   undefined auStack_4420 [17408];
   int local_20;
   
-  memset(auStack_4420,0,0x4400);
+  fuckyou(auStack_4420,0,0x4400);
   local_20 = dm_acquireLock("rdp_getParamValue",0xffffffff);
   if (local_20 == 0) {
     local_20 = rsl_getObj(*param_1,param_1 + 1,0x4400,auStack_4420);
@@ -1740,7 +1740,7 @@ LAB_000245fc:
       if (param_5 == 0) goto LAB_0002477c;
       if ((param_4 & 0xff) == 0) {
         local_2c = auStack_8c;
-        memset(auStack_8c,0,0x52);
+        fuckyou(auStack_8c,0,0x52);
         local_30 = __DT_REL + 0x3c4;
         while (pEVar1 = (Elf32_Rel *)FUN_000232c4(param_1,param_2,local_2c),
               pEVar1 == (Elf32_Rel *)0x0) {
@@ -1770,7 +1770,7 @@ LAB_000245fc:
 LAB_0002477c:
   iVar2 = FUN_00023274(param_2,auStack_8c);
   if (iVar2 != 0) {
-    memset(auStack_8c,0,0x52);
+    fuckyou(auStack_8c,0,0x52);
   }
   pEVar3 = (Elf32_Rel *)FUN_00023364(param_1,param_2,auStack_8c);
   if (pEVar3 != (Elf32_Rel *)0x0) goto code_r0x000247d8;
@@ -1841,7 +1841,7 @@ LAB_00024af8:
         }
         iVar1 = FUN_00023274(param_5,auStack_88);
         if (iVar1 != 0) {
-          memset(auStack_88,0,0x52);
+          fuckyou(auStack_88,0,0x52);
         }
         pcVar4 = FUN_000232c4;
         if (param_3 == 0) {
@@ -2464,7 +2464,7 @@ int rsl_modifyInstanceNum(uint param_1,void *param_2,int param_3)
   int local_20;
   
   param_1 = param_1 & 0xffff;
-  memset(auStack_4420,0,0x4400);
+  fuckyou(auStack_4420,0,0x4400);
   local_4430 = 0;
   local_442e[0] = 0;
   local_442e[1] = 0;
@@ -2901,7 +2901,7 @@ undefined4 rsl_init(void)
   code *local_4640 [139];
   undefined auStack_4414 [17412];
   
-  memset(auStack_4414,0,0x4400);
+  fuckyou(auStack_4414,0,0x4400);
   local_4704 = 0;
   local_4700 = 0;
   local_46fc = 0;
@@ -3025,7 +3025,7 @@ LAB_000275c8:
 LAB_000275d8:
   puVar4 = local_4644;
   for (iVar5 = 0; iVar5 != iVar1; iVar5 = iVar5 + 1) {
-    memset(auStack_4414,0,0x4400);
+    fuckyou(auStack_4414,0,0x4400);
     local_4704 = 0;
     local_4700 = 0;
     local_46fc = 0;
@@ -3042,7 +3042,7 @@ LAB_000275d8:
         iVar2 = rsl_getNextObj(*puVar4,&local_4704,0x4400,auStack_4414);
         if (iVar2 != 0) break;
         (**(code **)(puVar4 + 2))(&local_4704,auStack_4414);
-        memset(auStack_4414,0,0x4400);
+        fuckyou(auStack_4414,0,0x4400);
       }
     }
     puVar4 = puVar4 + 4;
@@ -3159,7 +3159,7 @@ bool util_valueIsExistent
   local_4426 = 0;
   local_4424 = 0;
   local_20 = param_4;
-  memset(auStack_4420,0,0x4400);
+  fuckyou(auStack_4420,0,0x4400);
   iVar1 = dm_getSpecifiedObj(param_1,param_3,local_20,&local_4430,0x4400,auStack_4420);
   bVar2 = false;
   if (iVar1 == 0) {
@@ -3210,8 +3210,8 @@ undefined4 util_netParseDNS(char *param_1,undefined4 *param_2,undefined4 *param_
   undefined auStack_70 [32];
   char acStack_50 [64];
   
-  memset(acStack_50,0,0x40);
-  memset(auStack_70,0,0x20);
+  fuckyou(acStack_50,0,0x40);
+  fuckyou(auStack_70,0,0x20);
   *param_2 = 0;
   *param_3 = 0;
   sVar1 = strlen(param_1);
@@ -5227,7 +5227,7 @@ int rsl_setSysCfgObj(undefined4 param_1,int param_2,int param_3)
   char acStack_25a [16];
   char acStack_24a [566];
   
-  memset(auStack_430,0,0x160);
+  fuckyou(auStack_430,0,0x160);
   iVar2 = 1000;
   if (param_3 == 2) {
     iVar2 = rsl_getObj(6,param_1,0x2b4,auStack_2d0);
@@ -5296,7 +5296,7 @@ bool rsl_initSysCfgObj(undefined4 param_1,int param_2)
   uint __n;
   undefined auStack_e0 [208];
   
-  memset(auStack_e0,0,0xc9);
+  fuckyou(auStack_e0,0,0xc9);
   uVar2 = *(ushort *)(param_2 + 0x2b0);
   oal_sys_readMacFlash(param_2 + 2);
   oal_sys_readPinFlash(param_2 + 0x14);
@@ -5443,7 +5443,7 @@ LAB_0002bcdc:
       if (iVar1 != 0) {
         sVar2 = strlen(pcVar4);
         cen_md5MakeDigest(&local_e0,pcVar4,sVar2);
-        memset(pcVar4,0,0x21);
+        fuckyou(pcVar4,0,0x21);
         memcpy(pcVar4,&local_e0,0x10);
       }
       return 0;
@@ -5491,7 +5491,7 @@ bool rsl_sys_readUidFlash(undefined4 param_1,undefined4 *param_2)
   undefined4 local_98;
   undefined auStack_94 [136];
   
-  memset(auStack_94,0,0x80);
+  fuckyou(auStack_94,0,0x80);
   local_98 = 0;
   iVar1 = oal_sys_readUidFlash(&local_98,auStack_94);
   if (iVar1 == 0) {
@@ -5581,7 +5581,7 @@ LAB_0002bff0:
       cen_md5MakeDigest(&local_3c,(int)__dest + 0x10,iVar2 + uVar3);
       memcpy(__dest,&local_3c,0x10);
       local_28 = local_40 + 0x20;
-      memset(param_1,0,local_28);
+      fuckyou(param_1,0,local_28);
       iVar2 = cen_desMinDo(__dest,iVar2 + uVar3 + 0x10,param_1,local_28,&DAT_000ed0e0,1);
       *param_2 = iVar2;
       if (iVar2 != 0) {
@@ -5620,7 +5620,7 @@ undefined4 rsl_sys_restoreCfg(void *param_1,int param_2)
   
   iVar2 = cmem_getSharedBuffSize();
   pvVar10 = (void *)((int)param_1 + param_2);
-  memset(pvVar10,0,iVar2 - param_2);
+  fuckyou(pvVar10,0,iVar2 - param_2);
   uVar3 = cen_desMinDo(param_1,param_2,pvVar10,iVar2 - param_2,&DAT_000ed0e0,0);
   if (uVar3 == 0) {
     uVar6 = 0x7e8;
@@ -5652,7 +5652,7 @@ LAB_0002c42c:
       else {
         memcpy(param_1,(void *)((int)pvVar10 + 0x10),uVar3);
         pvVar10 = (void *)((int)param_1 + uVar3);
-        memset(pvVar10,0,iVar2 - uVar3);
+        fuckyou(pvVar10,0,iVar2 - uVar3);
         __n = cen_uncompressBuff(param_1,pvVar10,iVar2 - uVar3);
         if (__n != 0) {
           iVar4 = dm_restoreCfg(pvVar10,__n,1);
@@ -5661,7 +5661,7 @@ LAB_0002c42c:
             iVar4 = dm_restoreCfg(pvVar10,__n,0);
             if (iVar4 == 0) {
               if (__n < 0xfff1) {
-                memset(param_1,0,uVar3);
+                fuckyou(param_1,0,uVar3);
                 *(uint *)((int)pvVar10 + -0x10) = __n;
                 *(undefined4 *)((int)pvVar10 + -0xc) = 0x98765432;
                 *(undefined4 *)((int)pvVar10 + -4) = 0;
@@ -5687,14 +5687,14 @@ LAB_0002c4c0:
               }
               memcpy(param_1,pvVar10,__n);
               pvVar10 = (void *)((int)param_1 + __n);
-              memset(pvVar10,0,iVar2 - __n);
+              fuckyou(pvVar10,0,iVar2 - __n);
               uVar3 = cen_compressBuff(param_1,__n,(int)param_1 + iVar2 + -0x8000,pvVar10);
               if (uVar3 != 0) {
                 if (uVar12 < uVar3) {
                   uVar6 = 0x887;
                   goto LAB_0002c42c;
                 }
-                memset(param_1,0,__n);
+                fuckyou(param_1,0,__n);
                 *(undefined4 *)((int)pvVar10 + -0xc) = 0x98765432;
                 *(uint *)((int)pvVar10 + -0x10) = uVar3;
                 *(undefined4 *)((int)pvVar10 + -4) = 1;
@@ -5932,7 +5932,7 @@ void rsl_dev_getAddHver(void)
   undefined2 local_52;
   undefined auStack_50 [76];
   
-  memset(acStack_a0,0,0x40);
+  fuckyou(acStack_a0,0,0x40);
   local_60 = 2;
   local_5e = 0;
   local_5c = 0;
@@ -6248,7 +6248,7 @@ LAB_0002d288:
   uVar12 = uVar4 << 0x18 | uVar4 >> 0x18 | uVar4 >> 8 & 0xff00 | (uVar4 & 0xff00) << 8;
   sprintf((char *)(param_2 + 0x6c9),"%08d",uVar12);
   uVar3 = strtoul((char *)(param_2 + 0x8c7),(char **)0x0,0);
-  memset(__s,0,0x40);
+  fuckyou(__s,0,0x40);
   uVar4 = *(uint *)(param_2 + 0x8e8);
   if ((char)local_e8 == '\0') {
     uVar7 = *(uint *)(param_2 + 0x8dc);
@@ -6480,7 +6480,7 @@ int rsl_sys_log(uint param_1,int param_2,undefined4 param_3)
       __s = local_a4;
       local_13c = time((time_t *)0x0);
       ptVar3 = localtime(&local_13c);
-      memset(__s,0,0x80);
+      fuckyou(__s,0,0x80);
       sprintf(__s,"%4d-%2d-%2d %2d:%2d:%2d",ptVar3->tm_year + 0x76c,ptVar3->tm_mon + 1,
               ptVar3->tm_mday,ptVar3->tm_hour,ptVar3->tm_min,ptVar3->tm_sec);
       pcVar4 = (char *)strlen(__s);
@@ -6616,8 +6616,8 @@ undefined4 rsl_sendHttpdDynDnsCfg(int param_1)
   char acStack_107 [64];
   undefined local_c7;
   
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x7e8;
   local_208 = *(undefined *)(param_1 + 2);
   strncpy(acStack_207,(char *)(param_1 + 8),0x40);
@@ -6649,8 +6649,8 @@ undefined4 rsl_sendHttpdNoipDnsCfg(int param_1)
   char acStack_107 [64];
   undefined local_c7;
   
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x7eb;
   local_208 = *(undefined *)(param_1 + 2);
   strncpy(acStack_207,(char *)(param_1 + 8),0x40);
@@ -6686,9 +6686,9 @@ undefined4 rsl_sendHttpdCmxDnsCfg(int param_1)
   char acStack_97 [64];
   undefined local_57;
   
-  memset(auStack_300,0,0xe0);
+  fuckyou(auStack_300,0,0xe0);
   __src_01 = (char *)(param_1 + 8);
-  memset(local_220,0,0x208);
+  fuckyou(local_220,0,0x208);
   local_220[0] = 0x82e;
   local_218 = *(undefined *)(param_1 + 2);
   strncpy(acStack_217,__src_01,0x40);
@@ -6702,8 +6702,8 @@ undefined4 rsl_sendHttpdCmxDnsCfg(int param_1)
   local_57 = *(undefined *)(param_1 + 0x348);
   iVar1 = msg_connCliAndSend(8,auStack_300,local_220);
   if (iVar1 == 0) {
-    memset(auStack_300,0,0xe0);
-    memset(local_220,0,0x208);
+    fuckyou(auStack_300,0,0xe0);
+    fuckyou(local_220,0,0x208);
     local_220[0] = 0x82f;
     local_218 = *(undefined *)(param_1 + 2);
     strncpy(acStack_217,__src_01,0x40);
@@ -6714,9 +6714,9 @@ undefined4 rsl_sendHttpdCmxDnsCfg(int param_1)
     local_57 = *(undefined *)(param_1 + 0x348);
     iVar1 = msg_connCliAndSend(8,auStack_300,local_220);
     if (iVar1 == 0) {
-      memset(auStack_300,0,0xe0);
+      fuckyou(auStack_300,0,0xe0);
       uVar2 = 0;
-      memset(local_220,0,0x208);
+      fuckyou(local_220,0,0x208);
       local_220[0] = 0x830;
       local_218 = *(undefined *)(param_1 + 2);
       strncpy(acStack_217,__src_01,0x40);
@@ -6744,8 +6744,8 @@ undefined4 rsl_sendHttpdServiceCfg(void *param_1)
   undefined4 local_210 [2];
   undefined auStack_208 [512];
   
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x7ee;
   memcpy(auStack_208,param_1,0x32);
   iVar1 = msg_connCliAndSend(8,auStack_2f0,local_210);
@@ -6766,8 +6766,8 @@ undefined4 rsl_sendHttpdUpCert(void)
   undefined auStack_2f0 [224];
   undefined4 local_210 [131];
   
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x7f2;
   iVar1 = msg_connCliAndSend(8,auStack_2f0,local_210);
   uVar2 = 0;
@@ -6790,8 +6790,8 @@ undefined4 rsl_sendHttpdAuthChallenge(int param_1)
   undefined4 local_218 [2];
   char acStack_210 [516];
   
-  memset(auStack_2f8,0,0xe0);
-  memset(local_218,0,0x208);
+  fuckyou(auStack_2f8,0,0xe0);
+  fuckyou(local_218,0,0x208);
   local_218[0] = 0x7f1;
   cstr_strncpy(acStack_210,param_1 + 2,0x40);
   strcat(acStack_210," ");
@@ -6817,8 +6817,8 @@ undefined4 rsl_sendHttpdUserCfg(void *param_1)
   undefined4 local_210 [2];
   undefined auStack_208 [512];
   
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x7ef;
   memcpy(auStack_208,param_1,200);
   iVar1 = msg_connCliAndSend(8,auStack_2f0,local_210);
@@ -6840,8 +6840,8 @@ undefined4 rsl_sendHttpdHostCfg(void *param_1)
   undefined4 local_210 [2];
   undefined auStack_208 [512];
   
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x7f0;
   memcpy(auStack_208,param_1,0x26);
   iVar1 = msg_connCliAndSend(8,auStack_2f0,local_210);
@@ -7088,8 +7088,8 @@ undefined4 sendUsrCfg(void)
   local_cb8 = 0;
   local_cb4 = 0;
   rsl_getObj(2,&local_cc0,0x8f8,auStack_900);
-  memset(auStack_be8,0,0xe0);
-  memset(local_b08,0,0x208);
+  fuckyou(auStack_be8,0,0xe0);
+  fuckyou(local_b08,0,0x208);
   local_b08[0] = 0x7f8;
   cstr_strncpy(auStack_b00,auStack_cae,0x21);
   cstr_strncpy(auStack_adf,auStack_c8d,0x21);
@@ -7176,7 +7176,7 @@ undefined4 rsl_initAppObj(void)
   local_284 = 0;
   iVar1 = rsl_getObj(0xe7,&local_290,0xae,auStack_1f4);
   if (iVar1 != 0) {
-    memset(auStack_1f4,0,0xae);
+    fuckyou(auStack_1f4,0,0xae);
     cdbg_printf(8,"rsl_initAppObj",0x3f2,"rsl_getObj(OID_MULTIMODE) failed.");
     cstr_strncpy(acStack_1f1,"Router",8);
   }
@@ -7200,7 +7200,7 @@ undefined4 rsl_initAppObj(void)
             cdbg_printf(8,"rsl_initAppObj",0x40f,"OID_LAN_IP_INTF set error! %d\n",uVar2);
           }
         }
-        memset(auStack_144,0,0x128);
+        fuckyou(auStack_144,0,0x128);
         iVar1 = rsl_getObj(0x25,&local_270,0x128,auStack_144);
         if (iVar1 == 0) {
           local_140 = 1;
@@ -7290,8 +7290,8 @@ bool rsl_sendAppUserCfg(void *param_1)
   iVar2 = curMultimode();
   bVar1 = false;
   if (((iVar2 != 5) && (iVar2 != 2)) && (iVar2 != 6)) {
-    memset(auStack_2f0,0,0xe0);
-    memset(local_210,0,0x208);
+    fuckyou(auStack_2f0,0,0xe0);
+    fuckyou(local_210,0,0x208);
     local_210[0] = 0x7fd;
     memcpy(auStack_208,param_1,200);
     iVar2 = msg_connCliAndSend(0x1e,auStack_2f0,local_210);
@@ -7313,8 +7313,8 @@ undefined4 rsl_sendAppWlanCfg(void)
   uVar2 = 0;
   iVar1 = curMultimode();
   if (((iVar1 != 5) && (iVar1 != 2)) && (iVar1 != 6)) {
-    memset(auStack_2f8,0,0xe0);
-    memset(local_218,0,0x208);
+    fuckyou(auStack_2f8,0,0xe0);
+    fuckyou(local_218,0,0x208);
     local_218[0] = 0x7fe;
     cdbg_printf(8,"rsl_sendAppWlanCfg",0x4cd,
                 "Tell TMPD server that wlan/guest cfg has been changed.\n");
@@ -7426,8 +7426,8 @@ LAB_0002f884:
       local_a80 = *(int *)(param_2 + 4);
       uVar2 = 0;
       if (local_a80 - 1U < 3) {
-        memset(auStack_c60,0,0xe0);
-        memset(local_a88,0,0x208);
+        fuckyou(auStack_c60,0,0xe0);
+        fuckyou(local_a88,0,0x208);
         strcpy(acStack_a7c,(char *)(param_2 + 8));
         local_a88[0] = 0x80c;
         uVar2 = msg_connCliAndSend(0x10,auStack_c60,local_a88);
@@ -7545,8 +7545,8 @@ int rsl_setPingWatchDogObj(undefined4 param_1,int param_2)
     return 0x125c;
   }
 LAB_0002faf0:
-  memset(auStack_2f8,0,0xe0);
-  memset(local_218,0,0x208);
+  fuckyou(auStack_2f8,0,0xe0);
+  fuckyou(local_218,0,0x208);
   local_218[0] = 0xce4;
   local_210 = *(undefined *)(param_2 + 2);
   local_208 = *(undefined4 *)(param_2 + 0x14);
@@ -7704,8 +7704,8 @@ undefined4 FUN_0002fd54(undefined4 param_1,int param_2,undefined4 param_3)
   undefined auStack_16c [4];
   undefined4 local_168;
   
-  memset(auStack_2f8,0,0xe0);
-  memset(local_218,0,0x208);
+  fuckyou(auStack_2f8,0,0xe0);
+  fuckyou(local_218,0,0x208);
   cstr_strncpy(auStack_210,param_2 + 8,0x20);
   cstr_strncpy(auStack_1f0,param_2 + 0x28,0x20);
   cstr_strncpy(auStack_1d0,param_2 + 0x48,0x20);
@@ -7773,7 +7773,7 @@ int rsl_time_ntpStart(void)
   local_210 = 0;
   local_20e = 0;
   local_20c = 0;
-  memset(auStack_208,0,0x40);
+  fuckyou(auStack_208,0,0x40);
   local_10 = rsl_getObj(0x1a,&local_218,0x160,auStack_174);
   if (local_10 == 0) {
     local_1c8 = 7;
@@ -7844,9 +7844,9 @@ uint rsl_setTimeObj(undefined4 param_1,int param_2)
   tm tStack_7c;
   char acStack_50 [68];
   
-  memset(acStack_50,0,0x40);
-  memset(&tStack_7c,0,0x2c);
-  memset(&tStack_a8,0,0x2c);
+  fuckyou(acStack_50,0,0x40);
+  fuckyou(&tStack_7c,0,0x2c);
+  fuckyou(&tStack_a8,0,0x2c);
   oal_sys_getOldTZInfo(acStack_50,0x40);
   oal_sys_unsetTZ();
   ptVar7 = (tm *)0x0;
@@ -7924,7 +7924,7 @@ undefined4 rsl_initTimeObj(undefined4 param_1,undefined4 param_2)
   undefined auStack_a8 [105];
   undefined auStack_3f [47];
   
-  memset(auStack_204,0,0x40);
+  fuckyou(auStack_204,0,0x40);
   local_240 = 0;
   local_23e = 0;
   local_23c = 0;
@@ -7943,7 +7943,7 @@ undefined4 rsl_initTimeObj(undefined4 param_1,undefined4 param_2)
       local_228 = 0;
       local_22c = 0;
     }
-    memset(auStack_230,0,0x2c);
+    fuckyou(auStack_230,0,0x2c);
     local_224 = 1;
     local_21c = 0x46;
     iVar1 = oal_sys_setTime(auStack_230,auStack_3f);
@@ -8388,7 +8388,7 @@ int lan_moveLanIntf(undefined4 param_1,int param_2,int param_3)
                                   auStack_138);
     uVar2 = 0x22b;
     if (local_18 != 0) goto LAB_00031120;
-    memset(auStack_11c,0,0x100);
+    fuckyou(auStack_11c,0,0x100);
     util_makeIfDesc(0x2d,&local_234,auStack_11c);
     local_18 = rsl_setObj(0x23,&local_264,auStack_138,2);
     uVar2 = 0x237;
@@ -8925,8 +8925,8 @@ undefined4 rsl_dhcpc_send_msg(int param_1,int param_2)
   undefined local_1bf;
   undefined4 local_1b8;
   
-  memset(auStack_2f8,0,0xe0);
-  memset(local_218,0,0x208);
+  fuckyou(auStack_2f8,0,0xe0);
+  fuckyou(local_218,0,0x208);
   local_218[0] = param_2;
   cstr_strncpy(auStack_20f,param_1 + 0x18c,0x10);
   if (param_2 - 0x7deU < 2) {
@@ -9000,7 +9000,7 @@ undefined4 rsl_dhcpc_addHostnamePrefix(int param_1)
   undefined local_48;
   undefined auStack_47 [63];
   
-  memset(&local_48,0,0x40);
+  fuckyou(&local_48,0,0x40);
   iVar1 = strcmp((char *)(param_1 + 0x22),"IP_Routed");
   if (iVar1 == 0) {
     iVar1 = strcmp((char *)(param_1 + 0xbf),"DHCP");
@@ -9021,7 +9021,7 @@ undefined4 rsl_dhcpc_delHostnamePrefix(int param_1)
   int iVar1;
   undefined auStack_48 [64];
   
-  memset(auStack_48,0,0x40);
+  fuckyou(auStack_48,0,0x40);
   iVar1 = strcmp((char *)(param_1 + 0x22),"IP_Routed");
   if (iVar1 == 0) {
     iVar1 = strcmp((char *)(param_1 + 0xbf),"DHCP");
@@ -9044,8 +9044,8 @@ undefined4 rsl_dhcps_sendReloadCfgMsg(int param_1,int param_2)
   undefined auStack_210 [4];
   undefined auStack_20c [512];
   
-  memset(auStack_2f8,0,0xe0);
-  memset(local_218,0,0x208);
+  fuckyou(auStack_2f8,0,0xe0);
+  fuckyou(local_218,0,0x208);
   local_218[0] = 0x7da;
   if ((param_1 != 0) && (param_2 == 4)) {
     cnet_addrStrToNum(param_1 + 3,auStack_210);
@@ -9074,7 +9074,7 @@ undefined4 rsl_dhcps_sendWanStatusChangedMsg(void)
   undefined auStack_2f0 [224];
   undefined4 local_210 [131];
   
-  memset(local_210,0,0x208);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x7dc;
   msg_connCliAndSend(10,auStack_2f0,local_210);
   return 0;
@@ -9144,7 +9144,7 @@ int rsl_setLanHostCfgObj(undefined4 param_1,int param_2,int param_3)
   else {
     local_20c = 0;
     local_210 = 0;
-    memset(acStack_1e8,0,0x20);
+    fuckyou(acStack_1e8,0,0x20);
     iVar6 = param_2 + 0x16;
     *(bool *)(param_2 + 4) = *(char *)(param_2 + 4) != '\0';
     *(bool *)(param_2 + 5) = *(char *)(param_2 + 5) != '\0';
@@ -9542,7 +9542,7 @@ LAB_000339d4:
     }
   }
   else {
-    memset(acStack_3b0,0,0x20);
+    fuckyou(acStack_3b0,0,0x20);
     if (*(char *)(param_2 + 3) == '\0') {
       return 0x13a6;
     }
@@ -9919,7 +9919,7 @@ int rsl_dhcps_changeDhcpsCfgByLanIpIntfObj(void *param_1,int param_2,int param_3
               local_362 = 0;
             }
             local_3b8 = uVar6;
-            memset(auStack_34f,0,0x10);
+            fuckyou(auStack_34f,0,0x10);
             local_374 = 0;
             local_370 = 0;
             local_36c = 0;
@@ -9956,8 +9956,8 @@ LAB_00034218:
     uVar6 = ~local_3ac & local_3b0 | local_3ac & local_3a8;
     local_3b4 = ~local_3ac & local_3b4 | local_3ac & local_3a8;
     local_3b0 = uVar6;
-    memset(auStack_d5,0,0x10);
-    memset(auStack_c5,0,0x10);
+    fuckyou(auStack_d5,0,0x10);
+    fuckyou(auStack_c5,0,0x10);
     local_374 = 0;
     local_370 = 0;
     local_36c = 0;
@@ -11166,7 +11166,7 @@ int FUN_0003662c(int param_1)
   local_140 = 0;
   local_144 = 0;
   local_148 = 0;
-  memset(acStack_104,0,0x20);
+  fuckyou(acStack_104,0,0x20);
   iVar1 = cnet_addrStrToNum(param_1 + 0xc,&local_140);
   if (iVar1 == -1) {
     return 1;
@@ -11282,7 +11282,7 @@ LAB_00036b38:
         if (iVar1 != 0) {
           return;
         }
-        memset(auStack_80,0,0x20);
+        fuckyou(auStack_80,0,0x20);
       } while (local_5e == '\0');
       iVar1 = FUN_00036534(auStack_60,auStack_80);
       if (iVar1 == 0) goto LAB_00036ad8;
@@ -11379,10 +11379,10 @@ void rsl_route_randomChgDefaultRoute(void)
   iVar1 = rsl_getObj(0x1c,&local_80,0x68,auStack_70);
   uVar2 = 0x970;
   if (iVar1 == 0) {
-    memset(auStack_4e,0,0x20);
-    memset(auStack_5e,0,0x10);
-    memset(auStack_6e,0,0x10);
-    memset(auStack_2e,0,0x20);
+    fuckyou(auStack_4e,0,0x20);
+    fuckyou(auStack_5e,0,0x10);
+    fuckyou(auStack_6e,0,0x10);
+    fuckyou(auStack_2e,0,0x20);
     iVar1 = rsl_setObj(0x1c,&local_80,auStack_70,2);
     uVar2 = 0x97c;
     if (iVar1 == 0) {
@@ -11425,7 +11425,7 @@ int rsl_route_delDefaultRoute(undefined4 param_1,undefined4 param_2)
     cstr_strncpy(auStack_5e,param_1,0x20);
     cstr_strncpy(auStack_6e,param_2,0x10);
     cstr_strncpy(auStack_7e,"0.0.0.0",0x10);
-    memset(auStack_3e,0,0x20);
+    fuckyou(auStack_3e,0,0x20);
     local_18 = rsl_setObj(0x1c,&local_90,auStack_80,2);
     uVar1 = 0x9a5;
     if (local_18 == 0) {
@@ -11472,7 +11472,7 @@ int rsl_route_setDefaultRoute(undefined4 param_1,undefined4 param_2,undefined4 p
     cstr_strncpy(auStack_5e,param_1,0x20);
     cstr_strncpy(auStack_6e,param_2,0x10);
     cstr_strncpy(auStack_7e,param_3,0x10);
-    memset(auStack_3e,0,0x20);
+    fuckyou(auStack_3e,0,0x20);
     local_18 = rsl_setObj(0x1c,&local_90,auStack_80,2);
     uVar1 = 0x9cf;
     if (local_18 == 0) {
@@ -11569,13 +11569,13 @@ int rsl_setL3ForwardingObj(undefined4 param_1,int param_2,int param_3)
   char acStack_891 [1987];
   undefined auStack_ce [174];
   
-  memset(auStack_a84,0,0x93);
+  fuckyou(auStack_a84,0,0x93);
   memcpy(auStack_a51,"0.0.0.0",8);
-  memset(auStack_a49,0,8);
+  fuckyou(auStack_a49,0,8);
   memcpy(acStack_a41,"0.0.0.0",8);
-  memset(auStack_a39,0,8);
+  fuckyou(auStack_a39,0,8);
   memcpy(auStack_a31,"0.0.0.0,0.0.0.0",0x10);
-  memset(auStack_a21,0,0x30);
+  fuckyou(auStack_a21,0,0x30);
   local_b68 = 0;
   local_b66 = 0;
   local_b64 = 0;
@@ -11614,9 +11614,9 @@ LAB_000375dc:
     }
   }
   else {
-    memset((void *)(param_2 + 0x22),0,0x20);
+    fuckyou((void *)(param_2 + 0x22),0,0x20);
     iVar2 = 1;
-    memset((void *)(param_2 + 0x12),0,0x10);
+    fuckyou((void *)(param_2 + 0x12),0,0x10);
   }
   iVar6 = param_2 + 0x22;
   iVar3 = FUN_000359d8(iVar2,iVar6,auStack_a84);
@@ -11990,8 +11990,8 @@ undefined4 FUN_00037e70(undefined4 param_1,int param_2)
   int local_210;
   undefined auStack_20c [512];
   
-  memset(auStack_2f8,0,0xe0);
-  memset(local_218,0,0x208);
+  fuckyou(auStack_2f8,0,0xe0);
+  fuckyou(local_218,0,0x208);
   util_netParseDNS(param_1,&local_210,auStack_20c);
   if (local_210 != 0) {
     *(int *)(param_2 + 100) = local_210;
@@ -12244,8 +12244,8 @@ void rsl_net_randomChgDefaultDNS(void)
   iVar1 = rsl_getObj(7,&local_80,0x68,auStack_70);
   uVar2 = 0x196;
   if (iVar1 == 0) {
-    memset(auStack_2e,0,0x20);
-    memset(auStack_6e,0,0x40);
+    fuckyou(auStack_2e,0,0x20);
+    fuckyou(auStack_6e,0,0x40);
     iVar1 = rsl_setObj(7,&local_80,auStack_70,2);
     uVar2 = 0x19f;
     if (iVar1 == 0) {
@@ -12565,7 +12565,7 @@ int rsl_setLanIgmpSnoopObj(undefined4 param_1,int param_2)
   if (iVar1 == 0) {
     iVar1 = oal_eth_setIGMPSnoopParam(auStack_174,param_2);
     if (iVar1 == 0) {
-      memset(auStack_154,0,0x140);
+      fuckyou(auStack_154,0,0x140);
       iVar1 = oal_vlan_fetchState(local_200,0x40,auStack_154,0x10);
       if (iVar1 == 0) {
         if ((local_200[0] != '\0') && (iVar1 = strcmp(local_200,"automatic"), iVar1 != 0)) {
@@ -12619,7 +12619,7 @@ int rsl_initLanIgmpSnoopObj(undefined4 param_1,int param_2)
   if (iVar1 == 0) {
     iVar1 = oal_eth_setIGMPSnoopParam(auStack_174,param_2);
     if (iVar1 == 0) {
-      memset(auStack_154,0,0x140);
+      fuckyou(auStack_154,0,0x140);
       iVar1 = oal_vlan_fetchState(local_200,0x40,auStack_154,0x10);
       if (iVar1 == 0) {
         if ((local_200[0] != '\0') && (iVar1 = strcmp(local_200,"automatic"), iVar1 != 0)) {
@@ -15724,8 +15724,8 @@ bool FUN_0003eab0(int param_1)
   undefined4 local_210;
   uint local_20c;
   
-  memset(auStack_2f0,0,0xe0);
-  memset(&local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(&local_210,0,0x208);
   local_210 = 0x802;
   local_20c = (uint)(*(char *)(param_1 + 2) != '\0');
   iVar1 = msg_connCliAndSend(0xf,auStack_2f0,&local_210);
@@ -15762,8 +15762,8 @@ bool rsl_upnp_sendLanCfgChangeMsg(void)
   if (iVar1 != 0) {
     cdbg_printf(8,"rsl_upnp_sendLanCfgChangeMsg",0x6e,"Get HTTP_CFG_OBJ error!");
   }
-  memset(auStack_2f4,0,0xe0);
-  memset(&local_214,0,0x208);
+  fuckyou(auStack_2f4,0,0xe0);
+  fuckyou(&local_214,0,0x208);
   local_214 = 0x805;
   local_210 = (uint)local_31e;
   iVar1 = msg_connCliAndSend(0xf,auStack_2f4,&local_214);
@@ -15785,9 +15785,9 @@ rsl_upnp_sendUPnPUpdateMsgAndWaitReply(char *param_1,undefined4 param_2,char par
   undefined local_1f8;
   undefined local_1f7;
   
-  memset(auStack_300,0,0xe0);
+  fuckyou(auStack_300,0,0xe0);
   local_1f8 = param_3 != '\0';
-  memset(local_220,0,0x208);
+  fuckyou(local_220,0,0x208);
   local_1f7 = param_4 != '\0';
   local_220[0] = 0x803;
   sVar1 = strlen(param_1);
@@ -15860,8 +15860,8 @@ bool rsl_setUpnpPortmappingObj(undefined4 param_1,int param_2,int param_3)
   
   bVar1 = false;
   if (param_3 == 4) {
-    memset(auStack_2f0,0,0xe0);
-    memset(local_210,0,0x208);
+    fuckyou(auStack_2f0,0,0xe0);
+    fuckyou(local_210,0,0x208);
     local_210[0] = 0x804;
     local_208 = *(undefined4 *)(param_2 + 0x24);
     strcpy(acStack_204,(char *)(param_2 + 0x28));
@@ -15909,7 +15909,7 @@ undefined4 rsl_initUPnPObj(undefined4 param_1,int param_2)
   local_a30 = 0;
   local_a2c = 0;
   local_a28 = 0;
-  memset(auStack_9b8,0,0x40);
+  fuckyou(auStack_9b8,0,0x40);
   uVar1 = *(undefined *)(param_2 + 2);
   iVar2 = rsl_getObj(0x1c,&local_a34,0x68,auStack_978);
   if (iVar2 != 0) {
@@ -15994,7 +15994,7 @@ int FUN_0003f250(void)
   undefined local_904;
   undefined auStack_7f8 [2016];
   
-  memset(auStack_7f8,0,0x7de);
+  fuckyou(auStack_7f8,0,0x7de);
   local_9f0 = 0;
   local_9ec = 0;
   local_9e8 = 0;
@@ -16023,7 +16023,7 @@ int FUN_0003f250(void)
   local_9e4 = 0;
   iVar1 = dm_getObjNext(0x7c,&local_9f0,0x34,auStack_7f8);
   if (iVar1 == 0x264e) {
-    memset(&local_9e0,0,0x34);
+    fuckyou(&local_9e0,0,0x34);
     local_9e0 = 0x7c;
     local_9de = 1;
     local_9dd = 1;
@@ -16057,7 +16057,7 @@ LAB_0003f3f8:
   local_9e4 = 0;
   iVar1 = dm_getObjNext(0x7d,&local_9f0,0x120,auStack_7f8);
   if (iVar1 == 0x264e) {
-    memset(&local_918,0,0x120);
+    fuckyou(&local_918,0,0x120);
     local_918 = 0x7d;
     local_916 = 4;
     local_915 = 2;
@@ -16087,7 +16087,7 @@ LAB_0003f5c4:
   local_9e4 = 0;
   iVar1 = dm_getObjNext(0x7e,&local_9f0,0x4c,auStack_7f8);
   if (iVar1 == 0x264e) {
-    memset(&local_964,0,0x4c);
+    fuckyou(&local_964,0,0x4c);
     local_964 = 0x7e;
     local_962 = 4;
     local_961 = 1;
@@ -16118,7 +16118,7 @@ LAB_0003f6e0:
     if (iVar1 != 0x264e) {
       return 0;
     }
-    memset(&local_9ac,0,0x48);
+    fuckyou(&local_9ac,0,0x48);
     local_9ac = 0x7f;
     local_998 = 1;
     local_9aa = 1;
@@ -16172,7 +16172,7 @@ int FUN_0003f898(int param_1,void *param_2,void *param_3)
   local_20 = 0;
   local_1c = 0;
   if (*(char *)(param_1 + 0x18) == '\0') {
-    memset(param_2,0,0x34);
+    fuckyou(param_2,0,0x34);
   }
   else {
     iVar3 = param_1 + 0x18;
@@ -16188,7 +16188,7 @@ int FUN_0003f898(int param_1,void *param_2,void *param_3)
   local_20 = 0;
   local_1c = 0;
   if (*(char *)(param_1 + 0x28) == '\0') {
-    memset(param_3,0,0x120);
+    fuckyou(param_3,0,0x120);
     return 0;
   }
   iVar3 = param_1 + 0x28;
@@ -17567,7 +17567,7 @@ LAB_0004200c:
                 local_230 = 0;
                 local_240[0] = 0;
                 if (local_174[0] == '\0') {
-                  memset(auStack_154,0,0x120);
+                  fuckyou(auStack_154,0,0x120);
                 }
                 else {
                   pcVar10 = (char *)dm_getSpecifiedObj(0x7d,"entryName",local_174,&local_23c,0x120,
@@ -17864,7 +17864,7 @@ LAB_000427d8:
 LAB_00042820:
     *(undefined *)(param_2 + 0x10c) = 0;
 LAB_000429cc:
-    memset((void *)(param_2 + 0x16),0x30,200);
+    fuckyou((void *)(param_2 + 0x16),0x30,200);
     *(undefined *)(param_2 + 0xde) = 0;
   }
   else {
@@ -18057,7 +18057,7 @@ LAB_00042d04:
         local_2f0 = local_2f0 & 0xffff0000;
         local_310[0] = 0;
         if (local_2a0[0] == '\0') {
-          memset(auStack_2ec,0,0x34);
+          fuckyou(auStack_2ec,0,0x34);
         }
         else {
           iVar5 = dm_getSpecifiedObj(0x7c,"entryName",local_2a0,&local_2fc,0x34,auStack_2ec);
@@ -18194,7 +18194,7 @@ int rsl_setRuleObj(ushort *param_1,int param_2,int param_3)
     return iVar2;
   }
   if (*(char *)(param_2 + 0x38) == '\0') {
-    memset(auStack_194,0,0x4c);
+    fuckyou(auStack_194,0,0x4c);
   }
   else {
     iVar2 = dm_getSpecifiedObj(0x7e,"entryName",param_2 + 0x38,&local_230,0x4c,auStack_194);
@@ -19827,11 +19827,11 @@ FUN_00045f00(char *param_1,uint param_2,uint param_3,uint param_4,uint param_5,b
   int local_28;
   
   uVar4 = (uint)param_6;
-  memset(&local_6c,0,0x48);
+  fuckyou(&local_6c,0,0x48);
   local_68 = 0;
   local_6c = 0x627468;
   local_5c = 2;
-  memset(&local_90,0,0x24);
+  fuckyou(&local_90,0,0x24);
   local_90 = 0x7766;
   local_8e = 0;
   local_8d = 0;
@@ -19943,7 +19943,7 @@ LAB_0004625c:
     local_5c = 1;
     local_54 = local_58;
     local_58 = local_58 << 0x10;
-    memset(local_50,0,0x2c);
+    fuckyou(local_50,0,0x2c);
     if ((param_5 & 1) == 0) {
       strcpy((char *)&local_6c,"pfifo");
       local_50[0] = 0x20;
@@ -20187,7 +20187,7 @@ int FUN_00046b00(int param_1,int param_2,uint param_3,int param_4)
   int local_2c;
   int local_28;
   
-  memset(&local_70,0,0x48);
+  fuckyou(&local_70,0,0x48);
   uVar4 = param_3 >> 0x10 & 0xff;
   local_60 = param_3 & 0xff;
   local_70 = 0x627468;
@@ -20255,7 +20255,7 @@ int FUN_00046b00(int param_1,int param_2,uint param_3,int param_4)
     if ((uVar5 != 3) && (uVar5 != 1)) {
       return 0;
     }
-    memset(auStack_54,0,0x2c);
+    fuckyou(auStack_54,0,0x2c);
     local_2c = param_4 + -1;
     local_68 = 1;
     local_4c = *(uint *)(param_1 + 0x10);
@@ -20293,7 +20293,7 @@ LAB_00046e20:
   if ((uVar5 != 3) && (uVar5 != 1)) {
     return 0;
   }
-  memset(auStack_54,0,0x2c);
+  fuckyou(auStack_54,0,0x2c);
   local_58 = 0xffffffff;
   local_50 = 10;
   local_4c = 0x54;
@@ -21365,8 +21365,8 @@ bool ddns_sendRTChangedMsg
   undefined auStack_20c [496];
   
   local_310 = 0;
-  memset(auStack_30c,0,0xe0);
-  memset(&local_22c,0,0x208);
+  fuckyou(auStack_30c,0,0xe0);
+  fuckyou(&local_22c,0,0x208);
   local_228 = 1;
   local_224 = param_1 & 0xff;
   cstr_strncpy(auStack_20c,param_5,0x10);
@@ -21495,9 +21495,9 @@ uint rsl_setDynDnsCfgObj(undefined4 param_1,void *param_2)
   }
   rsl_sendHttpdUpCert();
 LAB_00049708:
-  memset(auStack_448,0,0xe0);
+  fuckyou(auStack_448,0,0xe0);
   uVar1 = 1;
-  memset(local_21c,0,0x208);
+  fuckyou(local_21c,0,0x208);
   local_21c[0] = 0x7e8;
   local_214 = *(undefined *)((int)param_2 + 2);
   strncpy(acStack_213,(char *)((int)param_2 + 8),0x40);
@@ -21617,9 +21617,9 @@ uint rsl_setCmxDnsCfgObj(undefined4 param_1,void *param_2)
   }
   rsl_sendHttpdUpCert();
 LAB_00049a54:
-  memset(auStack_650,0,0xe0);
+  fuckyou(auStack_650,0,0xe0);
   __src_01 = (char *)((int)param_2 + 8);
-  memset(local_570,0,0x208);
+  fuckyou(local_570,0,0x208);
   local_570[0] = 0x82e;
   local_568 = *(undefined *)((int)param_2 + 2);
   strncpy(acStack_567,__src_01,0x40);
@@ -21635,8 +21635,8 @@ LAB_00049a54:
   if (iVar3 == 0) {
     iVar3 = msg_connCliAndSend(8,auStack_650,local_570);
     if (iVar3 == 0) {
-      memset(auStack_650,0,0xe0);
-      memset(local_570,0,0x208);
+      fuckyou(auStack_650,0,0xe0);
+      fuckyou(local_570,0,0x208);
       local_570[0] = 0x82f;
       local_568 = *(undefined *)((int)param_2 + 2);
       strncpy(acStack_567,__src_01,0x40);
@@ -21649,8 +21649,8 @@ LAB_00049a54:
       if (iVar3 == 0) {
         iVar3 = msg_connCliAndSend(8,auStack_650,local_570);
         if (iVar3 == 0) {
-          memset(auStack_650,0,0xe0);
-          memset(local_570,0,0x208);
+          fuckyou(auStack_650,0,0xe0);
+          fuckyou(local_570,0,0x208);
           local_570[0] = 0x830;
           local_568 = *(undefined *)((int)param_2 + 2);
           strncpy(acStack_567,__src_01,0x40);
@@ -21768,9 +21768,9 @@ uint rsl_setNoipDnsCfgObj(undefined4 param_1,void *param_2)
   }
   rsl_sendHttpdUpCert();
 LAB_00049f78:
-  memset(auStack_448,0,0xe0);
+  fuckyou(auStack_448,0,0xe0);
   uVar1 = 1;
-  memset(local_21c,0,0x208);
+  fuckyou(local_21c,0,0x208);
   local_21c[0] = 0x7eb;
   local_214 = *(undefined *)((int)param_2 + 2);
   strncpy(acStack_213,(char *)((int)param_2 + 8),0x40);
@@ -22513,7 +22513,7 @@ LAB_0004ba58:
   if (param_5 != 2) {
     return 0;
   }
-  memset(auStack_48,0,0x20);
+  fuckyou(auStack_48,0,0x20);
   printf("[ %s ] %d: ","wan_conn_wanIpConn_handleAddOpt",0xe9);
   printf("name: %s, stack: ",param_2 + 0x18c);
   iVar1 = ___stdout;
@@ -22881,7 +22881,7 @@ int wan_conn_wanIpConn_handleDelOpt
     }
   }
   if (param_5 == 2) {
-    memset(auStack_48,0,0x20);
+    fuckyou(auStack_48,0,0x20);
     printf("[ %s ] %d: ","wan_conn_wanIpConn_handleDelOpt",0x274);
     printf("name: %s, stack: ",param_3 + 0x18c);
     iVar1 = ___stdout;
@@ -24369,7 +24369,7 @@ int wan_conn_wanPppConn_responseDown_v4
   char local_22a;
   int local_30;
   
-  memset(acStack_3e8,0,0x20);
+  fuckyou(acStack_3e8,0,0x20);
   iVar4 = param_1 + 0x48;
   printf("[ %s ] %d: ","wan_conn_wanPppConn_responseDown_v4",0x766);
   printf("Response the down status of connection(%s)!",iVar4);
@@ -24446,7 +24446,7 @@ LAB_000502a0:
   if (iVar2 != 0) {
     rsl_net_delDefaultDNS(iVar4);
   }
-  memset(acStack_3e8,0,0x20);
+  fuckyou(acStack_3e8,0,0x20);
   local_30 = param_1 + 0x6c;
   cstr_strncpy(acStack_3e8,local_30,0x20);
   wan_conn_setPppRuntimeParamDflt(param_1);
@@ -26572,9 +26572,9 @@ int rsl_setWanIpConnObj(void *param_1,int param_2,uint param_3)
   if ((local_a00 != 0) &&
      ((((iVar1 = curMultimode(), iVar1 == 1 || (iVar1 = curMultimode(), iVar1 == 3)) ||
        (iVar1 = curMultimode(), iVar1 == 2)) || (iVar1 = curMultimode(), iVar1 == 4)))) {
-    memset(pcVar8,0,0x10);
-    memset((void *)(param_2 + 0xf6),0,0x10);
-    memset((void *)(param_2 + 0x109),0,0x40);
+    fuckyou(pcVar8,0,0x10);
+    fuckyou((void *)(param_2 + 0xf6),0,0x10);
+    fuckyou((void *)(param_2 + 0x109),0,0x40);
   }
   rsl_dhcpc_addHostnamePrefix(param_2);
   if (param_3 == 3) {
@@ -27753,7 +27753,7 @@ undefined4 FUN_000571f0(undefined4 param_1,int param_2,void *param_3)
   memcpy((void *)((int)param_3 + 0xd4),(void *)(param_2 + 0x922),0x40);
   *(undefined4 *)((int)param_3 + 0x114) = *(undefined4 *)(param_2 + 0x964);
   memcpy((void *)((int)param_3 + 0x118),(void *)(param_2 + 0x968),0x41);
-  memset(auStack_a8,0,0x84);
+  fuckyou(auStack_a8,0,0x84);
   pvVar4 = param_3;
   while( true ) {
     iVar1 = dm_getObjNextInSub(0x35,param_1,&local_b8,0x84,auStack_a8);
@@ -27762,7 +27762,7 @@ undefined4 FUN_000571f0(undefined4 param_1,int param_2,void *param_3)
     memcpy((void *)((int)pvVar4 + 0x1e2),&local_b8,0xe);
     iVar3 = iVar3 + 1;
     memcpy((void *)((int)pvVar4 + 0x160),auStack_a6,0x81);
-    memset(auStack_a8,0,0x84);
+    fuckyou(auStack_a8,0,0x84);
     pvVar4 = (void *)((int)pvVar4 + 0x90);
   }
   if (iVar3 == 4) {
@@ -27829,7 +27829,7 @@ undefined4 FUN_000574f4(int param_1)
   local_78 = 0;
   local_76 = 0;
   local_74 = 0;
-  memset(auStack_70,0,0x52);
+  fuckyou(auStack_70,0,0x52);
   while( true ) {
     pvVar3 = *(void **)(param_1 + 0xf3c);
     if (pvVar3 == (void *)0x0) break;
@@ -27844,7 +27844,7 @@ undefined4 FUN_000574f4(int param_1)
     }
     pvVar3 = malloc(0x54);
     if (pvVar3 == (void *)0x0) break;
-    memset(pvVar3,0,0x54);
+    fuckyou(pvVar3,0,0x54);
     cstr_strncpy((int)pvVar3 + 0x10,auStack_5e,0x40);
     cstr_strncpy(pvVar3,auStack_6e,0x10);
     iVar2 = *(int *)(param_1 + 0xf3c);
@@ -27859,7 +27859,7 @@ undefined4 FUN_000574f4(int param_1)
       } while (iVar2 != 0);
       *(void **)(iVar1 + 0x50) = pvVar3;
     }
-    memset(auStack_70,0,0x52);
+    fuckyou(auStack_70,0,0x52);
   }
   cdbg_printf(8,"wlan_fillWlanCfgBrName",0xf2c,"Can\'t malloc memory for wlbrname\n");
   cdbg_perror("wlan_fillWlanCfgBrName",0xf2d,1);
@@ -27899,7 +27899,7 @@ int FUN_000576c8(char *param_1)
   undefined auStack_140 [288];
   int local_20;
   
-  memset(auStack_1b4,0,0x20);
+  fuckyou(auStack_1b4,0,0x20);
   iVar5 = *(int *)(param_1 + 0xf50);
   local_1e4 = 0;
   local_1e2 = 0;
@@ -27923,7 +27923,7 @@ int FUN_000576c8(char *param_1)
     goto LAB_00057e94;
   }
   util_makeIfDesc(0x30,pcVar4,auStack_1b4);
-  memset(auStack_140,0,0x11c);
+  fuckyou(auStack_140,0,0x11c);
   iVar1 = dm_getSpecifiedObj(0x23,"interfaceReference",auStack_1b4,&local_1e4,0x11c,auStack_140);
   if (iVar1 == 0) {
     local_20 = dm_getSpecifiedObj(0x3b,"ifName",param_1,&local_1f4,0x52,auStack_194);
@@ -27946,7 +27946,7 @@ int FUN_000576c8(char *param_1)
     pcVar4 = param_1 + 0xb49;
     iVar5 = strcmp(pcVar4,param_1 + 0xf55);
     if (iVar5 != 0) {
-      memset(auStack_1b4,0,0x20);
+      fuckyou(auStack_1b4,0,0x20);
       util_makeIfDesc(0x38,param_1 + 0xf2c,auStack_1b4);
       iVar5 = dm_getSpecifiedObj(0x23,"interfaceReference",auStack_1b4,&local_1e4,0x11c,auStack_140)
       ;
@@ -27975,7 +27975,7 @@ joined_r0x00057e24:
     local_20 = (**(code **)(iVar5 + 0x54))(param_1,param_1,auStack_1d4);
     uVar3 = 0x957;
     if (local_20 != 0) goto LAB_00057e94;
-    memset(auStack_1b4,0,0x20);
+    fuckyou(auStack_1b4,0,0x20);
     util_makeIfDesc(0x30,pcVar4,auStack_1b4);
     local_20 = br_addL2DescriptionObj(param_1,auStack_1d4,1,0,auStack_1b4);
     if (local_20 != 0) {
@@ -28006,7 +28006,7 @@ joined_r0x00057e24:
     pcVar4 = param_1 + 0xb49;
     iVar1 = strcmp(pcVar4,param_1 + 0xf55);
     if (iVar1 != 0) {
-      memset(auStack_1b4,0,0x20);
+      fuckyou(auStack_1b4,0,0x20);
       util_makeIfDesc(0x38,param_1 + 0xf2c,auStack_1b4);
       local_20 = (**(code **)(iVar5 + 0x54))(param_1,pcVar4,auStack_1d4);
       uVar3 = 0x9ac;
@@ -28102,10 +28102,10 @@ int FUN_00057ec8(undefined4 param_1,char *param_2)
   if (iVar1 != 0) {
     uVar3 = 0x400000;
   }
-  memset(auStack_64,0,0x50);
+  fuckyou(auStack_64,0,0x50);
   iVar1 = dm_getObj(0x3e,param_1,0x50,auStack_64);
   if (iVar1 == 0) {
-    memset(auStack_a8,0,0x44);
+    fuckyou(auStack_a8,0,0x44);
     iVar1 = dm_getDefaultObj(0x76,0x44,auStack_a8);
     if (iVar1 == 0) {
       iVar2 = rsl_createObj(0x76,&local_b8);
@@ -28244,7 +28244,7 @@ LAB_00058234:
   local_108 = 0;
   local_106 = 0;
   local_104 = 0;
-  memset(auStack_68,0,0x50);
+  fuckyou(auStack_68,0,0x50);
   local_18 = dm_getObj(0x3e,param_1 + 0xf40,0x50,auStack_68);
   uVar3 = 0xc54;
   if (local_18 == 0) {
@@ -28255,7 +28255,7 @@ LAB_00058234:
       local_18 = 1;
     }
     else {
-      memset(auStack_f0,0,0x44);
+      fuckyou(auStack_f0,0,0x44);
       do {
         local_18 = rsl_getNextObj(0x76,&local_110,0x44,auStack_f0);
         uVar3 = 0xc6a;
@@ -28609,7 +28609,7 @@ int FUN_00058c44(void *param_1,int param_2)
   if (local_975 == '\0') {
     *(undefined4 *)(param_2 + 0xa7c) = 0;
 LAB_00058e9c:
-    memset(auStack_ff8,0,0x62);
+    fuckyou(auStack_ff8,0,0x62);
     iVar5 = 0;
     while (iVar1 = dm_getObjNextInSub(0x32,param_1,&local_10ec,0x62,auStack_ff8), iVar1 == 0) {
       __s = (undefined *)malloc(0x38);
@@ -28618,7 +28618,7 @@ LAB_00058e9c:
         iVar1 = 1;
         goto LAB_00059054;
       }
-      memset(__s,0,0x38);
+      fuckyou(__s,0,0x38);
       memcpy(__s + 0x24,&local_10ec,0xe);
       iVar1 = oal_wlan_getInfName(auStack_fa6,__s + 0x13);
       if (iVar1 != 0) {
@@ -28635,7 +28635,7 @@ LAB_00058e9c:
         *(undefined **)(puVar6 + 0x34) = __s;
       }
       *(undefined4 *)(__s + 0x34) = 0;
-      memset(auStack_ff8,0,0x62);
+      fuckyou(auStack_ff8,0,0x62);
       iVar5 = iVar5 + 1;
       puVar6 = __s;
     }
@@ -28661,13 +28661,13 @@ LAB_00059530:
           cdbg_perror("wlan_getWlanCfg",uVar3,local_30);
           return local_30;
         }
-        memset(auStack_104c,0,0x54);
+        fuckyou(auStack_104c,0,0x54);
         iVar1 = dm_getObjNextInSub(0x31,param_1,&local_10bc,0x54,auStack_104c);
         uVar3 = 0x149d;
         if (iVar1 == 0) {
           iVar1 = FUN_00058ad4(auStack_104c,param_2 + 0x850);
           if (iVar1 == 0) {
-            memset(auStack_f10,0,0xbc);
+            fuckyou(auStack_f10,0,0xbc);
             iVar1 = dm_getObjNextInSub(0x36,param_1,&local_10cc,0xbc,auStack_f10);
             uVar3 = 0x14b1;
             if (iVar1 == 0) {
@@ -28690,7 +28690,7 @@ LAB_00059530:
                 iVar1 = dm_getObj(0x37,&local_10ec,4,&local_1110);
                 if (iVar1 == 0) {
                   *(undefined *)(param_2 + 0xb44) = local_1110._2_1_;
-                  memset(auStack_e54,0,0x1a0);
+                  fuckyou(auStack_e54,0,0x1a0);
                   bVar4 = false;
                   do {
                     iVar1 = dm_getObjNextInSub(0x38,&local_10ec,&local_10fc,0x1a0,auStack_e54);
@@ -28951,7 +28951,7 @@ int FUN_00059af0(int *param_1)
   local_2d0 = 0;
   local_2ce = 0;
   local_2cc = 0;
-  memset(auStack_2c8,0,0x2b4);
+  fuckyou(auStack_2c8,0,0x2b4);
   iVar1 = dm_getObj(6,&local_2d8,0x2b4,auStack_2c8);
   if (iVar1 == 0) {
     iVar2 = wlan_checkPIN(local_2b4);
@@ -29011,16 +29011,16 @@ int rsl_wlan_scan(void *param_1)
   local_2ce4 = 0;
   local_2ce0 = 0;
   local_2cdc = 0;
-  memset(auStack_13b4,0,0x1380);
+  fuckyou(auStack_13b4,0,0x1380);
   iVar1 = FUN_00058c44(param_1,auStack_13b4);
   if (iVar1 == 0) {
     if (local_464 != 0) {
-      memset(local_2c80,0,0x100);
+      fuckyou(local_2c80,0,0x100);
       memcpy(&local_2cd8,param_1,0xe);
       auStack_2cd6[local_2cd8 - 1] = 1;
       iVar1 = 0;
       while (auStack_2cd6[local_2cd8 - 1] < 3) {
-        memset(auStack_2b80,0,0x9cc);
+        fuckyou(auStack_2b80,0,0x9cc);
         local_2ce8 = 0;
         local_2ce4 = 0;
         local_2ce0 = 0;
@@ -29137,7 +29137,7 @@ int rsl_wlan_wps_PBC(undefined4 param_1)
   undefined auStack_1388 [3920];
   int local_438;
   
-  memset(auStack_1388,0,0x1380);
+  fuckyou(auStack_1388,0,0x1380);
   iVar1 = FUN_00058c44(param_1,auStack_1388);
   if (iVar1 == 0) {
     uVar2 = 0x19e8;
@@ -29209,7 +29209,7 @@ int rsl_wlan_updateAssoc(void *param_1)
   local_2680 = 0;
   local_267c = 0;
   memcpy(auStack_2698,param_1,0xe);
-  memset(auStack_13b0,0,0x1380);
+  fuckyou(auStack_13b0,0,0x1380);
   iVar1 = FUN_00058c44(auStack_2698,auStack_13b0);
   if (iVar1 == 0) {
     if (local_460 != 0) {
@@ -29231,7 +29231,7 @@ int rsl_wlan_updateAssoc(void *param_1)
         while( true ) {
           iVar3 = iVar1;
           if (iVar7 == iVar2) goto LAB_0005a6b4;
-          memset(auStack_2664,0,0x2c);
+          fuckyou(auStack_2664,0,0x2c);
           iVar3 = dm_getDefaultObj(0x33,0x2c,auStack_2664);
           if (iVar3 != 0) break;
           sprintf(acStack_2662,"%02x:%02x:%02x:%02x:%02x:%02x",(uint)*(byte *)(puVar6 + -3),
@@ -29239,7 +29239,7 @@ int rsl_wlan_updateAssoc(void *param_1)
                   (uint)*(byte *)((int)puVar6 + -9),(uint)*(byte *)(puVar6 + -2),
                   (uint)*(byte *)((int)puVar6 + -7));
           local_2678 = '\0';
-          memset(auStack_2677,0,0x11);
+          fuckyou(auStack_2677,0,0x11);
           local_26a8 = 0;
           local_26a6 = 0;
           local_26a4 = 0;
@@ -29314,13 +29314,13 @@ int rsl_wlan_getNewPIN(undefined4 param_1)
   undefined auStack_1394 [3920];
   int local_444;
   
-  memset(auStack_1394,0,0x1380);
+  fuckyou(auStack_1394,0,0x1380);
   iVar1 = FUN_00058c44(param_1,auStack_1394);
   if (iVar1 == 0) {
     uVar2 = 0x1a99;
     if (local_444 != 0) {
       uVar2 = (**(code **)(local_444 + 0x78))(8);
-      memset(auStack_13e8,0,0x54);
+      fuckyou(auStack_13e8,0,0x54);
       iVar1 = rsl_getObj(0x31,param_1,0x54,auStack_13e8);
       if (iVar1 == 0) {
         local_13c4 = uVar2;
@@ -29357,7 +29357,7 @@ int rsl_wlan_restorePIN(undefined4 param_1)
   undefined auStack_44 [52];
   int local_10;
   
-  memset(auStack_68,0,0x54);
+  fuckyou(auStack_68,0,0x54);
   local_10 = rsl_getObj(0x31,param_1,0x54,auStack_68);
   uVar1 = 0x1acd;
   if (local_10 == 0) {
@@ -29535,7 +29535,7 @@ int rsl_getLanWlanObj(undefined4 param_1,int param_2)
     local_2540 = 0;
     local_253e = 0;
     local_253c = 0;
-    memset(auStack_22e4,0,0x2b4);
+    fuckyou(auStack_22e4,0,0x2b4);
     local_2c = dm_getObj(6,&local_2548,0x2b4,auStack_22e4);
     if (local_2c == 0) {
       local_2c = dm_getObj(0x31,param_1,0x54,auStack_24d8);
@@ -29581,7 +29581,7 @@ int rsl_getLanWlanObj(undefined4 param_1,int param_2)
                               (int)local_22d2,1);
                       local_2c = dm_setObj(0x38,&local_2558,auStack_2484);
                       if (local_2c == 0) {
-                        memset(auStack_2484,0,0x1a0);
+                        fuckyou(auStack_2484,0,0x1a0);
                         goto LAB_0005b044;
                       }
                       uVar5 = 0xa53;
@@ -29633,7 +29633,7 @@ LAB_0005af98:
 LAB_0005b044:
     local_2c = dm_getObj(6,&local_2538,0x2b4,auStack_2030);
     if (local_2c == 0) {
-      memset(auStack_13b0,0,0x1380);
+      fuckyou(auStack_13b0,0,0x1380);
       iVar3 = FUN_00058c44(param_1,auStack_13b0);
       if (iVar3 == 0) {
         memcpy((void *)(param_2 + 0x23),auStack_202e,0x12);
@@ -29649,7 +29649,7 @@ LAB_0005b044:
               if (local_2c == 0) {
                 memcpy(auStack_f48,(void *)(param_2 + 10),9);
                 iVar7 = curMultimode();
-                memset((void *)(param_2 + 0x1bc),0,0x400);
+                fuckyou((void *)(param_2 + 0x1bc),0,0x400);
                 if (local_460 == 0) {
                   cdbg_printf(8,"wlan_getChannelInfo",0x76e,"Failed to get Oal Funcs\n");
                   local_2c = 1;
@@ -29661,10 +29661,10 @@ LAB_0005b044:
                      local_2c == 0)) {
                     local_255c = 0;
                     local_2560 = 0;
-                    memset((void *)(param_2 + 0x5bc),0,0x100);
-                    memset((void *)(param_2 + 0x6bc),0,0x100);
+                    fuckyou((void *)(param_2 + 0x5bc),0,0x100);
+                    fuckyou((void *)(param_2 + 0x6bc),0,0x100);
                     __s = (char *)(param_2 + 0x7bc);
-                    memset(__s,0,0x100);
+                    fuckyou(__s,0,0x100);
                     if (local_460 == 0) {
                       cdbg_printf(8,"wlan_getRatesInfo",0x85d,"Failed to get Oal Funcs\n");
                       local_2c = 1;
@@ -29875,7 +29875,7 @@ int rsl_setLanWlanObj(undefined4 param_1,int param_2,int param_3)
   if (param_3 != 2) {
     return 0x3ea;
   }
-  memset(auStack_13a4,0,0x1380);
+  fuckyou(auStack_13a4,0,0x1380);
   iVar1 = FUN_00058c44(param_1,auStack_13a4);
   if (iVar1 == 0) {
     uVar4 = 0x1be6;
@@ -30121,7 +30121,7 @@ int rsl_getLanWlanWpsObj(undefined4 param_1,int param_2)
   undefined auStack_1390 [3920];
   int local_440;
   
-  memset(auStack_1390,0,0x1380);
+  fuckyou(auStack_1390,0,0x1380);
   iVar1 = FUN_00058c44(param_1,auStack_1390);
   if (iVar1 == 0) {
     if (local_440 != 0) {
@@ -30181,7 +30181,7 @@ int rsl_setLanWlanWpsObj(undefined4 param_1,int param_2,int param_3)
   if (param_3 != 2) {
     return 0x3ea;
   }
-  memset(auStack_1398,0,0x1380);
+  fuckyou(auStack_1398,0,0x1380);
   iVar2 = FUN_00058c44(param_1,auStack_1398);
   if (iVar2 != 0) {
     uVar4 = 0x1cda;
@@ -30379,7 +30379,7 @@ int rsl_setLanWlanMactableentryObj(void *param_1,int param_2,int param_3)
     auStack_142e[iVar2] = 0;
     local_1430 = (ushort)iVar2;
   }
-  memset(auStack_13ac,0,0x1380);
+  fuckyou(auStack_13ac,0,0x1380);
   pcVar6 = (char *)(param_2 + 3);
   iVar2 = FUN_00056c5c(pcVar6);
   if (iVar2 == 0) {
@@ -30396,7 +30396,7 @@ int rsl_setLanWlanMactableentryObj(void *param_1,int param_2,int param_3)
     local_1416 = 0;
     local_1414 = 0;
     FUN_00056c20(pcVar6);
-    memset(auStack_1410,0,0x62);
+    fuckyou(auStack_1410,0,0x62);
     do {
       do {
         iVar2 = dm_getObjNextInSub(0x32,&local_1430,&local_1420,0x62,auStack_1410);
@@ -30618,7 +30618,7 @@ int rsl_setLanWlanWepkeyObj(void *param_1,int param_2,int param_3)
       auStack_1d86[iVar4] = 0;
       local_1d88 = (ushort)iVar4;
     }
-    memset(auStack_13ac,0,0x1380);
+    fuckyou(auStack_13ac,0,0x1380);
     iVar4 = FUN_00058c44(&local_1d88,auStack_13ac);
     if (iVar4 == 0) {
       iVar4 = 0;
@@ -30695,7 +30695,7 @@ int wdsVapStatus(char *param_1)
   short local_601c;
   char acStack_6010 [24580];
   
-  memset(acStack_6010,0,0x6000);
+  fuckyou(acStack_6010,0,0x6000);
   if (DAT_000f1360 == 0) {
     DAT_000f1360 = socket(2,1,0);
   }
@@ -30707,7 +30707,7 @@ int wdsVapStatus(char *param_1)
   iVar3 = 0;
   iVar1 = ioctl(DAT_000f1360,0x8913,&local_6050);
   if ((-1 < iVar1) && ((local_6040 & 0x41) != 0)) {
-    memset(acStack_6030,0,0x20);
+    fuckyou(acStack_6030,0,0x20);
     strncpy(acStack_6030,param_1,0x10);
     strcpy(acStack_6010,"connStatus");
     local_601c = 0x6000;
@@ -30734,7 +30734,7 @@ undefined4 rsl_getLanWlanWdsbridgeObj(undefined4 param_1,int param_2)
   int iVar2;
   undefined auStack_48 [64];
   
-  memset(auStack_48,0,0x40);
+  fuckyou(auStack_48,0,0x40);
   iVar2 = oal_wlan_getInfName(param_2 + 3,auStack_48);
   if (iVar2 == 0) {
     uVar1 = wdsVapStatus(auStack_48);
@@ -30767,7 +30767,7 @@ int rsl_setLanWlanWdsbridgeObj(undefined4 param_1,int param_2,int param_3)
   
   iVar2 = 0;
   if (((param_3 == 3) || (param_3 == 4)) || (param_3 != 2)) goto LAB_0005d6e8;
-  memset(auStack_139c,0,0x1380);
+  fuckyou(auStack_139c,0,0x1380);
   iVar2 = FUN_00058c44(param_1,auStack_139c);
   if (iVar2 == 0) {
     if (local_44c != 0) {
@@ -30885,7 +30885,7 @@ int rsl_getLanWlanMssidentryObj(void *param_1,int param_2)
     auStack_139e[iVar1] = 0;
     local_13a0 = (ushort)iVar1;
   }
-  memset(auStack_1390,0,0x1380);
+  fuckyou(auStack_1390,0,0x1380);
   iVar1 = FUN_00058c44(&local_13a0,auStack_1390);
   if (iVar1 == 0) {
     iVar1 = dm_compareNumStack(param_1,auStack_464);
@@ -30977,7 +30977,7 @@ int rsl_setLanWlanMssidentryObj(void *param_1,int param_2,int param_3)
     auStack_1dd6[iVar2] = 0;
     local_1dd8 = (ushort)iVar2;
   }
-  memset(auStack_139c,0,0x1380);
+  fuckyou(auStack_139c,0,0x1380);
   iVar2 = FUN_00058c44(&local_1dd8,auStack_139c);
   if (iVar2 == 0) {
     pcVar6 = (char *)(param_2 + 0x1c);
@@ -31186,7 +31186,7 @@ int rsl_setLanWlanMssidwepkeyObj(void *param_1,int param_2,int param_3)
     auStack_1da6[iVar2] = 0;
     local_1da8 = (ushort)iVar2;
   }
-  memset(auStack_13bc,0,0x1380);
+  fuckyou(auStack_13bc,0,0x1380);
   iVar2 = FUN_00058c44(param_1,auStack_13bc);
   if (iVar2 == 0) {
     iVar2 = 0;
@@ -31294,7 +31294,7 @@ int rsl_setLanWlanWlbrnameObj(void *param_1,int param_2,int param_3)
     auStack_13fe[iVar1] = 0;
     local_1400 = (ushort)iVar1;
   }
-  memset(acStack_139c,0,0x1380);
+  fuckyou(acStack_139c,0,0x1380);
   iVar1 = FUN_00058c44(&local_1400,acStack_139c);
   if (iVar1 == 0) {
     if (local_44c != 0) {
@@ -31312,7 +31312,7 @@ int rsl_setLanWlanWlbrnameObj(void *param_1,int param_2,int param_3)
           if (param_3 != 2) {
             return 0x3ea;
           }
-          memset(auStack_13f0,0,0x52);
+          fuckyou(auStack_13f0,0,0x52);
           iVar1 = dm_getObj(0x3b,param_1,0x52,auStack_13f0);
           if (iVar1 == 0) {
             pcVar4 = (char *)(param_2 + 0x12);
@@ -31467,7 +31467,7 @@ int rsl_setLanWlanGuestnetObj(void *param_1,int param_2,int param_3)
   local_1444 = 0;
   local_1442 = 0;
   local_1440 = 0;
-  memset(auStack_1398,0,0x1380);
+  fuckyou(auStack_1398,0,0x1380);
   iVar1 = FUN_00058c44(auStack_143c,auStack_1398);
   if (iVar1 == 0) {
     if (local_448 == 0) {
@@ -31575,7 +31575,7 @@ uint rsl_initLanWlanObj(undefined4 param_1,int param_2)
   local_1468 = 0;
   local_1466 = 0;
   local_1464 = 0;
-  memset(auStack_13a0,0,0x1380);
+  fuckyou(auStack_13a0,0,0x1380);
   iVar3 = FUN_00058c44(param_1,auStack_13a0);
   ppcVar1 = local_450;
   if (iVar3 == 0) {
@@ -31654,7 +31654,7 @@ LAB_0005f180:
                       iVar3 = rsl_getObj(0xe7,&local_1470,0xae,auStack_1450);
                       if (iVar3 != 0) {
                         cdbg_printf(8,"rsl_initLanWlanObj",0x24fb,"Failed to get multimode cfg\n");
-                        memset(auStack_1450,0,0xae);
+                        fuckyou(auStack_1450,0,0xae);
                       }
                       if (local_144e == '\x01') {
                         iVar3 = strcmp(acStack_144d,"Repeater");
@@ -32163,11 +32163,11 @@ LAB_0005fea8:
     if ((uVar7 & 1) != 0) break;
   }
   uVar11 = ((uVar11 & local_3d8) >> (uVar12 & 0x1f)) + 1 << (uVar12 & 0x1f);
-  memset(acStack_2e1,0,0x10);
+  fuckyou(acStack_2e1,0,0x10);
   uVar7 = uVar11 + 1;
   cnet_addrNumToStr(uVar7 * 0x1000000 | uVar7 >> 0x18 | (uVar7 & 0xff0000) >> 8 |
                     (uVar7 & 0xff00) << 8,acStack_2e1);
-  memset(auStack_2d1,0,0x10);
+  fuckyou(auStack_2d1,0,0x10);
   cnet_addrNumToStr(uVar13,auStack_2d1);
   iVar5 = 9;
   uVar13 = 1;
@@ -32181,7 +32181,7 @@ LAB_0005fea8:
       uVar13 = -(uint)(uVar13 == 1) | 1;
     }
     uVar11 = uVar13 + (uVar11 >> (uVar12 & 0x1f)) << (uVar12 & 0x1f);
-    memset(acStack_2e1,0,0x10);
+    fuckyou(acStack_2e1,0,0x10);
     uVar7 = uVar11 + 1;
     cnet_addrNumToStr(uVar7 * 0x1000000 | uVar7 >> 0x18 | (uVar7 & 0xff0000) >> 8 |
                       (uVar7 & 0xff00) << 8,acStack_2e1);
@@ -32441,8 +32441,8 @@ int br_addL2DescriptionObj
   undefined auStack_130 [20];
   undefined auStack_11c [260];
   
-  memset(auStack_1b0,0,0x20);
-  memset(auStack_1d0,0,0x20);
+  fuckyou(auStack_1b0,0,0x20);
+  fuckyou(auStack_1d0,0,0x20);
   if (param_5 == 0) {
     if ((param_3 != '\0') && (iVar1 = br_lanIfNameToRef(param_1,auStack_1b0), iVar1 != 0)) {
       return iVar1;
@@ -32491,7 +32491,7 @@ int br_addL2DescriptionObj
         local_1d4 = 0;
         local_1e8 = 0;
         local_1e4 = param_4;
-        memset(auStack_138,0,0x40);
+        fuckyou(auStack_138,0,0x40);
         iVar1 = dm_getDefaultObj(0x22,0x58,auStack_190);
         if (iVar1 == 0) {
           iVar1 = rsl_createObj(0x22,&local_1e0);
@@ -32569,7 +32569,7 @@ int br_delL2DescriptionObj(undefined4 param_1,char param_2,int param_3)
   undefined auStack_134 [284];
   int local_18;
   
-  memset(auStack_1ac,0,0x20);
+  fuckyou(auStack_1ac,0,0x20);
   if (param_3 == 0) {
     if ((param_2 != '\0') && (iVar1 = br_lanIfNameToRef(param_1,auStack_1ac), iVar1 != 0)) {
       return iVar1;
@@ -33011,7 +33011,7 @@ void FUN_000615c4(int param_1,int param_2)
   local_a4 = 0;
   local_a0 = 0;
   local_9c = 0;
-  memset(acStack_98,0,0x20);
+  fuckyou(acStack_98,0,0x20);
   local_a8 = 0;
   local_a4 = 0;
   local_a0 = 0;
@@ -33041,13 +33041,13 @@ void FUN_000615c4(int param_1,int param_2)
     cstr_strncpy(acStack_98,param_2,0x20);
     iVar1 = strncmp(acStack_98,"NO_INTERFACE",0xd);
     if (iVar1 == 0) {
-      memset(auStack_56,0,0x20);
+      fuckyou(auStack_56,0,0x20);
     }
     else {
       cstr_strncpy(auStack_56,acStack_98,0x20);
     }
-    memset(auStack_66,0,0x10);
-    memset(auStack_36,0,0x20);
+    fuckyou(auStack_66,0,0x10);
+    fuckyou(auStack_36,0,0x20);
     iVar1 = rsl_setObj(0x1c,&local_a8,auStack_78,2);
     if (iVar1 != 0) {
       cdbg_printf(8,"setL3ForwardingName",0x306,"set L3 forwarding error:%d!\n",iVar1);
@@ -33515,8 +33515,8 @@ void FUN_00062290(int param_1)
   local_d9c = 0;
   local_d98 = 0;
   local_d94 = 0;
-  memset(acStack_d80,0,0x20);
-  memset(acStack_d80,0,0x20);
+  fuckyou(acStack_d80,0,0x20);
+  fuckyou(acStack_d80,0,0x20);
   cstr_strncpy(acStack_d80,param_1 + 0x29,0x20);
   iVar3 = strcmp(acStack_d80,"NO_INTERFACE");
   if (iVar3 == 0) {
@@ -34062,7 +34062,7 @@ LAB_000634b8:
       local_2b8 = 0;
       local_2f8 = 0;
       local_2f4 = 0;
-      memset(acStack_2b4,0,0x28);
+      fuckyou(acStack_2b4,0,0x28);
       oal_intf_getMacAddr(param_2 + 0x158,&local_2c8);
       cnet_macStrToEth(&local_2c8,&local_2f8);
       iVar1 = *(int *)(param_2 + 0x134);
@@ -34681,9 +34681,9 @@ wan_conn_wanIpConn_connect_v6(int param_1,undefined4 param_2,undefined4 param_3,
     }
     iVar1 = strcmp((char *)(param_1 + 0x1b2),"Static");
     if (iVar1 == 0) {
-      memset(auStack_300,0,0xe0);
+      fuckyou(auStack_300,0,0xe0);
       bVar2 = false;
-      memset(local_220,0,0x208);
+      fuckyou(local_220,0,0x208);
       local_220[0] = 0xb56;
       cstr_strncpy(auStack_206,param_1 + 0x2f,0x20);
       cstr_strncpy(auStack_218,"Connected",0x12);
@@ -35227,8 +35227,8 @@ undefined4 FUN_00065ba0(char *param_1,undefined4 param_2,uint param_3)
   char acStack_70 [40];
   char acStack_48 [40];
   
-  memset(acStack_48,0,0x28);
-  memset(acStack_70,0,0x28);
+  fuckyou(acStack_48,0,0x28);
+  fuckyou(acStack_70,0,0x28);
   if ((param_3 - 1 < 0x40) && ((param_3 & 7) == 0)) {
     iVar3 = inet_pton(10,param_1,local_80);
     if (iVar3 < 1) {
@@ -35286,8 +35286,8 @@ int FUN_00065d64(int param_1)
   local_230 = 0;
   local_22e = 0;
   local_22c = 0;
-  memset(acStack_200,0,0x28);
-  memset(acStack_228,0,0x28);
+  fuckyou(acStack_200,0,0x28);
+  fuckyou(acStack_228,0,0x28);
   iVar1 = dm_getSpecifiedObj(0x21,"bridgeName","Default",&local_238,0x5c,auStack_1d8);
   if (iVar1 == 0) {
     iVar1 = rsl_getObj(0x2b,&local_238,0x16c,auStack_17c);
@@ -35352,8 +35352,8 @@ int FUN_00065f6c(int param_1)
   char acStack_4a4 [924];
   undefined auStack_108 [248];
   
-  memset(acStack_8a8,0,0x28);
-  memset(acStack_8d0,0,0x28);
+  fuckyou(acStack_8a8,0,0x28);
+  fuckyou(acStack_8d0,0,0x28);
   local_8e0 = 0;
   local_8dc = 0;
   local_8d8 = 0;
@@ -35635,7 +35635,7 @@ int rsl_route6_delIp6DefaultRoute(undefined4 param_1,undefined4 param_2)
     cstr_strncpy(auStack_5e,param_1,0x20);
     cstr_strncpy(auStack_6e,param_2,0x10);
     cstr_strncpy(auStack_96,&DAT_000c3ba8,0x28);
-    memset(auStack_3e,0,0x20);
+    fuckyou(auStack_3e,0,0x20);
     local_18 = rsl_setObj(0x1e,&local_a8,auStack_98,2);
     uVar1 = 0x29b;
     if (local_18 == 0) {
@@ -35682,7 +35682,7 @@ int rsl_route6_setIp6DefaultRoute(undefined4 param_1,undefined4 param_2,undefine
     cstr_strncpy(auStack_5e,param_1,0x20);
     cstr_strncpy(auStack_6e,param_2,0x10);
     cstr_strncpy(auStack_96,param_3,0x28);
-    memset(auStack_3e,0,0x20);
+    fuckyou(auStack_3e,0,0x20);
     local_18 = rsl_setObj(0x1e,&local_a8,auStack_98,2);
     uVar1 = 0x2d2;
     if (local_18 == 0) {
@@ -35723,10 +35723,10 @@ void rsl_route6_randomChgIp6DefaultRoute(void)
   iVar1 = rsl_getObj(0x1e,&local_98,0x80,auStack_88);
   uVar2 = 0x2ed;
   if (iVar1 == 0) {
-    memset(auStack_4e,0,0x20);
-    memset(auStack_5e,0,0x10);
-    memset(auStack_86,0,0x28);
-    memset(auStack_2e,0,0x20);
+    fuckyou(auStack_4e,0,0x20);
+    fuckyou(auStack_5e,0,0x10);
+    fuckyou(auStack_86,0,0x28);
+    fuckyou(auStack_2e,0,0x20);
     iVar1 = rsl_setObj(0x1e,&local_98,auStack_88,2);
     uVar2 = 0x2ff;
     if (iVar1 == 0) {
@@ -35761,10 +35761,10 @@ undefined4 rsl_setL3Ip6ForwardingObj(undefined4 param_1,int param_2,int param_3)
   undefined local_36;
   undefined auStack_35 [37];
   
-  memset(auStack_68,0,0x58);
+  fuckyou(auStack_68,0,0x58);
   local_38 = 0x3a3a;
   local_36 = 0;
-  memset(auStack_35,0,0x25);
+  fuckyou(auStack_35,0,0x25);
   if (param_3 != 2) {
     return 0x3ea;
   }
@@ -35880,8 +35880,8 @@ int rsl_setL3Ip6ForwardingEntryObj(undefined4 param_1,int param_2,int param_3)
         }
       } while (((param_3 == 2) && (iVar1 = dm_compareNumStack(param_1,&local_248), iVar1 == 1)) ||
               (iVar1 = local_1a8, local_1a8 != *(int *)(param_2 + 0x40)));
-      memset(acStack_210,0,0x28);
-      memset(acStack_238,0,0x28);
+      fuckyou(acStack_210,0,0x28);
+      fuckyou(acStack_238,0,0x28);
       iVar1 = FUN_00065ba0(param_2 + 0x15,acStack_210,iVar1);
       if (iVar1 != 0) {
         uVar2 = 0xa9;
@@ -35941,7 +35941,7 @@ int FUN_00067080(int param_1,void *param_2,void *param_3)
   local_20 = 0;
   local_1c = 0;
   if (*(char *)(param_1 + 0x17) == '\0') {
-    memset(param_2,0,0x44);
+    fuckyou(param_2,0,0x44);
   }
   else {
     iVar3 = param_1 + 0x17;
@@ -35957,7 +35957,7 @@ int FUN_00067080(int param_1,void *param_2,void *param_3)
   local_20 = 0;
   local_1c = 0;
   if (*(char *)(param_1 + 0x27) == '\0') {
-    memset(param_3,0,0x44);
+    fuckyou(param_3,0,0x44);
     return 0;
   }
   iVar3 = param_1 + 0x27;
@@ -36641,7 +36641,7 @@ LAB_00068514:
       local_156 = 0;
       local_154 = 0;
       if (local_4d[0] == '\0') {
-        memset(auStack_140,0,0x44);
+        fuckyou(auStack_140,0,0x44);
       }
       else {
         iVar2 = dm_getSpecifiedObj(0x84,"entryName",local_4d,&local_160,0x44,auStack_140);
@@ -36836,7 +36836,7 @@ LAB_00068adc:
           local_156 = 0;
           local_154 = 0;
           if (local_5d[0] == '\0') {
-            memset(auStack_140,0,0x44);
+            fuckyou(auStack_140,0,0x44);
           }
           else {
             iVar3 = dm_getSpecifiedObj(0x83,"entryName",local_5d,&local_160,0x44,auStack_140);
@@ -36946,7 +36946,7 @@ LAB_000694e0:
           iVar2 = FUN_00067080(param_2,auStack_104,auStack_148);
           if (iVar2 == 0) {
             if (*(char *)(param_2 + 0x37) == '\0') {
-              memset(auStack_78,0,0x4c);
+              fuckyou(auStack_78,0,0x4c);
             }
             else {
               iVar2 = dm_getSpecifiedObj(0x85,"entryName",param_2 + 0x37,&local_168,0x4c,auStack_78)
@@ -37714,8 +37714,8 @@ int rsl_setIp6TunnelObj(undefined4 param_1,int param_2)
   local_334 = 0;
   local_332 = 0;
   local_330 = 0;
-  memset(auStack_2b8,0,0x28);
-  memset(acStack_2e0,0,0x28);
+  fuckyou(auStack_2b8,0,0x28);
+  fuckyou(acStack_2e0,0,0x28);
   iVar1 = rsl_getObj(0x87,&local_33c,0x54,auStack_290);
   if (iVar1 != 0) {
     cdbg_printf(8,"rsl_setIp6TunnelObj",0xee,"Get IPv6 Tunnel object data failed. ret = %d",iVar1);
@@ -37881,7 +37881,7 @@ int rsl_setDsliteObj(undefined4 param_1,int param_2)
   local_98 = 0;
   local_96 = 0;
   local_94 = 0;
-  memset(auStack_90,0,0x28);
+  fuckyou(auStack_90,0,0x28);
   iVar1 = rsl_getObj(0x87,&local_a0,0x54,auStack_68);
   if (iVar1 == 0) {
     if ((*(char *)(param_2 + 2) == '\0') || (local_50 == '\0')) {
@@ -37970,7 +37970,7 @@ int rsl_setSit6rdObj(undefined4 param_1,int param_2)
   local_258 = 0;
   local_256 = 0;
   local_254 = 0;
-  memset(acStack_208,0,0x28);
+  fuckyou(acStack_208,0,0x28);
   local_270 = 0;
   local_26e = 0;
   local_26c = 0;
@@ -38660,8 +38660,8 @@ wan_conn_createServiceName(int param_1,undefined4 param_2,int param_3,int param_
   char acStack_58 [32];
   char acStack_38 [36];
   
-  memset(acStack_38,0,0x20);
-  memset(acStack_58,0,0x20);
+  fuckyou(acStack_38,0,0x20);
+  fuckyou(acStack_58,0,0x20);
   if (param_3 == 0) {
     iVar4 = param_1 + 0x2f;
 LAB_0006c37c:
@@ -38945,7 +38945,7 @@ undefined4 wan_conn_fillPppIfName(char *param_1)
   local_528 = 0;
   local_526 = 0;
   local_524 = 0;
-  memset(local_520,0,0x24);
+  fuckyou(local_520,0,0x24);
   do {
     do {
       iVar2 = rsl_getNextObj(100,&local_530,0x4dc,auStack_4fc);
@@ -39262,7 +39262,7 @@ LAB_0006d24c:
     local_20 = dm_getSpecifiedObj(0x23,"availableInterfaceKey",&local_a20,&local_9fc,0x11c,
                                   auStack_9ac);
     if (local_20 == 0) {
-      memset(auStack_990,0,0x100);
+      fuckyou(auStack_990,0,0x100);
       uVar4 = 0x61;
       if (bVar1) {
         puVar5 = &local_a0c;
@@ -39391,7 +39391,7 @@ int wan_conn_getDefaultHostname(char *param_1,int param_2)
   local_9b4 = 0;
   memcpy(acStack_970,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.",0x42);
   puVar4 = auStack_92c;
-  memset(local_9b1 + 1,0,0x40);
+  fuckyou(local_9b1 + 1,0,0x40);
   iVar2 = rsl_getObj(2,&local_9c0,0x8f8,puVar4);
   if (iVar2 == 0) {
     sVar3 = strlen(local_8e3);
@@ -39597,8 +39597,8 @@ bool wan_conn_staticIpConn(int param_1)
   undefined auStack_1f6 [494];
   
   cstr_strncpy(param_1 + 3,"Connecting",0x12);
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x7d8;
   cstr_strncpy(auStack_1f6,param_1 + 0x2f,0x20);
   cstr_strncpy(auStack_208,"Connected",0x12);
@@ -39749,8 +39749,8 @@ LAB_0006e09c:
   oal_br_addIntfIntoBridge(iVar3,&local_308);
 LAB_0006e0c4:
   cstr_strncpy(param_1 + 3,"Connecting",0x12);
-  memset(auStack_2f8,0,0xe0);
-  memset(local_218,0,0x208);
+  fuckyou(auStack_2f8,0,0xe0);
+  fuckyou(local_218,0,0x208);
   local_218[0] = 0x7d8;
   cstr_strncpy(auStack_1fe,param_1 + 0x2f,0x20);
   cstr_strncpy(auStack_210,"Connected",0x12);
@@ -41429,8 +41429,8 @@ undefined4 l2tp_dhcpc_send_msg(int param_1,int param_2)
   undefined auStack_1ff [67];
   undefined4 local_1bc;
   
-  memset(auStack_2f8,0,0xe0);
-  memset(local_218,0,0x208);
+  fuckyou(auStack_2f8,0,0xe0);
+  fuckyou(local_218,0,0x208);
   local_218[0] = param_2;
   cstr_strncpy(auStack_20f,param_1 + 0x1e0,0x10);
   if (param_2 - 0x7deU < 2) {
@@ -43365,8 +43365,8 @@ undefined4 pptp_dhcpc_send_msg(int param_1,int param_2)
   undefined auStack_1ff [67];
   undefined4 local_1bc;
   
-  memset(auStack_2f8,0,0xe0);
-  memset(local_218,0,0x208);
+  fuckyou(auStack_2f8,0,0xe0);
+  fuckyou(local_218,0,0x208);
   local_218[0] = param_2;
   cstr_strncpy(auStack_20f,param_1 + 0x1e0,0x10);
   if (param_2 - 0x7deU < 2) {
@@ -46147,7 +46147,7 @@ LAB_0007d548:
     *(undefined4 *)(param_2 + 0x30) = 0;
     *(undefined4 *)(param_2 + 0x34) = 0;
     *(undefined4 *)(param_2 + 0x38) = 0;
-    memset((void *)(param_2 + 0x3c),0,0x10);
+    fuckyou((void *)(param_2 + 0x3c),0,0x10);
   }
   if ((*(char *)(param_2 + 0xcc) != '\0') || (iVar5 = strcmp(pcVar7,"Requested"), iVar5 != 0)) {
     iVar5 = strcmp(pcVar7,"Requested");
@@ -46374,7 +46374,7 @@ LAB_0007dd18:
   if (iVar6 == 0) {
     *(undefined4 *)(param_2 + 0x20) = 0;
     *(undefined4 *)(param_2 + 0x24) = 0;
-    memset((void *)(param_2 + 0x40),0,0x10);
+    fuckyou((void *)(param_2 + 0x40),0,0x10);
   }
   if (*(char *)(param_2 + 0xd0) == '\0') {
     pcVar9 = (char *)(param_2 + 0x200);
@@ -47211,7 +47211,7 @@ LAB_0007f4dc:
       if (iVar2 != 0) {
         cdbg_printf(8,"rsl_initVlanObj",0x37d,"Set VLAN OBJ to dm failed!");
       }
-      memset(local_17c,0,0x140);
+      fuckyou(local_17c,0,0x140);
       puVar6 = local_17c;
       do {
         oal_addVlanTagIntf(*puVar13,0,0);
@@ -47322,7 +47322,7 @@ LAB_0007f4dc:
   local_3e0 = 0;
   local_3dc = 0;
   local_3d8 = 0;
-  memset(local_2bc,0,0x140);
+  fuckyou(local_2bc,0,0x140);
   local_2ac = 0x41;
   local_2a8 = 4;
   local_298 = 0x42;
@@ -47392,7 +47392,7 @@ int FUN_0007fb90(undefined4 param_1)
   local_550 = 0;
   local_54e = 0;
   local_54c = 0;
-  memset(auStack_430,0,0x408);
+  fuckyou(auStack_430,0,0x408);
   puVar4 = auStack_430;
   iVar3 = 0;
   puVar5 = puVar4;
@@ -47471,7 +47471,7 @@ int FUN_0007fd98(int param_1)
   local_648 = 0;
   local_646 = 0;
   local_644 = 0;
-  memset(auStack_420,0,0x408);
+  fuckyou(auStack_420,0,0x408);
   if (param_1 == 0xef) {
     puVar4 = auStack_420;
     iVar3 = 0;
@@ -47804,7 +47804,7 @@ undefined4 FUN_00080c94(undefined *param_1,int param_2)
     uVar3 = 1;
   }
   else {
-    memset(param_1,0,10);
+    fuckyou(param_1,0,10);
     iVar4 = 0;
     pcVar5 = &g_beaconArr;
     do {
@@ -48807,9 +48807,9 @@ int FUN_00084a4c(void)
           cstr_strncpy(auStack_d39,"detect",7);
           cstr_strncpy(auStack_cff,&DAT_000c7498,0x15);
           cstr_strncpy(auStack_cea,&DAT_000c4c20,0xf);
-          memset(auStack_d32,0,0x12);
-          memset(auStack_d20,0,0x21);
-          memset(auStack_cdb,0,0x41);
+          fuckyou(auStack_d32,0,0x12);
+          fuckyou(auStack_d20,0,0x21);
+          fuckyou(auStack_cdb,0,0x41);
           local_c98 = 1;
           iVar1 = rsl_setObj(0x36,&local_e74,auStack_d4c,2);
           if (iVar1 != 0) {
@@ -48844,8 +48844,8 @@ int FUN_00084a4c(void)
           cstr_strncpy(auStack_938,&DAT_000c4418,5);
           cstr_strncpy(auStack_933,"n",7);
           cstr_strncpy(auStack_9d2,&DAT_000c0a20,9);
-          memset(auStack_ba,0,0x40);
-          memset(auStack_ba,0,0x41);
+          fuckyou(auStack_ba,0,0x40);
+          fuckyou(auStack_ba,0,0x41);
           local_78 = 0x714;
           local_10 = dm_setObj(0x30,&local_e54,auStack_9dc);
           uVar2 = 0x379;
@@ -49473,7 +49473,7 @@ int dm_getDefaultObj(undefined2 param_1,uint param_2,void *param_3)
   else {
     iVar2 = 0x2650;
     if (*(ushort *)(iVar1 + 6) <= param_2) {
-      memset(param_3,0,(uint)*(ushort *)(iVar1 + 6));
+      fuckyou(param_3,0,(uint)*(ushort *)(iVar1 + 6));
       iVar2 = dm_getObjDefaultVal(iVar1,param_3);
       if (iVar2 != 0) {
         cdbg_printf(8,"dm_getDefaultObj",0x28f,
@@ -49563,7 +49563,7 @@ LAB_000860cc:
       uVar9 = uVar4;
     }
     pvVar12 = (void *)(iVar11 + uVar10 * 0x1c);
-    memset(pvVar12,0,0xe);
+    fuckyou(pvVar12,0,0xe);
     *(undefined *)((int)pvVar12 + 0x12) = 0;
     *(undefined2 *)((int)pvVar12 + 0xe) = 0;
     *(undefined2 *)((int)pvVar12 + 0x10) = 0;
@@ -49607,7 +49607,7 @@ undefined4 dm_getObj(undefined2 param_1,ushort *param_2,uint param_3,void *param
       uVar2 = 0x2653;
       if ((*(byte *)(puVar1 + 1) & 0x10) == 0) {
         if (*param_2 == (ushort)*(byte *)((int)puVar1 + 3)) {
-          memset(param_4,0,__n);
+          fuckyou(param_4,0,__n);
           if (*(byte *)((int)puVar1 + 3) == 0) {
             __src = *(void **)(puVar1 + 0x10);
             if (__src == (void *)0x0) {
@@ -49691,7 +49691,7 @@ LAB_000866ec:
     if ((*(byte *)(iVar1 + 2) & 0x10) != 0) {
       return 0x2653;
     }
-    memset(param_4,0,uVar4);
+    fuckyou(param_4,0,uVar4);
     if (*(byte *)(iVar1 + 3) == 0) {
       return 0x264e;
     }
@@ -49793,12 +49793,12 @@ dm_getSpecifiedObj(undefined2 param_1,undefined4 param_2,undefined4 param_3,void
         uVar6 = 0x232d;
       }
       else {
-        memset(param_6,0,(size_t)*(undefined2 *)(iVar1 + 6));
+        fuckyou(param_6,0,(size_t)*(undefined2 *)(iVar1 + 6));
         if (*(char *)(iVar1 + 3) == '\0') {
           iVar2 = dm_checkValIsExistent(*(undefined4 *)(iVar1 + 0x20),iVar2,param_3);
           uVar6 = 0x264c;
           if (iVar2 == 1) {
-            memset(param_4,0,0xe);
+            fuckyou(param_4,0,0xe);
             pvVar5 = *(void **)(iVar1 + 0x20);
 LAB_00086a80:
             uVar6 = 0;
@@ -49860,7 +49860,7 @@ dm_getSpecifiedParam
   undefined2 local_441c;
   undefined auStack_4418 [17408];
   
-  memset(auStack_4418,0,0x4400);
+  fuckyou(auStack_4418,0,0x4400);
   local_4428 = 0;
   local_4426 = 0;
   local_4424 = 0;
@@ -49893,7 +49893,7 @@ undefined4 dm_getParamValue(undefined2 *param_1,undefined4 param_2,undefined4 pa
   void *__src;
   undefined auStack_4418 [17408];
   
-  memset(auStack_4418,0,0x4400);
+  fuckyou(auStack_4418,0,0x4400);
   iVar1 = dm_getObjNode(*param_1);
   if (iVar1 == 0) {
     cdbg_printf(8,"dm_getParamValue",0x4d4,"Get object\'s information node failed, object oid = %u."
@@ -50447,7 +50447,7 @@ int dm_fillStrByObj(undefined4 param_1,uint param_2,undefined4 param_3,ushort *p
                );
     return 0x264c;
   }
-  memset(local_c8,0,0x46);
+  fuckyou(local_c8,0,0x46);
   sVar3 = strlen(param_6);
   if (sVar3 == 0) {
     uVar15 = (uint)*(ushort *)(iVar2 + 0x14);
@@ -50458,7 +50458,7 @@ int dm_fillStrByObj(undefined4 param_1,uint param_2,undefined4 param_3,ushort *p
     }
 LAB_00087de8:
     if (uVar15 != 0) {
-      memset(param_6,0,(size_t)param_5);
+      fuckyou(param_6,0,(size_t)param_5);
       puVar9 = local_c8;
       pcVar13 = (char *)0x0;
       bVar1 = false;
@@ -50698,7 +50698,7 @@ bool dm_valueIsExistent(undefined2 param_1,undefined4 param_2,undefined4 param_3
   local_4420 = 0;
   local_441e = 0;
   local_441c = 0;
-  memset(auStack_4418,0,0x4400);
+  fuckyou(auStack_4418,0,0x4400);
   iVar1 = dm_getSpecifiedObj(param_1,param_2,param_3,&local_4428,0x4400,auStack_4418);
   return iVar1 == 0;
 }
@@ -50793,7 +50793,7 @@ int FUN_000887f8(int param_1,undefined4 param_2)
     for (iVar2 = 0; iVar2 < (int)(uint)*(ushort *)(param_1 + 0x16); iVar2 = iVar2 + 1) {
       iVar1 = FUN_000887f8(*(int *)(param_1 + 0x1c) + iVar2 * 0x24,param_2);
       if (iVar1 != 0) {
-        memset(auStack_40,0,0x20);
+        fuckyou(auStack_40,0,0x20);
         dm_numStackToStr(param_2,auStack_40);
         return iVar1;
       }
@@ -50900,7 +50900,7 @@ int dm_createObjInst(undefined2 param_1,ushort *param_2)
   if (1 < *param_2 + 1) {
     iVar3 = dm_getInstDesc(*(undefined4 *)(iVar2 + 0xc),param_2,0);
     if (iVar3 == 0) {
-      memset(&local_30,0,0x20);
+      fuckyou(&local_30,0,0x20);
       dm_numStackToStr(param_2,&local_30);
       cdbg_printf(8,"dm_createObjInst",0x5b2,"Object(%s)\'s parent doesn\'t have sub tree %s",
                   *(undefined4 *)(iVar2 + 8),&local_30);
@@ -50986,7 +50986,7 @@ LAB_00088eb8:
       local_2c = 0;
       local_28 = 0;
       dm_numStackToStr(param_2,&local_30);
-      memset(param_5,0,(size_t)*(undefined2 *)(iVar3 + 6));
+      fuckyou(param_5,0,(size_t)*(undefined2 *)(iVar3 + 6));
     }
   }
   return iVar7;
@@ -51491,14 +51491,14 @@ int dm_fullPathToPathDescriptor(char *param_1,undefined2 *param_2)
   char local_218 [256];
   char acStack_118 [256];
   
-  memset(acStack_118,0,0x100);
+  fuckyou(acStack_118,0,0x100);
   __dest = local_218;
-  memset(__dest,0,0x100);
+  fuckyou(__dest,0,0x100);
   sVar3 = strlen(param_1);
-  memset(param_2,0,0x52);
+  fuckyou(param_2,0,0x52);
   if (((sVar3 & 0xffff) == 0) || (((sVar3 & 0xffff) == 1 && (*param_1 == '.')))) {
     *param_2 = 1;
-    memset(param_2 + 1,0,0xe);
+    fuckyou(param_2 + 1,0,0xe);
     iVar5 = 0;
     strcpy((char *)(param_2 + 8),".");
   }
@@ -51544,7 +51544,7 @@ LAB_00089e88:
         strcat(acStack_118,"{i}.");
         iVar5 = dm_genericPathToOid(acStack_118,param_2);
         if (iVar5 != 0) {
-          memset(param_2,0,0x52);
+          fuckyou(param_2,0,0x52);
         }
       }
     }
@@ -51568,8 +51568,8 @@ undefined4 dm_pathDescriptorToFullPath(undefined2 *param_1,uint param_2,char *pa
   char acStack_130 [256];
   undefined2 *local_30;
   
-  memset(acStack_130,0,0x100);
-  memset(acStack_230,0,0x100);
+  fuckyou(acStack_130,0,0x100);
+  fuckyou(acStack_230,0,0x100);
   pcVar1 = (char *)dm_oidToGenericPath(*param_1);
   if (pcVar1 == (char *)0x0) {
     cdbg_printf(8,"dm_pathDescriptorToFullPath",0xbd5,
@@ -51866,7 +51866,7 @@ LAB_0008a4b8:
           return 0;
         }
 LAB_0008a684:
-        memset(param_2 + 1,0,0xe);
+        fuckyou(param_2 + 1,0,0xe);
         return 0x264e;
       }
       __src = param_1 + 1;
@@ -51885,7 +51885,7 @@ LAB_0008a684:
       if (*param_2 == 0) {
         __src = (undefined2 *)dm_getInstDesc(psVar2,param_1 + 1,local_40);
         if (__src == (undefined2 *)0x0) {
-          memset(param_2 + 1,0,0xe);
+          fuckyou(param_2 + 1,0,0xe);
           return 0x264e;
         }
         *param_2 = *psVar2;
@@ -51893,9 +51893,9 @@ LAB_0008a684:
       else {
         iVar5 = dm_getInstDesc(psVar2,__s,local_40);
         if (iVar5 == 0) {
-          memset(&local_3c,0,0x20);
+          fuckyou(&local_3c,0,0x20);
           dm_numStackToStr(__s,&local_3c);
-          memset(__s,0,0xe);
+          fuckyou(__s,0,0xe);
           cdbg_printf(8,"dm_getNextChildObjPathDesc",0xc8b,
                       "Instance of object \"%s\" with stack %s is not exist",
                       *(undefined4 *)(psVar2 + 4),&local_3c);
@@ -52121,7 +52121,7 @@ int FUN_0008abe4(undefined4 param_1)
   undefined auStack_90c [521];
   char acStack_703 [1779];
   
-  memset(acStack_e20,0,0x514);
+  fuckyou(acStack_e20,0,0x514);
   if (confXmlCtx._17432_4_ == 0) {
     return 0;
   }
@@ -52288,7 +52288,7 @@ LAB_0008b190:
   }
   pcVar2 = (char *)xml_getAttr(param_1,"accessList");
   if (pcVar2 != (char *)0x0) {
-    memset(&local_130,0,0x100);
+    fuckyou(&local_130,0,0x100);
     if (*pcVar2 == '\0') {
       uVar7 = 0;
     }
@@ -52300,7 +52300,7 @@ LAB_0008b190:
         pcVar5 = strchr(pcVar2,0x2c);
         pcVar11 = pcVar2;
         while (pcVar5 != (char *)0x0) {
-          memset(&local_130,0,0x100);
+          fuckyou(&local_130,0,0x100);
           strncpy((char *)&local_130,pcVar11,(size_t)(pcVar5 + (1 - (int)pcVar11)));
           ppuVar13 = &PTR_DAT_000ec040;
           iVar4 = 0;
@@ -52434,7 +52434,7 @@ int FUN_0008b6b0(undefined2 *param_1)
       iVar2 = strcmp(pcVar7,*(char **)(param_1 + 4));
       if (iVar2 == 0) {
         confXmlCtx._17412_4_ = param_1;
-        memset(confXmlCtx,0,0x4400);
+        fuckyou(confXmlCtx,0,0x4400);
         iVar2 = dm_getDefaultObj(*param_1,0x4400,confXmlCtx);
         return iVar2;
       }
@@ -52469,7 +52469,7 @@ LAB_0008ba34:
     confXmlCtx._17412_4_ = iVar2;
     if ((*(int *)(confXmlCtx._17440_4_ + 0xc4) == 0) ||
        (iVar2 = FUN_0008aeac(confXmlCtx._17440_4_,1), iVar2 == 0)) {
-      memset(confXmlCtx,0,0x4400);
+      fuckyou(confXmlCtx,0,0x4400);
       if (*(int *)(confXmlCtx._17440_4_ + 0xd0) == 0) {
         if (*(char *)(confXmlCtx._17412_4_ + 3) == '\0') {
           confXmlCtx._17412_4_ = uVar5;
@@ -52719,7 +52719,7 @@ int FUN_0008bf0c(undefined2 *param_1,ushort *param_2)
   undefined auStack_444c [32];
   undefined auStack_442c [17416];
   
-  memset(auStack_442c,0,0x4400);
+  fuckyou(auStack_442c,0,0x4400);
   if ((*(byte *)(param_1 + 1) & 0x10) != 0) {
     return 0;
   }
@@ -52764,7 +52764,7 @@ LAB_0008c0d0:
         }
       }
       if ((*(char *)((int)param_1 + 3) != '\0') && ((*(byte *)(param_1 + 1) & 1) != 0)) {
-        memset(auStack_444c,0,0x20);
+        fuckyou(auStack_444c,0,0x20);
         dm_numStackToStr(param_2,auStack_444c);
         cdbg_printf(8,"hasAnyParamsOrAttrsChanged",0x4c2,
                     "could not determine action, objNode %s depth=%d numStack=%s",
@@ -52784,7 +52784,7 @@ LAB_0008c0d0:
       }
       return iVar3;
     }
-    memset(auStack_444c,0,0x20);
+    fuckyou(auStack_444c,0,0x20);
     dm_numStackToStr(param_2,auStack_444c);
     cdbg_printf(8,"hasAnyParamsOrAttrsChanged",0x49d,
                 "Object(%s oid = %u, %s) doesn\'t contain attributes for its parameters.",
@@ -52868,8 +52868,8 @@ void FUN_0008c3e0(undefined2 *param_1,undefined4 param_2,int param_3,int param_4
   int local_2c;
   
   local_30 = param_4;
-  memset(auStack_4430,0,0x4400);
-  memset(local_4944,0,0x514);
+  fuckyou(auStack_4430,0,0x4400);
+  fuckyou(local_4944,0,0x514);
   if (param_1[10] == 0) {
     return;
   }
@@ -52894,7 +52894,7 @@ void FUN_0008c3e0(undefined2 *param_1,undefined4 param_2,int param_3,int param_4
     }
     iVar16 = *(int *)(iVar16 + 0x14);
     if (iVar16 == 0) {
-      memset(acStack_4964,0,0x20);
+      fuckyou(acStack_4964,0,0x20);
       dm_numStackToStr(param_2,acStack_4964);
       cdbg_printf(8,"dumpChangedParams",0x4f8,
                   "Object(%s oid = %u, %s) doesn\'t contain attributes for its parameters.",
@@ -52933,7 +52933,7 @@ void FUN_0008c3e0(undefined2 *param_1,undefined4 param_2,int param_3,int param_4
         sVar6 = strlen(local_4944);
         sVar6 = fwrite(local_4944,1,sVar6,param_5);
         *param_6 = *param_6 + sVar6;
-        memset(local_4944,0,0x514);
+        fuckyou(local_4944,0,0x514);
         local_2c = 0;
       }
       iVar12 = sprintf(local_4944 + local_2c,"<%s",*ppcVar13);
@@ -52946,13 +52946,13 @@ void FUN_0008c3e0(undefined2 *param_1,undefined4 param_2,int param_3,int param_4
             sVar6 = strlen(local_4944);
             sVar6 = fwrite(local_4944,1,sVar6,param_5);
             *param_6 = *param_6 + sVar6;
-            memset(local_4944,0,0x514);
+            fuckyou(local_4944,0,0x514);
           }
           iVar4 = sprintf(local_4944 + iVar12," %s=\"%d\"","notification",*pbVar14 >> 1 & 3);
           iVar12 = iVar12 + iVar4;
         }
         if ((*pbVar14 & 0x70) != 0x70) {
-          memset(acStack_4964,0,0x20);
+          fuckyou(acStack_4964,0,0x20);
           iVar4 = FUN_0008c298(*pbVar14 >> 4 & 7,acStack_4964);
           if (iVar4 != 0) {
             cdbg_printf(8,"dumpChangedParams",0x53d,
@@ -52965,7 +52965,7 @@ void FUN_0008c3e0(undefined2 *param_1,undefined4 param_2,int param_3,int param_4
             sVar6 = strlen(local_4944);
             sVar6 = fwrite(local_4944,1,sVar6,param_5);
             *param_6 = *param_6 + sVar6;
-            memset(local_4944,0,0x514);
+            fuckyou(local_4944,0,0x514);
           }
           iVar4 = sprintf(local_4944 + iVar12," %s=\"%s\"","accessList",acStack_4964);
           iVar12 = iVar12 + iVar4;
@@ -52978,7 +52978,7 @@ void FUN_0008c3e0(undefined2 *param_1,undefined4 param_2,int param_3,int param_4
           sVar6 = strlen(local_4944);
           sVar6 = fwrite(local_4944,1,sVar6,param_5);
           *param_6 = *param_6 + sVar6;
-          memset(local_4944,0,0x514);
+          fuckyou(local_4944,0,0x514);
         }
         pcVar10 = *ppcVar13;
         pcVar11 = local_4944 + iVar12;
@@ -52999,7 +52999,7 @@ LAB_0008ceec:
             sVar6 = strlen(local_4944);
             sVar6 = fwrite(local_4944,1,sVar6,param_5);
             *param_6 = *param_6 + sVar6;
-            memset(local_4944,0,0x514);
+            fuckyou(local_4944,0,0x514);
           }
           sprintf(local_4944 + iVar12,"></%s>\n",*ppcVar13);
           goto LAB_0008cf08;
@@ -53011,7 +53011,7 @@ LAB_0008ceec:
           sVar6 = strlen(local_4944);
           sVar6 = fwrite(local_4944,1,sVar6,param_5);
           *param_6 = *param_6 + sVar6;
-          memset(local_4944,0,0x514);
+          fuckyou(local_4944,0,0x514);
         }
         pcVar11 = local_4944 + iVar12;
         pcVar7 = ">%s</%s>\n";
@@ -53024,7 +53024,7 @@ LAB_0008ceec:
           sVar6 = strlen(local_4944);
           sVar6 = fwrite(local_4944,1,sVar6,param_5);
           *param_6 = *param_6 + sVar6;
-          memset(local_4944,0,0x514);
+          fuckyou(local_4944,0,0x514);
         }
         uVar2 = *(ushort *)((int)ppcVar13 + 0xe);
         pcVar11 = local_4944 + iVar12;
@@ -53037,7 +53037,7 @@ LAB_0008ceec:
           sVar6 = strlen(local_4944);
           sVar6 = fwrite(local_4944,1,sVar6,param_5);
           *param_6 = *param_6 + sVar6;
-          memset(local_4944,0,0x514);
+          fuckyou(local_4944,0,0x514);
         }
         uVar2 = *(ushort *)((int)ppcVar13 + 0xe);
         pcVar11 = local_4944 + iVar12;
@@ -53052,7 +53052,7 @@ LAB_0008cc44:
           sVar6 = strlen(local_4944);
           sVar6 = fwrite(local_4944,1,sVar6,param_5);
           *param_6 = *param_6 + sVar6;
-          memset(local_4944,0,0x514);
+          fuckyou(local_4944,0,0x514);
         }
         pcVar10 = *ppcVar13;
         cVar1 = *(char *)((int)auStack_4430 + (uint)*(ushort *)((int)ppcVar13 + 0xe));
@@ -53072,7 +53072,7 @@ LAB_0008cc44:
           sVar6 = strlen(local_4944);
           sVar6 = fwrite(local_4944,1,sVar6,param_5);
           *param_6 = *param_6 + sVar6;
-          memset(local_4944,0,0x514);
+          fuckyou(local_4944,0,0x514);
         }
         pcVar11 = local_4944 + iVar12;
         uVar9 = (uint)*(byte *)((int)auStack_4430 + (uint)*(ushort *)((int)ppcVar13 + 0xe));
@@ -53085,7 +53085,7 @@ LAB_0008cc44:
           sVar6 = strlen(local_4944);
           sVar6 = fwrite(local_4944,1,sVar6,param_5);
           *param_6 = *param_6 + sVar6;
-          memset(local_4944,0,0x514);
+          fuckyou(local_4944,0,0x514);
         }
         uVar9 = (uint)*(ushort *)((int)auStack_4430 + (uint)*(ushort *)((int)ppcVar13 + 0xe));
         pcVar11 = local_4944 + iVar12;
@@ -53141,7 +53141,7 @@ FUN_0008cfa4(undefined2 *param_1,undefined4 param_2,int param_3,int param_4,uint
   
   local_3c = param_3;
   local_34 = param_4;
-  memset(apcStack_4440,0,0x4400);
+  fuckyou(apcStack_4440,0,0x4400);
   if (param_1[10] == 0) {
     return 0;
   }
@@ -53205,7 +53205,7 @@ LAB_0008d9f0:
             *param_7 = *param_7 + iVar5;
           }
           if ((*pbVar11 & 0x70) != 0x70) {
-            memset(acStack_4954,0,0x20);
+            fuckyou(acStack_4954,0,0x20);
             iVar5 = FUN_0008c298(*pbVar11 >> 4 & 7,acStack_4954);
             if (iVar5 != 0) {
               cdbg_printf(8,"dumpChangedParameters",0x654,
@@ -53269,7 +53269,7 @@ LAB_0008d710:
               pcVar9 = (char *)(param_6 + local_38);
               break;
             }
-            memset(acStack_4954,0,0x514);
+            fuckyou(acStack_4954,0,0x514);
             iVar5 = xml_escapeString((int)apcStack_4440 + (uint)*(ushort *)((int)ppcVar10 + 0xe),
                                      0x514,acStack_4954);
             if (iVar5 < 0) {
@@ -53293,7 +53293,7 @@ LAB_0008d6c8:
               __format = " %s=\"%s\" />\n";
               goto LAB_0008d710;
             }
-            memset(acStack_4954,0,0x514);
+            fuckyou(acStack_4954,0,0x514);
             iVar5 = xml_escapeString((int)apcStack_4440 + (uint)*(ushort *)((int)ppcVar10 + 0xe),
                                      0x514,acStack_4954);
             if (iVar5 < 0) {
@@ -53396,7 +53396,7 @@ LAB_0008da34:
     if (iVar13 != 0) {
       iVar13 = *(int *)(iVar13 + 0x14);
       if (iVar13 == 0) {
-        memset(acStack_4954,0,0x20);
+        fuckyou(acStack_4954,0,0x20);
         dm_numStackToStr(param_2,acStack_4954);
         cdbg_printf(8,"dumpChangedParameters",0x607,
                     "Object(%s oid = %u, %s) doesn\'t contain attributes for its parameters.",
@@ -53435,7 +53435,7 @@ uint dumpObjNode(undefined2 *param_1,ushort *param_2,char param_3,short param_4,
   char acStack_b4 [132];
   int local_30;
   
-  memset(acStack_b4,0,0x80);
+  fuckyou(acStack_b4,0,0x80);
   bVar3 = *(byte *)(param_1 + 1);
   if ((bVar3 & 0x10) != 0) {
     return 0;
@@ -53783,7 +53783,7 @@ LAB_0008e844:
         goto LAB_0008e844;
       }
       memcpy(puVar5,__src,uVar4);
-      memset((void *)((int)puVar5 + uVar4),0,(param_2 - 0x10U) - uVar4);
+      fuckyou((void *)((int)puVar5 + uVar4),0,(param_2 - 0x10U) - uVar4);
       *param_1 = uVar4;
       param_1[3] = 1;
     }
@@ -53845,7 +53845,7 @@ LAB_0008ec20:
       iVar2 = 0;
     }
     else {
-      memset(confXmlCtx,0,0x4428);
+      fuckyou(confXmlCtx,0,0x4428);
       confXmlCtx[17411] = param_3;
       pcVar1 = pcVar5;
 LAB_0008ec10:
@@ -53927,7 +53927,7 @@ void dm_cleanupCfg(void)
     if ((iVar1 != 0) && ((*(byte *)(iVar1 + 2) & 0x10) == 0)) {
       __s = *(void **)(iVar1 + 0x20);
       if (*(char *)(iVar1 + 3) == '\0') {
-        memset(__s,0,(size_t)*(undefined2 *)(iVar1 + 6));
+        fuckyou(__s,0,(size_t)*(undefined2 *)(iVar1 + 6));
         dm_getObjDefaultVal(iVar1,*(undefined4 *)(iVar1 + 0x20));
       }
       else {
@@ -53944,7 +53944,7 @@ void dm_cleanupCfg(void)
           *(undefined2 *)((int)__dest + 0xe) = 0;
           memcpy(__dest,&local_38,0xe);
           *(undefined *)((int)__dest + 0x12) = 0;
-          memset(*(void **)((int)__dest + 0x18),0,(size_t)*(undefined2 *)(iVar1 + 6));
+          fuckyou(*(void **)((int)__dest + 0x18),0,(size_t)*(undefined2 *)(iVar1 + 6));
           dm_getObjDefaultVal(iVar1,*(undefined4 *)((int)__dest + 0x18));
         }
       }
@@ -54121,7 +54121,7 @@ undefined4 dm_loadCfg(void)
             return 0x1194;
           }
           puVar11 = (uint *)((int)(puVar2 + 4) + uVar5);
-          memset(puVar11,0,(uVar3 - uVar5) - 0x10);
+          fuckyou(puVar11,0,(uVar3 - uVar5) - 0x10);
           local_20[0] = cen_uncompressBuff(puVar2 + 4,puVar11,uVar3 - uVar5);
           if (local_20[0] == 0) {
             cdbg_printf(8,"dm_loadCfg",0x9f7,"Depack config from flash failed!\n");
@@ -54297,7 +54297,7 @@ LAB_0008f994:
     cdbg_printf(8,"getValidValueArray",uVar2,pcVar3,iVar4);
     return 0xffffffff;
   }
-  memset(acStack_219 + 1,0,0x200);
+  fuckyou(acStack_219 + 1,0,0x200);
   while( true ) {
     pcVar3 = (char *)xml_getAttr(iVar4,"n");
     if (pcVar3 == (char *)0x0) {
@@ -55240,7 +55240,7 @@ void * dm_malloc(size_t param_1)
     cdbg_printf(8,"dm_malloc",0x15e,"Alloc %u size memory for DM failed.\n",param_1);
   }
   else {
-    memset(__s,0,param_1);
+    fuckyou(__s,0,param_1);
   }
   return __s;
 }
@@ -56101,7 +56101,7 @@ int dm_checkAccessPermissions(undefined2 param_1,void *param_2,char *param_3,int
   undefined auStack_6e [14];
   char local_60 [76];
   
-  memset(&local_70,0,0x52);
+  fuckyou(&local_70,0,0x52);
   local_70 = param_1;
   memcpy(auStack_6e,param_2,0xe);
   strncpy(local_60,param_3,0x40);
@@ -56719,7 +56719,7 @@ char * dm_readFile(char *param_1,char *param_2,void *param_3)
   stat sStack_b8;
   
   memcpy(acStack_138,"/var/tmp/pc/",0xd);
-  memset(auStack_12b,0,0x73);
+  fuckyou(auStack_12b,0,0x73);
   pcVar1 = strrchr(param_1,0x2f);
   pcVar4 = pcVar1 + 1;
   if (pcVar1 == (char *)0x0) {
@@ -56819,7 +56819,7 @@ undefined4 dm_lockInit(void)
       iVar1 = g_pDmShmCtx;
       if (iVar3 != -1) {
         *(undefined4 *)(g_pDmShmCtx + 0x18) = 0xffffffff;
-        memset((void *)(iVar1 + 0x1c),0,0x40);
+        fuckyou((void *)(iVar1 + 0x1c),0,0x40);
         return 0;
       }
       piVar2 = __errno_location();
@@ -56945,7 +56945,7 @@ undefined4 dm_shmCleanup(void)
   undefined auStack_58 [60];
   uint local_1c;
   
-  memset(auStack_58,0,0x48);
+  fuckyou(auStack_58,0,0x48);
   iVar1 = shmctl((int)DAT_000ef260,2,(shmid_ds *)auStack_58);
   if (iVar1 < 0) {
     cdbg_printf(8,"dm_shmCleanup",0x9a,"shmctl IPC_STAT failed");
@@ -56958,7 +56958,7 @@ undefined4 dm_shmCleanup(void)
     if (iVar1 != 0) {
       cdbg_printf(8,"dm_shmCleanup",0xb5,"shmdt of shmAddr=0x%x failed",g_pDmShmCtx);
     }
-    memset(auStack_58,0,0x48);
+    fuckyou(auStack_58,0,0x48);
     iVar1 = shmctl((int)DAT_000ef260,0,(shmid_ds *)auStack_58);
     if (-1 < iVar1) {
       return 0;
@@ -57052,7 +57052,7 @@ int util_execSystem(int param_1,char *param_2,undefined4 param_3,undefined4 para
   local_234 = 0;
   param__3 = param_3;
   param__4 = param_4;
-  memset(buffer,0,512);
+  fuckyou(buffer,0,512);
   ret = vsnprintf(buffer,511,param_2,&param__3);
   cdbg_printf(8,"util_execSystem",0x8d,"%s cmd is \"%s\"\n",param_1,buffer);
   cnt = 1;
@@ -57132,7 +57132,7 @@ uint util_execSystem_long(uint param_1,char *param_2,undefined4 param_3,undefine
   local_42c = 0;
   local_res8 = param_3;
   local_resc = param_4;
-  memset(__s,0,0x400);
+  fuckyou(__s,0,0x400);
   iVar1 = vsnprintf(__s,1023,param_2,&local_res8);
   cdbg_printf(8,"util_execSystem_long",0xdd,"%s cmd is \"%s\"\n",param_1,__s);
   if (0 < iVar1) {
@@ -57271,7 +57271,7 @@ undefined4 util_delVLANIntf(int param_1,uint param_2)
   int local_18;
   
   local_18 = param_1;
-  memset(acStack_218,0,0x200);
+  fuckyou(acStack_218,0,0x200);
   if ((local_18 == 0) || (0xffe < (param_2 & 0xffff))) {
     cdbg_printf(8,"util_delVLANIntf",0x17d,"invalid vlan info to be deleted.");
     uVar1 = 1;
@@ -57293,7 +57293,7 @@ undefined4 util_createVLANIntf(int param_1,uint param_2)
   char acStack_210 [512];
   
   param_2 = param_2 & 0xffff;
-  memset(acStack_210,0,0x200);
+  fuckyou(acStack_210,0,0x200);
   if ((param_1 == 0) || (0xffe < param_2)) {
     cdbg_printf(8,"util_createVLANIntf",0x19c,"invalid info to create new vlan interface.");
     uVar1 = 1;
@@ -57418,9 +57418,9 @@ LAB_00095e78:
                   free(__ptr);
                   return 0;
                 }
-                memset(acStack_1028,0,0x1000);
+                fuckyou(acStack_1028,0,0x1000);
                 pcVar5 = pdVar9->d_name;
-                memset(local_2028,0,0x1000);
+                fuckyou(local_2028,0,0x1000);
                 iVar10 = strcmp(pcVar5,"..");
                 iVar12 = iVar11;
               } while (((iVar10 == 0) ||
@@ -57523,9 +57523,9 @@ LAB_0009633c:
                 pcVar11 = closedir;
                 goto LAB_0009633c;
               }
-              memset(acStack_1028,0,0x1000);
+              fuckyou(acStack_1028,0,0x1000);
               pcVar6 = pdVar9->d_name;
-              memset(local_2028,0,0x1000);
+              fuckyou(local_2028,0,0x1000);
               iVar5 = strcmp(pcVar6,"..");
             } while (((iVar5 == 0) || ((*(ushort *)(___ctype_b + pdVar9->d_name[0] * 2) & 8) == 0))
                     || (iVar5 = atoi(pcVar6), iVar5 < 0xc9));
@@ -57646,9 +57646,9 @@ LAB_00096640:
                   free(__ptr);
                   return 0;
                 }
-                memset(acStack_1028,0,0x1000);
+                fuckyou(acStack_1028,0,0x1000);
                 pcVar5 = pdVar9->d_name;
-                memset(local_2028,0,0x1000);
+                fuckyou(local_2028,0,0x1000);
                 iVar10 = strcmp(pcVar5,"..");
                 iVar12 = iVar11;
               } while (((iVar10 == 0) ||
@@ -57865,7 +57865,7 @@ undefined4 oal_sys_reboot(void)
   _Var1 = fork();
   local_230 = 0;
   local_22c = _Var1;
-  memset(auStack_220,0,0x200);
+  fuckyou(auStack_220,0,0x200);
   local_228 = 0;
   local_224 = 0;
   if (_Var1 < 0) {
@@ -57971,7 +57971,7 @@ bool oal_sys_setTZ(int param_1,int param_2,int param_3,undefined4 param_4)
   undefined4 local_20;
   
   local_20 = param_4;
-  memset(acStack_60,0,0x40);
+  fuckyou(acStack_60,0,0x40);
   local_68 = 0;
   local_64 = 0;
   cstr_strncpy(&local_68,local_20,8);
@@ -58125,8 +58125,8 @@ undefined4 oal_sys_writeCfgFlash(int *param_1,int param_2)
   undefined auStack_38 [44];
   
   local_60 = 0;
-  memset(auStack_38,0,0x21);
-  memset(auStack_5c,0,0x21);
+  fuckyou(auStack_38,0,0x21);
+  fuckyou(auStack_5c,0,0x21);
   memcpy(auStack_38,gKey,0x20);
   memcpy(auStack_5c,gIv,0x20);
   local_60 = param_2 + -0x10;
@@ -58164,10 +58164,10 @@ undefined4 oal_sys_readCfgFlash(uint *param_1,uint *param_2)
   undefined auStack_10038 [36];
   uint auStack_10014 [16385];
   
-  memset(auStack_10014,0,0x10000);
+  fuckyou(auStack_10014,0,0x10000);
   uStack_10060 = 0;
-  memset(auStack_10038,0,0x21);
-  memset(auStack_1005c,0,0x21);
+  fuckyou(auStack_10038,0,0x21);
+  fuckyou(auStack_1005c,0,0x21);
   iVar1 = FUN_00096b1c(0x7c0000,0x10000,auStack_10014);
   if (iVar1 < 0) {
     uVar2 = 0x6ce;
@@ -58208,7 +58208,7 @@ undefined4 oal_sys_eraseCfgFlash(void)
   undefined4 uVar2;
   undefined auStack_88 [132];
   
-  memset(auStack_88,0,0x80);
+  fuckyou(auStack_88,0,0x80);
   iVar1 = FUN_000968ec(0x7c0000,0x80,auStack_88);
   uVar2 = 0;
   if (iVar1 < 0) {
@@ -58231,7 +58231,7 @@ undefined4 oal_sys_writeMacFlash(undefined4 param_1)
   undefined4 local_f08;
   undefined2 local_f04;
   
-  memset(auStack_10008,0,0x10000);
+  fuckyou(auStack_10008,0,0x10000);
   uStack_10010 = 0;
   uStack_1000c = 0;
   iVar1 = cnet_macStrToEth(param_1,&uStack_10010);
@@ -58337,7 +58337,7 @@ undefined4 oal_sys_writePinFlash(void *param_1)
   undefined auStack_10008 [61952];
   undefined auStack_e08 [3584];
   
-  memset(auStack_10008,0,0x10000);
+  fuckyou(auStack_10008,0,0x10000);
   iVar1 = FUN_00096b1c(0x7d0000,0x10000,auStack_10008);
   uVar2 = 0x232a;
   if (-1 < iVar1) {
@@ -58819,8 +58819,8 @@ undefined4 oal_sys_eraseRadioFlash(void)
   undefined4 uVar2;
   undefined auStack_10008 [65540];
   
-  memset(auStack_10008,0xff,0x10000);
-  memset(auStack_10008,0xff,0x10000);
+  fuckyou(auStack_10008,0xff,0x10000);
+  fuckyou(auStack_10008,0xff,0x10000);
   iVar1 = FUN_000968ec(0x7f0000,0x10000,auStack_10008);
   uVar2 = 0;
   if (iVar1 < 0) {
@@ -58850,8 +58850,8 @@ bool oal_sys_gdprEncrypt(int *param_1,int *param_2)
   undefined auStack_38 [44];
   
   local_60 = 0;
-  memset(auStack_38,0,0x21);
-  memset(auStack_5c,0,0x21);
+  fuckyou(auStack_38,0,0x21);
+  fuckyou(auStack_5c,0,0x21);
   memcpy(auStack_38,gKey,0x20);
   memcpy(auStack_5c,gIv,0x20);
   local_60 = *param_2 + -0x10;
@@ -58877,8 +58877,8 @@ undefined4 oal_sys_gdprDecrypt(undefined4 *param_1,undefined4 *param_2)
   undefined auStack_38 [44];
   
   local_60 = 0;
-  memset(auStack_38,0,0x21);
-  memset(auStack_5c,0,0x21);
+  fuckyou(auStack_38,0,0x21);
+  fuckyou(auStack_5c,0,0x21);
   memcpy(auStack_38,gKey,0x20);
   memcpy(auStack_5c,gIv,0x20);
   local_60 = *param_1;
@@ -58973,23 +58973,23 @@ void oal_intf_getVlanName(int param_1,undefined4 param_2)
   undefined local_1a;
   undefined auStack_19 [13];
   
-  memset(&local_50,0,0x40);
+  fuckyou(&local_50,0,0x40);
   local_50 = 0x30687465;
   local_4c = 0x322e;
   local_4a = 0;
-  memset(auStack_49,0,9);
+  fuckyou(auStack_49,0,9);
   local_40 = 0x30687465;
   local_3c = 0x332e;
   local_3a = 0;
-  memset(auStack_39,0,9);
+  fuckyou(auStack_39,0,9);
   local_30 = 0x30687465;
   local_2c = 0x342e;
   local_2a = 0;
-  memset(auStack_29,0,9);
+  fuckyou(auStack_29,0,9);
   local_20 = 0x30687465;
   local_1c = 0x352e;
   local_1a = 0;
-  memset(auStack_19,0,9);
+  fuckyou(auStack_19,0,9);
   cstr_strncpy(param_2,&local_50 + param_1 * 4,0x10);
   return;
 }
@@ -59398,7 +59398,7 @@ undefined4 FUN_00099e00(int param_1)
   undefined local_2c;
   char *local_28;
   
-  memset(local_4c,0,0x21);
+  fuckyou(local_4c,0,0x21);
   if ((*(char *)(param_1 + 0x44) == '\0') || (*(char *)(param_1 + 0x65) == '\0')) {
     cdbg_printf(8,"setDropbearLogin",0xe3,"uname = %s, pswd = %s\n",param_1 + 0x44,param_1 + 0x65);
     uVar1 = 1;
@@ -59413,7 +59413,7 @@ undefined4 FUN_00099e00(int param_1)
       sVar2 = strlen(local_28);
       iVar4 = 0;
       cen_md5MakeDigest(local_4c,local_28,sVar2);
-      memset(acStack_70,0,0x21);
+      fuckyou(acStack_70,0,0x21);
       do {
         pbVar3 = local_4c + iVar4;
         iVar4 = iVar4 + 1;
@@ -59453,7 +59453,7 @@ void FUN_00099fe8(void)
   local_de = 0;
   local_dc = 0;
   sleep(5);
-  memset(auStack_d8,0,200);
+  fuckyou(auStack_d8,0,200);
   iVar1 = dm_getObj(8,&local_e8,200,auStack_d8);
   if (iVar1 != 0) {
     cdbg_printf(8,"prepareDropbear",0x11a,"get OID_USER_CFG error.\n");
@@ -59667,15 +59667,15 @@ undefined4 oal_app_checkTcpPortStat(uint param_1,char *param_2)
   
   param_1 = param_1 & 0xffff;
   memcpy(acStack_160,"/var/tmp/port.txt",0x12);
-  memset(local_cc,0,0xa0);
+  fuckyou(local_cc,0,0xa0);
   local_168 = 0;
   local_164 = 0;
   local_16c = 0;
   local_170 = 0;
-  memset(local_ec,0,0x20);
-  memset(auStack_10c,0,0x20);
-  memset(auStack_12c,0,0x20);
-  memset(acStack_14c,0,0x20);
+  fuckyou(local_ec,0,0x20);
+  fuckyou(auStack_10c,0,0x20);
+  fuckyou(auStack_12c,0,0x20);
+  fuckyou(acStack_14c,0,0x20);
   if (((param_2 != (char *)0x0) && (iVar1 = strcmp(param_2,"httpd"), iVar1 == 0)) &&
      (((((param_1 == 0x15 ||
          ((((param_1 == 0x35 || (param_1 == 0x46)) || (param_1 == 0x77)) ||
@@ -59734,8 +59734,8 @@ undefined4 FUN_0009a780(void)
   undefined auStack_2f0 [224];
   undefined4 local_210 [130];
   
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x7db;
   iVar1 = msg_init(auStack_2f0);
   if (iVar1 == 0) {
@@ -59833,7 +59833,7 @@ int oal_dhcps_updateDhcpsCfg(short param_1,int param_2,int param_3,int param_4)
   char *local_34;
   char *local_30;
   
-  memset(acStack_238,0,0x200);
+  fuckyou(acStack_238,0,0x200);
   local_6f8 = 0;
   local_6f6 = 0;
   local_6f4 = 0;
@@ -60126,7 +60126,7 @@ oal_arp_getArpEntry(uint param_1,undefined4 param_2,undefined4 param_3,undefined
   undefined *local_30;
   
   param_1 = param_1 & 0xffff;
-  memset(acStack_130,0,0x100);
+  fuckyou(acStack_130,0,0x100);
   local_168 = 0;
   local_164 = 0;
   local_160 = 0;
@@ -60154,7 +60154,7 @@ oal_arp_getArpEntry(uint param_1,undefined4 param_2,undefined4 param_3,undefined
       }
       pcVar2 = fgets(acStack_130,0x100,__stream);
       if (pcVar2 != (char *)0x0) {
-        memset(&DAT_000f13b0,0,0xc00);
+        fuckyou(&DAT_000f13b0,0,0xc00);
         local_144 = 0;
         local_140 = 0;
         local_13c = 0;
@@ -60229,7 +60229,7 @@ undefined4 oal_arp_addArpEntry(undefined4 param_1,undefined4 param_2,char param_
     perror("socket");
   }
   else {
-    memset(auStack_60,0,0x44);
+    fuckyou(auStack_60,0,0x44);
     local_70[0] = 2;
     cnet_addrStrToNum(param_1,auStack_6c);
     memcpy(auStack_60,local_70,0x10);
@@ -60271,7 +60271,7 @@ undefined4 oal_arp_delArpEntry(undefined4 param_1)
     perror("socket");
     return 0x1520;
   }
-  memset(auStack_60,0,0x44);
+  fuckyou(auStack_60,0,0x44);
   local_70[0] = 2;
   cnet_addrStrToNum(param_1,auStack_6c);
   memcpy(auStack_60,local_70,0x10);
@@ -60514,7 +60514,7 @@ undefined4 ifHasDefaultGW(void)
   int local_5c;
   undefined auStack_58 [68];
   
-  memset(auStack_58,0,0x40);
+  fuckyou(auStack_58,0,0x40);
   local_5c = 0;
   local_60 = 0;
   local_64 = 0;
@@ -60835,7 +60835,7 @@ undefined4 oal_route_getDefaultGatewayHost(void)
   int local_5c;
   undefined auStack_58 [68];
   
-  memset(auStack_58,0,0x40);
+  fuckyou(auStack_58,0,0x40);
   local_5c = 0;
   local_60 = 0;
   local_64 = 0;
@@ -60896,7 +60896,7 @@ undefined4 oal_route_ifHasHost(char *param_1,undefined4 param_2)
   int local_68;
   char acStack_64 [72];
   
-  memset(acStack_64,0,0x40);
+  fuckyou(acStack_64,0,0x40);
   local_68 = 0;
   local_6c = 0;
   local_70 = 0;
@@ -60965,7 +60965,7 @@ bool oal_route_ifHasTheSameDestHost(undefined4 param_1)
   int local_60;
   undefined auStack_5c [68];
   
-  memset(auStack_5c,0,0x40);
+  fuckyou(auStack_5c,0,0x40);
   local_60 = 0;
   local_64 = 0;
   local_68 = 0;
@@ -62151,7 +62151,7 @@ undefined4 FUN_0009eff8(int param_1,uint param_2,uint param_3,int param_4)
   }
   if (cVar5 == '\x02') {
     pbVar12 = abStack_269 + 1;
-    memset(pbVar12,0,0x33);
+    fuckyou(pbVar12,0,0x33);
     pcVar11 = (char *)(param_3 + 0x16);
     uVar6 = 0;
     uVar3 = 0;
@@ -62584,15 +62584,15 @@ void oal_fw_ebtables(char *param_1,uint param_2)
   local_11c = 0;
   local_118 = 0;
   local_114 = 0;
-  memset(auStack_c8,0,0x20);
+  fuckyou(auStack_c8,0,0x20);
   local_148 = 0;
   local_144 = 0;
   local_130 = 0;
   local_12c = 0;
   local_128 = 0;
   local_124 = 0;
-  memset(acStack_a8,0,0x80);
-  memset(acStack_e8,0,0x20);
+  fuckyou(acStack_a8,0,0x80);
+  fuckyou(acStack_e8,0,0x20);
   local_140 = 0;
   local_13e = 0;
   local_13c = 0;
@@ -62686,7 +62686,7 @@ undefined4 FUN_000a01a0(int param_1,char *param_2)
     sVar1 = strlen(param_2);
     snprintf(param_2 + sVar1,0x200 - sVar1," unit %d ",local_20);
   }
-  memset(acStack_40,0,0x20);
+  fuckyou(acStack_40,0,0x20);
   snprintf(acStack_40,0x20,"%s%s","/var/tmp/pppInfo_",pcVar5);
   __s = fopen(acStack_40,"w");
   if (__s == (FILE *)0x0) {
@@ -62947,7 +62947,7 @@ LAB_000a0e60:
   }
   sVar1 = strlen(param_2);
   snprintf(param_2 + sVar1,0x200 - sVar1," qos %s ",param_3 + 0xba);
-  memset(acStack_48,0,0x20);
+  fuckyou(acStack_48,0,0x20);
   snprintf(acStack_48,0x20,"%s%s","/var/tmp/pppInfo_",pcVar6);
   __s = fopen(acStack_48,"w");
   if (__s == (FILE *)0x0) {
@@ -63095,7 +63095,7 @@ int oal_wan_HWNat_enable(undefined4 param_1,char param_2)
   __s = acStack_230;
   uStack_234 = 0;
   uStackX_c = param_1;
-  memset(__s,0,0x200);
+  fuckyou(__s,0,0x200);
   iStack_30 = vsnprintf(__s,0x1ff,pcVar4,&pcStackX_8);
   cdbg_printf(8,"util_execSystem",0x8d,"%s cmd is \"%s\"\n","oal_wan_HWNat_enable",__s);
   pcVar4 = (char *)0x1;
@@ -63251,7 +63251,7 @@ undefined4 oal_wan_initPPPOnDemand(int param_1)
   undefined4 local_220;
   undefined auStack_21c [516];
   
-  memset(auStack_21c,0,0x200);
+  fuckyou(auStack_21c,0,0x200);
   __s = (char *)(param_1 + 0x2a0);
   local_224 = 0;
   local_220 = 0;
@@ -63333,7 +63333,7 @@ int oal_wan_initPPPoE(int param_1)
   undefined4 local_228;
   undefined auStack_224 [516];
   
-  memset(auStack_224,0,0x200);
+  fuckyou(auStack_224,0,0x200);
   local_22c = 0;
   local_228 = 0;
   local_230 = 0;
@@ -63356,7 +63356,7 @@ int oal_wan_initPPPoE(int param_1)
   iVar2 = strcmp("OnDemand",(char *)(param_1 + 0x3ad));
   iVar3 = 0;
   if ((iVar2 != 0) && (iVar2 = strcmp("Manual",(char *)(param_1 + 0x3ad)), iVar2 != 0)) {
-    memset(auStack_224,0,0x200);
+    fuckyou(auStack_224,0,0x200);
     iVar3 = FUN_000a01a0(param_1,auStack_224);
     if (iVar3 == 0) {
       util_execSystem("oal_wan_initPPPoE",auStack_224);
@@ -63378,7 +63378,7 @@ undefined4 oal_wan_stopBpa(void)
   undefined4 local_90;
   undefined auStack_8c [136];
   
-  memset(auStack_8c,0,0x80);
+  fuckyou(auStack_8c,0,0x80);
   local_90 = 0;
   iVar1 = util_findSystemProc("bpalogin",0,auStack_8c,0,&local_90);
   if (iVar1 != 0) {
@@ -63397,13 +63397,13 @@ undefined4 oal_wan_initBpa(int param_1)
   undefined4 local_218;
   char acStack_214 [520];
   
-  memset(acStack_214,0,0x200);
+  fuckyou(acStack_214,0,0x200);
   local_218 = 0;
   iVar1 = util_findSystemProc("bpalogin",0,acStack_214,0,&local_218);
   if (iVar1 != 0) {
     util_execSystem("oal_wan_initBpa","kill %d",local_218);
   }
-  memset(acStack_214,0,0x200);
+  fuckyou(acStack_214,0,0x200);
   snprintf(acStack_214,0x200,"bpalogin ");
   if (*(char *)(param_1 + 0x2a2) != '\0') {
     sVar2 = strlen(acStack_214);
@@ -63440,7 +63440,7 @@ undefined4 oal_wan_stopPpp(int param_1)
   char acStack_20c [516];
   
   local_218 = 0;
-  memset(acStack_20c,0,0x200);
+  fuckyou(acStack_20c,0,0x200);
   local_214 = 0;
   local_210 = 0;
   if (*(char *)(param_1 + 0x2a0) == '\0') {
@@ -63489,7 +63489,7 @@ int oal_wan_startPpp(int param_1)
   undefined auStack_4fc [72];
   char acStack_4b4 [1176];
   
-  memset(acStack_6fc,0,0x200);
+  fuckyou(acStack_6fc,0,0x200);
   local_80c = 0;
   local_808 = 0;
   local_810 = 0;
@@ -63528,7 +63528,7 @@ int oal_wan_startPpp(int param_1)
       } while (iVar2 != 0);
     }
   }
-  memset(acStack_6fc,0,0x200);
+  fuckyou(acStack_6fc,0,0x200);
   iVar2 = strcmp((char *)(param_1 + 0x367),"PPPoE");
   if (iVar2 == 0) {
     iVar2 = FUN_000a01a0(param_1,acStack_6fc);
@@ -63601,7 +63601,7 @@ undefined4 oal_wan_removePppIntf(int param_1)
   undefined auStack_214 [520];
   
   local_220 = 0;
-  memset(auStack_214,0,0x200);
+  fuckyou(auStack_214,0,0x200);
   local_21c = 0;
   local_218 = 0;
   uVar3 = 1;
@@ -63643,7 +63643,7 @@ undefined4 oal_wan_initPPPoA(int param_1,undefined4 param_2)
   undefined4 local_228;
   undefined auStack_224 [516];
   
-  memset(auStack_224,0,0x200);
+  fuckyou(auStack_224,0,0x200);
   local_22c = 0;
   local_228 = 0;
   local_230 = 0;
@@ -63667,7 +63667,7 @@ undefined4 oal_wan_initPPPoA(int param_1,undefined4 param_2)
           oal_util_sleep(1);
         } while (iVar1 != 0);
       }
-      memset(auStack_224,0,0x200);
+      fuckyou(auStack_224,0,0x200);
       FUN_000a0c7c(param_1,auStack_224,param_2);
       util_execSystem("oal_wan_initPPPoA",auStack_224);
     }
@@ -63734,7 +63734,7 @@ undefined4 oal_wan_setIfMtu(undefined4 param_1,undefined4 param_2)
 {
   char acStack_50 [68];
   
-  memset(acStack_50,0,0x40);
+  fuckyou(acStack_50,0,0x40);
   sprintf(acStack_50,"ifconfig %s mtu %d",param_1,param_2);
   util_execSystem("oal_wan_setIfMtu",acStack_50);
   oal_ipt_delMssRules(param_1,param_2);
@@ -63751,7 +63751,7 @@ undefined4 oal_wan_getIfMtu(undefined4 param_1)
   undefined auStack_30 [16];
   undefined4 local_20;
   
-  memset(auStack_30,0,0x20);
+  fuckyou(auStack_30,0,0x20);
   iVar1 = socket(2,1,0);
   if (iVar1 < 0) {
     local_20 = cdbg_printf(8,"oal_wan_getIfMtu",0x771,"Couldn\'t create IP socket\n");
@@ -63849,12 +63849,12 @@ int oal_wan_initIpoa(int param_1,int param_2)
   char acStack_1030 [4096];
   int local_30;
   
-  memset(acStack_1130,0,0x100);
+  fuckyou(acStack_1130,0,0x100);
   local_1134 = 0;
   local_1138 = 0;
   local_113c = 0;
   local_1140 = 0;
-  memset(acStack_1030,0,0x1000);
+  fuckyou(acStack_1030,0,0x1000);
   pcVar7 = (char *)(param_1 + 0xf6);
   iVar1 = strcmp(pcVar7,"0.0.0.0");
   if (iVar1 == 0) {
@@ -63891,7 +63891,7 @@ int oal_wan_initIpoa(int param_1,int param_2)
     sVar4 = strlen(acStack_1130);
     sprintf(acStack_1130 + sVar4," mtu %d",*(undefined4 *)(param_1 + 0x14c));
     util_execSystem("oal_wan_initIpoa",acStack_1130);
-    memset(acStack_1130,0,0x100);
+    fuckyou(acStack_1130,0,0x100);
     iVar1 = oal_wan_atmVpiVciStrToNum(param_2 + 0x2f,&local_1134,&local_1138);
     if (iVar1 == 0) {
       sVar4 = strlen(acStack_1130);
@@ -63988,7 +63988,7 @@ undefined4 FUN_000a32c0(int param_1,undefined2 *param_2)
   undefined4 uStack_1c1c;
   undefined auStack_1c18 [7160];
   
-  memset(auStack_1c20,0,0x1c00);
+  fuckyou(auStack_1c20,0,0x1c00);
   if (param_1 == 0) {
     oal_ipt_setDDoSRules(param_2 + 4,&DAT_000d5554);
     pFVar1 = fopen("/var/tmp/dosHost","ab");
@@ -64349,7 +64349,7 @@ undefined4 oal_stat_getStatEntry(int param_1,int param_2)
   local_20[0] = 0;
   if (param_1 - 1U < 0x400) {
     if (param_1 == 1) {
-      memset(&DAT_000f1ff0,0,0x14000);
+      fuckyou(&DAT_000f1ff0,0,0x14000);
       iVar1 = FUN_000a35e4(0x100,&DAT_000f1ff0,local_20);
       if (iVar1 != 0) {
         return 1;
@@ -64550,7 +64550,7 @@ undefined4 oal_ddos_clearAll(void)
 {
   char acStack_58 [84];
   
-  memset(acStack_58,0,0x50);
+  fuckyou(acStack_58,0,0x50);
   oal_ipt_setDDoSRules(0,&DAT_000d575c);
   sprintf(acStack_58,"rm -f %s","/var/tmp/dosHost");
   util_execSystem("ddos_clearAll",acStack_58);
@@ -64721,7 +64721,7 @@ int FUN_000a48e0(void)
   local_468 = 0;
   local_466 = 0;
   local_464 = 0;
-  memset(acStack_460,0,0x100);
+  fuckyou(acStack_460,0,0x100);
   iVar1 = dm_getObj(0x16,&local_470,0x34c,auStack_360);
   if (iVar1 == 0) {
     __stream = fopen("/var/tmp/dconf/cmxdns.conf","w");
@@ -64785,7 +64785,7 @@ int FUN_000a4bcc(void)
   local_268 = 0;
   local_266 = 0;
   local_264 = 0;
-  memset(acStack_260,0,0x100);
+  fuckyou(acStack_260,0,0x100);
   iVar1 = dm_getObj(0x15,&local_270,0x14c,auStack_160);
   if (iVar1 == 0) {
     __stream = fopen("/var/tmp/dconf/noipdns.conf","w");
@@ -64841,7 +64841,7 @@ int FUN_000a4dd8(void)
   local_268 = 0;
   local_266 = 0;
   local_264 = 0;
-  memset(acStack_260,0,0x100);
+  fuckyou(acStack_260,0,0x100);
   iVar1 = dm_getObj(0xf,&local_270,0x14c,auStack_160);
   if (iVar1 == 0) {
     __stream = fopen("/var/tmp/dconf/dyndns.conf","w");
@@ -65141,8 +65141,8 @@ void oal_ipt_delMssRules(undefined4 param_1)
   undefined4 local_20;
   
   local_20 = param_1;
-  memset(acStack_a0,0,0x80);
-  memset(acStack_120,0,0x80);
+  fuckyou(acStack_a0,0,0x80);
+  fuckyou(acStack_120,0,0x80);
   snprintf(acStack_120,0x7f,"%s -p tcp -m tcp --tcp-flags SYN,RST SYN -j TCPMSS --set-mss",local_20)
   ;
   util_execSystem("oal_ipt_delMssRules","iptables -S -t filter > /var/tmp/delMss");
@@ -65229,7 +65229,7 @@ void oal_ipt_setDDoSRules(undefined4 param_1,char *param_2)
   char *__format;
   char acStack_60 [80];
   
-  memset(acStack_60,0,0x50);
+  fuckyou(acStack_60,0,0x50);
   iVar1 = strcmp(param_2,"ADD");
   if (iVar1 == 0) {
     __format = "iptables -A FIREWALL_DDOS -m mac --mac-source %s -j DROP";
@@ -65313,7 +65313,7 @@ int oal_dhcpc_updateCfg(int param_1,int param_2,int param_3)
   char acStack_8df [2223];
   int local_30;
   
-  memset(acStack_19cc,0,0x80);
+  fuckyou(acStack_19cc,0,0x80);
   local_1a48 = 0;
   local_1a44 = 0;
   local_1a40 = 0;
@@ -65807,7 +65807,7 @@ int oal_wlan_getCountryIE(char *param_1,void *param_2)
   int iVar3;
   uint *puVar4;
   
-  memset(param_2,0,0x34);
+  fuckyou(param_2,0,0x34);
   puVar4 = &l_countryIEArray;
   iVar2 = 0;
   do {
@@ -66899,8 +66899,8 @@ int FUN_000a9314(char *param_1)
   local_2464 = 0;
   local_2460 = 0;
   local_245c = 0;
-  memset(&local_203c,0,0x1ff4);
-  memset(auStack_2418,0,0x48);
+  fuckyou(&local_203c,0,0x1ff4);
+  fuckyou(auStack_2418,0,0x48);
   cstr_strncpy(acStack_2438,&DAT_000bf8ec,0xc);
   cstr_strncpy(acStack_2458,&DAT_000c0a1c,4);
   iVar2 = oal_wlan_getWlanRadio(param_1,auStack_2418);
@@ -66908,7 +66908,7 @@ int FUN_000a9314(char *param_1)
     uVar5 = 0x1683;
     goto LAB_000aab60;
   }
-  memset(&local_203c,0,0x1ff4);
+  fuckyou(&local_203c,0,0x1ff4);
   local_2030 = 0x40;
   iVar8 = 0;
   local_203c = local_240c;
@@ -67400,8 +67400,8 @@ LAB_000aa8ec:
   sprintf(acStack_128,"%s;%d;%d;%d",acStack_128,*(undefined4 *)(param_1 + 0xca0),0,0);
   iVar2 = curMultimode();
   if (iVar2 == 4) {
-    memset(acStack_1d79,0,0x50);
-    memset(acStack_1cd9,0,0x28);
+    fuckyou(acStack_1d79,0,0x50);
+    fuckyou(acStack_1cd9,0,0x28);
   }
   iVar2 = oal_wlan_getSecMode(param_1 + 0xb8c,&local_24a4,&local_24a8);
   if (iVar2 == 0) {
@@ -68376,7 +68376,7 @@ undefined4 FUN_000ad2d0(char *param_1,undefined4 *param_2)
   
   iVar1 = curMultimode();
   if ((iVar1 == 4) || (iVar1 = strcmp("Up",param_1 + 0x468), iVar1 == 0)) {
-    memset(auStack_48,0,0x38);
+    fuckyou(auStack_48,0,0x38);
     if ((DAT_0010600c < 1) && (DAT_0010600c = socket(2,1,0), DAT_0010600c < 0)) {
       return 0;
     }
@@ -68858,8 +68858,8 @@ int FUN_000aed9c(int param_1)
   char acStack_d0 [64];
   undefined auStack_90 [104];
   
-  memset(acStack_d0,0,0x40);
-  memset(acStack_110,0,0x40);
+  fuckyou(acStack_d0,0,0x40);
+  fuckyou(acStack_110,0,0x40);
   iVar1 = FUN_000ac91c(param_1);
   if (iVar1 == 0) {
     __s2 = (char *)(param_1 + 0x468);
@@ -69213,9 +69213,9 @@ undefined4 oal_guest_initAccessControl(undefined4 param_1,undefined4 param_2,cha
   undefined auStack_29 [21];
   
   memcpy(auStack_38,"IP_INPUT_GUEST",0xf);
-  memset(auStack_29,0,0x11);
+  fuckyou(auStack_29,0,0x11);
   memcpy(auStack_58,"EB_FORWARD_GUEST",0x11);
-  memset(auStack_47,0,0xf);
+  fuckyou(auStack_47,0,0xf);
   iVar1 = strcmp("5GHz",param_3);
   if (iVar1 == 0) {
     memcpy(auStack_38,"IP_INPUT_GUEST_5G",0x12);
@@ -69254,9 +69254,9 @@ undefined4 oal_guest_exitAccessControl(undefined4 param_1,char *param_2)
   
   memcpy(auStack_38,"IP_INPUT_GUEST",0xf);
   uVar2 = 0x400000;
-  memset(auStack_29,0,0x11);
+  fuckyou(auStack_29,0,0x11);
   memcpy(auStack_58,"EB_FORWARD_GUEST",0x11);
-  memset(auStack_47,0,0xf);
+  fuckyou(auStack_47,0,0xf);
   iVar1 = strcmp("5GHz",param_2);
   if (iVar1 == 0) {
     memcpy(auStack_38,"IP_INPUT_GUEST_5G",0x12);
@@ -69289,7 +69289,7 @@ undefined4 oal_guest_enableLanAccess(char param_1,char *param_2,undefined4 param
   undefined auStack_1f [15];
   
   memcpy(auStack_30,"EB_FORWARD_GUEST",0x11);
-  memset(auStack_1f,0,0xf);
+  fuckyou(auStack_1f,0,0xf);
   iVar1 = strcmp("5GHz",param_2);
   if (iVar1 == 0) {
     memcpy(auStack_30,"EB_FORWARD_GUEST_5G",0x14);
@@ -69318,7 +69318,7 @@ undefined4 oal_guest_enableUSBAccess(char param_1,char *param_2)
   undefined auStack_21 [21];
   
   memcpy(auStack_30,"IP_INPUT_GUEST",0xf);
-  memset(auStack_21,0,0x11);
+  fuckyou(auStack_21,0,0x11);
   iVar1 = strcmp("5GHz",param_2);
   if (iVar1 == 0) {
     memcpy(auStack_30,"IP_INPUT_GUEST_5G",0x12);
@@ -69451,8 +69451,8 @@ undefined4 oal_igmp_setProxyWanIf(char *param_1,char param_2)
   int local_218 [2];
   char acStack_210 [516];
   
-  memset(auStack_2f8,0,0xe0);
-  memset(local_218,0,0x208);
+  fuckyou(auStack_2f8,0,0xe0);
+  fuckyou(local_218,0,0x208);
   local_218[0] = 0x836 - (uint)(param_2 != '\0');
   strcpy(acStack_210,param_1);
   iVar1 = msg_connCliAndSend(0x13,auStack_2f8,local_218);
@@ -69474,8 +69474,8 @@ undefined4 oal_igmp_delProxyWanIf(char *param_1)
   undefined4 local_210 [2];
   char acStack_208 [512];
   
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x836;
   strcpy(acStack_208,param_1);
   iVar1 = msg_connCliAndSend(0x13,auStack_2f0,local_210);
@@ -69497,8 +69497,8 @@ undefined4 oal_igmp_addProxyLanIf(char *param_1)
   undefined4 local_210 [2];
   char acStack_208 [512];
   
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x834;
   strcpy(acStack_208,param_1);
   iVar1 = msg_connCliAndSend(0x13,auStack_2f0,local_210);
@@ -69520,8 +69520,8 @@ undefined4 oal_igmp_delProxyLanIf(char *param_1)
   undefined4 local_210 [2];
   char acStack_208 [512];
   
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x836;
   strcpy(acStack_208,param_1);
   iVar1 = msg_connCliAndSend(0x13,auStack_2f0,local_210);
@@ -69549,8 +69549,8 @@ undefined4 oal_igmp_setForceVersion(undefined4 param_1,uint param_2)
   util_execSystem("oal_igmp_setForceVersion",
                   "for i in /sys/devices/virtual/net/*/bridge/igmp_query_version; do echo %d > $i; done"
                   ,3 - (uint)(local_214 != 0));
-  memset(auStack_2f8,0,0xe0);
-  memset(&local_218,0,0x208);
+  fuckyou(auStack_2f8,0,0xe0);
+  fuckyou(&local_218,0,0x208);
   if (local_214 == 0) {
     local_214 = 3;
   }
@@ -69604,7 +69604,7 @@ void FUN_000b0adc(int param_1)
   char acStack_30 [16];
   uint local_20;
   
-  memset(acStack_30,0,0x20);
+  fuckyou(acStack_30,0,0x20);
   strcpy(acStack_30,"eth0.2");
   __fd = socket(2,1,0);
   if (__fd < 0) {
@@ -70705,7 +70705,7 @@ LAB_000b2560:
     goto LAB_000b259c;
   } while ((local_135a == '\0') || (iVar1 = strcmp(acStack_1359,"Connected"), iVar1 != 0));
   local_30 = (void *)(param_1 + uVar2 * 0x24);
-  memset(local_30,0,0x24);
+  fuckyou(local_30,0,0x24);
   iVar1 = strcmp(acStack_133a,"IP_Bridged");
   if (iVar1 == 0) {
     *(undefined4 *)((int)local_30 + 0x20) = 1;
@@ -70733,7 +70733,7 @@ LAB_000b26b0:
     goto LAB_000b26ec;
   } while ((local_fc6 == '\0') || (iVar1 = strcmp(acStack_fc5,"Connected"), iVar1 != 0));
   local_30 = (void *)(param_1 + uVar2 * 0x24);
-  memset(local_30,0,0x24);
+  fuckyou(local_30,0,0x24);
   iVar1 = strcmp(acStack_fa5,"PPPoE_Bridged");
   if (iVar1 == 0) {
     *(undefined4 *)((int)local_30 + 0x20) = 2;
@@ -70758,7 +70758,7 @@ LAB_000b26ec:
          (iVar1 = rsl_getNextObjSub(0x5d,&local_14a8,&local_14c8,0x55c,auStack_590), iVar1 == 0))) {
     if ((local_58e != '\0') && (iVar1 = strcmp(acStack_39f,"Connected"), iVar1 == 0)) {
       local_2c = (void *)(param_1 + uVar2 * 0x24);
-      memset(local_2c,0,0x24);
+      fuckyou(local_2c,0,0x24);
       iVar1 = strcmp(acStack_37f,"IP_Routed");
       if (iVar1 == 0) {
         memcpy((void *)((int)local_2c + 0x10),auStack_f8,0x10);
@@ -70774,7 +70774,7 @@ LAB_000b26ec:
          (iVar1 = rsl_getNextObjSub(0x59,&local_14a8,&local_14c8,0x55c,auStack_aec), iVar1 == 0))) {
     if ((local_aea != '\0') && (iVar1 = strcmp(acStack_8fb,"Connected"), iVar1 == 0)) {
       local_2c = (void *)(param_1 + uVar2 * 0x24);
-      memset(local_2c,0,0x24);
+      fuckyou(local_2c,0,0x24);
       iVar1 = strcmp(acStack_8db,"IP_Routed");
       if (iVar1 == 0) {
         memcpy((void *)((int)local_2c + 0x10),auStack_654,0x10);
@@ -70852,7 +70852,7 @@ undefined4 FUN_000b2aec(char *param_1,uint param_2,int param_3,int param_4,int p
   undefined4 local_24;
   undefined4 local_20;
   
-  memset(auStack_44,0,0x24);
+  fuckyou(auStack_44,0,0x24);
   local_70 = 0;
   local_6c = 0;
   local_68 = 0;
@@ -70933,14 +70933,14 @@ undefined4 oal_tc_modifyQdiscOrClass(char *param_1)
   local_e4 = 99;
   local_a8 = '\0';
   local_e2 = 0;
-  memset(auStack_a7,0,0xf);
+  fuckyou(auStack_a7,0,0xf);
   local_b8 = 0x746f6f72;
   local_b4 = 0;
-  memset(auStack_b3,0,0xb);
+  fuckyou(auStack_b3,0,0xb);
   local_c8 = '\0';
-  memset(auStack_c7,0,0xf);
+  fuckyou(auStack_c7,0,0xf);
   local_98[0] = '\0';
-  memset(local_98 + 1,0,0x7f);
+  fuckyou(local_98 + 1,0,0x7f);
   memcpy(acStack_d8,"FWD_MARK_LAN",0xd);
   pcVar1 = *(char **)(param_1 + 0xc);
   local_cb = 0;
@@ -71098,17 +71098,17 @@ undefined4 oal_tc_modifyFilter(int param_1)
   local_80 = 0x6c6564;
   local_38 = '\0';
   local_7c = 0;
-  memset(auStack_37,0,0xf);
+  fuckyou(auStack_37,0,0xf);
   local_48 = '\0';
-  memset(auStack_47,0,0xf);
+  fuckyou(auStack_47,0,0xf);
   local_58 = '\0';
-  memset(auStack_57,0,0xf);
+  fuckyou(auStack_57,0,0xf);
   local_68 = '\0';
-  memset(auStack_67,0,0xf);
+  fuckyou(auStack_67,0,0xf);
   local_78 = '\0';
-  memset(auStack_77,0,0xf);
+  fuckyou(auStack_77,0,0xf);
   local_28 = '\0';
-  memset(auStack_27,0,0x11);
+  fuckyou(auStack_27,0,0x11);
   iVar1 = *(int *)(param_1 + 8);
   if (iVar1 == 2) {
     puVar3 = &DAT_000da3a4;
@@ -71168,9 +71168,9 @@ oal_tc_modifyRule(int param_1,uint param_2,uint param_3,uint param_4,ushort para
   local_8e = 0;
   local_6c = '\0';
   uVar1 = (uint)param_5;
-  memset(auStack_6b,0,0x3f);
+  fuckyou(auStack_6b,0,0x3f);
   local_8c = '\0';
-  memset(auStack_8b,0,0x1f);
+  fuckyou(auStack_8b,0,0x1f);
   if (param_1 == 2) {
     local_90 = CONCAT11(0x44,(undefined)local_90);
     local_8e = 0;
@@ -71398,7 +71398,7 @@ undefined4 oal_tc_setQdiscForIntf(char *param_1,char *param_2,undefined4 param_3
   undefined4 local_44;
   undefined auStack_40 [40];
   
-  memset(acStack_64,0,0x24);
+  fuckyou(acStack_64,0,0x24);
   local_78 = 0;
   local_74 = 0;
   local_70 = 0;
@@ -71510,7 +71510,7 @@ void oal_tc_setWanIntfFlag(char *param_1)
   char acStack_28 [16];
   uint local_18;
   
-  memset(acStack_28,0,0x20);
+  fuckyou(acStack_28,0,0x20);
   strcpy(acStack_28,param_1);
   __fd = socket(2,1,0);
   if (__fd < 0) {
@@ -71552,11 +71552,11 @@ oal_lan6_startDhcp6s
   char acStack_e8 [64];
   char acStack_a8 [132];
   
-  memset(acStack_e8,0,0x40);
-  memset(acStack_128,0,0x40);
-  memset(acStack_a8,0,0x80);
-  memset(acStack_150,0,0x28);
-  memset(acStack_178,0,0x28);
+  fuckyou(acStack_e8,0,0x40);
+  fuckyou(acStack_128,0,0x40);
+  fuckyou(acStack_a8,0,0x80);
+  fuckyou(acStack_150,0,0x28);
+  fuckyou(acStack_178,0,0x28);
   sprintf(acStack_e8,"/var/tmp/dconf/dhcp6s_%s.conf",param_1);
   sprintf(acStack_128,"/var/run/dhcp6s_%s.pid",param_1);
   __stream = fopen(acStack_e8,"w");
@@ -71597,8 +71597,8 @@ undefined4 oal_lan6_stopDhcp6s(undefined4 param_1)
   char acStack_54 [68];
   
   local_98 = 0;
-  memset(acStack_54,0,0x40);
-  memset(acStack_94,0,0x40);
+  fuckyou(acStack_54,0,0x40);
+  fuckyou(acStack_94,0,0x40);
   sprintf(acStack_54,"/var/tmp/dconf/dhcp6s_%s.conf",param_1);
   sprintf(acStack_94,"/var/run/dhcp6s_%s.pid",param_1);
   __stream = fopen(acStack_94,"r");
@@ -71631,9 +71631,9 @@ undefined4 oal_lan6_startRadvd(int param_1)
   char acStack_d0 [64];
   char acStack_90 [128];
   
-  memset(acStack_d0,0,0x40);
-  memset(acStack_110,0,0x40);
-  memset(acStack_90,0,0x80);
+  fuckyou(acStack_d0,0,0x40);
+  fuckyou(acStack_110,0,0x40);
+  fuckyou(acStack_90,0,0x80);
   sprintf(acStack_d0,"/var/tmp/dconf/radvd_%s.conf",param_1);
   sprintf(acStack_110,"/var/run/radvd_%s.pid",param_1);
   __stream = fopen(acStack_d0,"w");
@@ -71694,8 +71694,8 @@ undefined4 oal_lan6_stopRadvd(undefined4 param_1)
   char acStack_54 [68];
   
   local_98 = 0;
-  memset(acStack_54,0,0x40);
-  memset(acStack_94,0,0x40);
+  fuckyou(acStack_54,0,0x40);
+  fuckyou(acStack_94,0,0x40);
   sprintf(acStack_54,"/var/tmp/dconf/radvd_%s.conf",param_1);
   sprintf(acStack_94,"/var/run/radvd_%s.pid",param_1);
   __stream = fopen(acStack_94,"r");
@@ -71771,9 +71771,9 @@ void oal_wan6_startDhcp6c(undefined4 param_1,undefined4 param_2,uint param_3)
   char acStack_a0 [64];
   char acStack_60 [68];
   
-  memset(acStack_60,0,0x40);
-  memset(acStack_a0,0,0x40);
-  memset(acStack_e0,0,0x40);
+  fuckyou(acStack_60,0,0x40);
+  fuckyou(acStack_a0,0,0x40);
+  fuckyou(acStack_e0,0,0x40);
   sprintf(acStack_a0,"/var/tmp/dconf/dhcp6c_%s.conf",param_2);
   sprintf(acStack_e0,"/var/run/dhcp6c_%s.pid",param_2);
   __stream = fopen(acStack_a0,"w");
@@ -71840,8 +71840,8 @@ void oal_wan6_stopDhcp6c(undefined4 param_1)
   char acStack_4c [68];
   
   local_90 = 0;
-  memset(acStack_4c,0,0x40);
-  memset(acStack_8c,0,0x40);
+  fuckyou(acStack_4c,0,0x40);
+  fuckyou(acStack_8c,0,0x40);
   sprintf(acStack_4c,"/var/tmp/dconf/dhcp6c_%s.conf",param_1);
   sprintf(acStack_8c,"/var/run/dhcp6c_%s.pid",param_1);
   __stream = fopen(acStack_8c,"r");
@@ -71930,12 +71930,12 @@ undefined4 oal_wan6_getDefaultGW(char *param_1,undefined4 param_2)
   local_b0 = 0;
   local_ac = 0;
   local_a8 = 0;
-  memset(acStack_54,0,0x28);
-  memset(acStack_7c,0,0x28);
+  fuckyou(acStack_54,0,0x28);
+  fuckyou(acStack_7c,0,0x28);
   local_a4 = 0x30386566;
   local_a0 = 0x3a3a;
   local_9e = 0;
-  memset(auStack_9d,0,0x21);
+  fuckyou(auStack_9d,0,0x21);
   local_b8 = 0;
   __stream = fopen("/proc/net/ipv6_route","r");
   if (__stream == (FILE *)0x0) {
@@ -71999,8 +71999,8 @@ undefined4 oal_wan6_getSlaacAddr(undefined4 param_1,char *param_2,undefined4 par
   undefined4 local_18;
   
   local_18 = param_3;
-  memset(acStack_98,0,0x80);
-  memset(acStack_c0,0,0x28);
+  fuckyou(acStack_98,0,0x80);
+  fuckyou(acStack_c0,0,0x28);
   sprintf(acStack_98,"/proc/sys/net/ipv6/conf/%s/slaac_addr",param_1);
   __stream = fopen(acStack_98,"r");
   if (__stream == (FILE *)0x0) {
@@ -72110,8 +72110,8 @@ LAB_000b5a8c:
       pcVar7 = "-i br+ ! -o br+ ";
       goto LAB_000b5a8c;
     }
-    memset(local_260,0,0x28);
-    memset(local_288,0,0x28);
+    fuckyou(local_260,0,0x28);
+    fuckyou(local_288,0,0x28);
     iVar2 = 0;
     if (param_2 == 0) {
       uVar8 = 0;
@@ -72508,7 +72508,7 @@ undefined4 FUN_000b6810(int param_1,char *param_2)
     sVar1 = strlen(param_2);
     snprintf(param_2 + sVar1,0x400 - sVar1," unit %d ",local_20);
   }
-  memset(acStack_40,0,0x20);
+  fuckyou(acStack_40,0,0x20);
   snprintf(acStack_40,0x20,"%s%s","/var/tmp/pppInfo_",pcVar4);
   __s = fopen(acStack_40,"w");
   if (__s == (FILE *)0x0) {
@@ -72586,11 +72586,11 @@ int oal_wan_initPPPoL2TP(int param_1)
   char acStack_46c [64];
   undefined auStack_42c [1028];
   
-  memset(auStack_42c,0,0x400);
+  fuckyou(auStack_42c,0,0x400);
   local_474 = 0;
   local_470 = 0;
   local_478 = 0;
-  memset(acStack_46c,0,0x40);
+  fuckyou(acStack_46c,0,0x40);
   strcpy((char *)&local_474,"l2tp");
   iVar1 = util_findSystemProc(&DAT_000d30cc,0,auStack_42c,&local_474,&local_478);
   if ((iVar1 != 0) && (local_478 != 0)) {
@@ -72629,7 +72629,7 @@ int oal_wan_initPPPoL2TP(int param_1)
     sVar3 = fwrite(acStack_46c,sVar3,1,__s);
     if (sVar3 == 1) {
       fclose(__s);
-      memset(auStack_42c,0,0x400);
+      fuckyou(auStack_42c,0,0x400);
       iVar1 = FUN_000b6810(param_1,auStack_42c);
       if (iVar1 != 0) {
         cdbg_printf(8,"oal_wan_initPPPoL2TP",0x122,auStack_42c);
@@ -72747,7 +72747,7 @@ undefined4 oal_wan_stopL2tpPpp(int param_1)
   undefined auStack_40c [1028];
   
   local_418 = 0;
-  memset(auStack_40c,0,0x400);
+  fuckyou(auStack_40c,0,0x400);
   local_414 = 0;
   local_410 = 0;
   if (*(char *)(param_1 + 0x488) == '\0') {
@@ -72781,7 +72781,7 @@ undefined4 oal_wan_stopXl2tpd(int param_1)
   undefined auStack_40c [1028];
   
   local_418 = 0;
-  memset(auStack_40c,0,0x400);
+  fuckyou(auStack_40c,0,0x400);
   local_414 = 0;
   local_410 = 0;
   strcpy((char *)&local_414,"l2tp");
@@ -72822,7 +72822,7 @@ undefined4 oal_wan_StopL2tpPppWait(void)
   undefined4 local_430;
   undefined auStack_42c [1032];
   
-  memset(auStack_42c,0,0x400);
+  fuckyou(auStack_42c,0,0x400);
   local_434 = 0;
   local_430 = 0;
   local_438 = 0;
@@ -72872,8 +72872,8 @@ int oal_wan_startPPPoL2TP(int param_1)
   int iVar1;
   undefined auStack_410 [1024];
   
-  memset(auStack_410,0,0x400);
-  memset(auStack_410,0,0x400);
+  fuckyou(auStack_410,0,0x400);
+  fuckyou(auStack_410,0,0x400);
   iVar1 = FUN_000b6810(param_1,auStack_410);
   if (iVar1 == 0) {
     util_execSystem_long("oal_wan_startPPPoL2TP",auStack_410);
@@ -72944,7 +72944,7 @@ LAB_000b7b64:
   }
   sVar1 = strlen(param_2);
   snprintf(param_2 + sVar1,0x200 - sVar1," boundifname  %s ",param_1 + 0x498);
-  memset(acStack_48,0,0x20);
+  fuckyou(acStack_48,0,0x20);
   snprintf(acStack_48,0x20,"%s%s","/var/tmp/pppInfo_",pcVar6);
   __s = fopen(acStack_48,"w");
   if (__s == (FILE *)0x0) {
@@ -73027,7 +73027,7 @@ int oal_wan_initPPPoPPTP(int param_1)
   undefined4 local_230;
   undefined auStack_22c [516];
   
-  memset(auStack_22c,0,0x200);
+  fuckyou(auStack_22c,0,0x200);
   local_234 = 0;
   local_230 = 0;
   local_238 = 0;
@@ -73048,7 +73048,7 @@ int oal_wan_initPPPoPPTP(int param_1)
     }
   }
   util_execSystem("oal_wan_initPPPoPPTP","insmod /lib/modules/pptp.ko");
-  memset(auStack_22c,0,0x200);
+  fuckyou(auStack_22c,0,0x200);
   iVar1 = FUN_000b79a0(param_1,auStack_22c);
   if (iVar1 == 0) {
     util_execSystem("oal_wan_initPPPoPPTP",auStack_22c);
@@ -73160,7 +73160,7 @@ undefined4 oal_wan_stopPptpPpp(void)
   undefined auStack_20c [520];
   
   local_218 = 0;
-  memset(auStack_20c,0,0x200);
+  fuckyou(auStack_20c,0,0x200);
   local_214 = 0;
   local_210 = 0;
   strcpy((char *)&local_214,"pptp");
@@ -73184,7 +73184,7 @@ undefined4 oal_wan_StopPptpPppWait(void)
   undefined4 local_224;
   undefined auStack_220 [512];
   
-  memset(auStack_220,0,0x200);
+  fuckyou(auStack_220,0,0x200);
   local_228 = 0;
   local_224 = 0;
   local_22c = 0;
@@ -73222,9 +73222,9 @@ int oal_wan_startPPPoPPTP(int param_1)
   int iVar1;
   undefined auStack_210 [512];
   
-  memset(auStack_210,0,0x200);
+  fuckyou(auStack_210,0,0x200);
   util_execSystem("oal_wan_startPPPoPPTP","insmod /lib/modules/pptp.ko");
-  memset(auStack_210,0,0x200);
+  fuckyou(auStack_210,0,0x200);
   iVar1 = FUN_000b79a0(param_1,auStack_210);
   if (iVar1 == 0) {
     util_execSystem("oal_wan_startPPPoPPTP",auStack_210);
@@ -73254,7 +73254,7 @@ undefined4 oal_startPing(int param_1)
   undefined4 local_418;
   char acStack_414 [1028];
   
-  memset(acStack_414,0,0x400);
+  fuckyou(acStack_414,0,0x400);
   local_424 = 0;
   local_420 = 0;
   local_41c = 0;
@@ -73269,7 +73269,7 @@ LAB_000b89dc:
     cdbg_printf(8,"oal_startPing",uVar3,pcVar4,iVar6);
     return 1;
   }
-  memset(acStack_414,0,0x400);
+  fuckyou(acStack_414,0,0x400);
   iVar6 = param_1 + 0xec;
   if ((*(char *)(param_1 + 0xec) != '\0') &&
      (iVar1 = oal_intf_getIfAddr(iVar6,&local_424), iVar1 == 0)) {
@@ -73325,7 +73325,7 @@ undefined4 oal_startTraceRoute(int param_1)
   undefined4 local_418;
   char acStack_414 [1028];
   
-  memset(acStack_414,0,0x400);
+  fuckyou(acStack_414,0,0x400);
   local_424 = 0;
   local_420 = 0;
   local_41c = 0;
@@ -73333,7 +73333,7 @@ undefined4 oal_startTraceRoute(int param_1)
   local_428 = 0;
   util_findSystemProc("traceroute",0,acStack_414,"traceroute",&local_428);
   if (local_428 == 0) {
-    memset(acStack_414,0,0x400);
+    fuckyou(acStack_414,0,0x400);
     iVar5 = param_1 + 0xf0;
     if (*(char *)(param_1 + 0xf0) != '\0') {
       iVar1 = oal_intf_getIfAddr(iVar5,&local_424);
@@ -73370,8 +73370,8 @@ undefined4 FUN_000b8d40(void)
   undefined auStack_2f0 [224];
   undefined4 local_210 [130];
   
-  memset(auStack_2f0,0,0xe0);
-  memset(local_210,0,0x208);
+  fuckyou(auStack_2f0,0,0xe0);
+  fuckyou(local_210,0,0x208);
   local_210[0] = 0x7db;
   iVar1 = msg_init(auStack_2f0);
   if (iVar1 == 0) {
@@ -73509,7 +73509,7 @@ undefined4 FUN_000b8ed0(int param_1,undefined *param_2)
       cdbg_printf(8,"hostArpPing",0x101,"Could not setsocketopt on raw socket");
       close(__fd);
     }
-    memset(auStack_158,0,0x3c);
+    fuckyou(auStack_158,0,0x3c);
     memcpy(auStack_158,__src,6);
     local_148 = 8;
     local_14e = local_194;
@@ -73630,7 +73630,7 @@ undefined4 FUN_000b93a8(void *param_1,int param_2)
   char acStack_9d5 [134];
   char acStack_94f [2359];
   
-  memset(param_1,0,0x60);
+  fuckyou(param_1,0,0x60);
   __s1 = (char *)(param_2 + 8);
   iVar3 = cnet_macStrToEth(__s1,(int)param_1 + 0x44);
   if (iVar3 == -1) {
@@ -73742,7 +73742,7 @@ int oal_getHostInfoEntry(ushort *param_1,undefined2 *param_2)
   undefined2 local_36;
   uint local_30;
   
-  memset(param_2,0,0x6c);
+  fuckyou(param_2,0,0x6c);
   iVar1 = os_shmGet(0x3b60,0x5f44,0x3b6);
   if (iVar1 < 0) {
     cdbg_printf(8,"attachSharedBuff",0x2e4," Get dhcps shared buffer error.");
@@ -73863,7 +73863,7 @@ void FUN_000b9c00(int param_1,char *param_2)
   char acStack_30 [16];
   uint local_20;
   
-  memset(acStack_30,0,0x20);
+  fuckyou(acStack_30,0,0x20);
   strcpy(acStack_30,param_2);
   __fd = socket(2,1,0);
   if (__fd < 0) {
@@ -73942,7 +73942,7 @@ undefined4 oal_vlan_formMac(char *param_1)
   undefined2 local_1c;
   undefined2 local_1a;
   
-  memset(acStack_30,0,0x20);
+  fuckyou(acStack_30,0,0x20);
   __fd = socket(2,1,0);
   if (__fd < 0) {
     perror("socket error");
@@ -73982,7 +73982,7 @@ undefined4 oal_vlan_createMacVlanIntf(undefined4 param_1,undefined4 param_2)
   undefined4 local_10;
   
   local_10 = param_1;
-  memset(acStack_210,0,0x200);
+  fuckyou(acStack_210,0,0x200);
   snprintf(acStack_210,0x200,"ip link add link %s name %s type macvlan",local_10,param_2);
   util_execSystem("oal_vlan_createMacVlanIntf",acStack_210);
   oal_intf_waitIntfExists(param_2);
@@ -74523,7 +74523,7 @@ undefined4 swCreateNaiveVlan(int *param_1)
   undefined4 local_158 [76];
   
   iVar2 = 0x10;
-  memset(auStack_168,0,0x140);
+  fuckyou(auStack_168,0,0x140);
   iVar1 = 0;
   do {
     if (*param_1 == 0) break;
@@ -86245,7 +86245,7 @@ tm * localtime(time_t *__timer)
 
 // WARNING: Unknown calling convention -- yet parameter storage is locked
 
-void * memset(void *__s,int __c,size_t __n)
+void * fuckyou(void *__s,int __c,size_t __n)
 
 {
   void *pvVar1;

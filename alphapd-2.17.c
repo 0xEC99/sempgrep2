@@ -812,7 +812,7 @@ void preparesslkey(void)
     }
     else {
       puVar5 = auStack_1020;
-      memset(puVar5,0,0x1000);
+      fuckyou(puVar5,0,0x1000);
       sVar4 = 0x1000;
       do {
         sVar2 = fread(puVar5,1,sVar4,pFVar1);
@@ -835,7 +835,7 @@ void preparesslkey(void)
     }
     else {
       puVar5 = auStack_1020;
-      memset(puVar5,0,0x1000);
+      fuckyou(puVar5,0,0x1000);
       sVar4 = 0x1000;
       do {
         sVar2 = fread(puVar5,1,sVar4,pFVar1);
@@ -1076,7 +1076,7 @@ undefined4 websStartupServer(undefined4 param_1)
   DAT_004d8c9c = local_c8;
   DAT_004d8ca0 = local_c4;
   DAT_004d8ca4 = local_c0;
-  memset(auStack_58,0,0x40);
+  fuckyou(auStack_58,0,0x40);
   getSysInfoBuffer(1,auStack_58,0x40);
   __ptr = (void *)AllocateMACAddress(0,0);
   if (__ptr != (void *)0x0) {
@@ -2765,7 +2765,7 @@ void websReplyUnSupportMsg(int param_1)
     ;
   }
   else {
-    memset(local_50,0,0x40);
+    fuckyou(local_50,0,0x40);
     getSysInfoBuffer(0x4f,local_50,1);
     switch(local_50[0]) {
     default:
@@ -3459,7 +3459,7 @@ void webAddReplyMessage(int param_1,char *param_2,int param_3)
   
   if (param_2 != (char *)0x0) {
     if (*param_2 != '\0') {
-      memset(acStack_218,0,0x200);
+      fuckyou(acStack_218,0,0x200);
       snprintf(acStack_258,0x40,"Message%d",*(undefined4 *)(param_1 + 0x118));
       if (param_3 == 0) {
         snprintf(acStack_218,0x200,"%s",param_2);
@@ -3725,7 +3725,7 @@ undefined4 WriteHexString(undefined4 param_1,byte *param_2)
     __n = sVar3 * 2 + 2;
     __s = (char *)mmalloc(__n);
     if (__s != (char *)0x0) {
-      memset(__s,0,__n);
+      fuckyou(__s,0,__n);
       bVar1 = *param_2;
       while (uVar5 = (uint)bVar1, uVar5 != 0) {
         while( true ) {
@@ -4050,8 +4050,8 @@ void getHashMd5StringConfig(int param_1,undefined4 param_2,int param_3,char **pa
   char *local_28 [2];
   
   local_28[0] = (char *)0x0;
-  memset(auStack_a8,0,0x40);
-  memset(auStack_68,0,0x40);
+  fuckyou(auStack_a8,0,0x40);
+  fuckyou(auStack_68,0,0x40);
   allocFmtString(local_28,0xfe,"%s",*(undefined4 *)(param_1 + 0x9c));
   if (local_28[0] == (char *)0x0) goto LAB_00410c60;
   if (param_3 < 1) {
@@ -4109,7 +4109,7 @@ undefined4 getHexStringConfig(undefined4 param_1,undefined4 param_2,int param_3,
     __n = sVar4 * 2 + 2;
     __s_00 = (char *)mmalloc(__n);
     if (__s_00 != (char *)0x0) {
-      memset(__s_00,0,__n);
+      fuckyou(__s_00,0,__n);
       bVar1 = *__s;
       while (uVar6 = (uint)bVar1, uVar6 != 0) {
         while( true ) {
@@ -4907,7 +4907,7 @@ void getCurrentTimeString(undefined4 param_1,char *param_2)
   char acStack_58 [64];
   time_t atStack_18 [2];
   
-  memset(acStack_58,0,0x40);
+  fuckyou(acStack_58,0,0x40);
   time(atStack_18);
   __tp = localtime(atStack_18);
   if (__tp != (tm *)0x0) {
@@ -5023,7 +5023,7 @@ undefined4 getHexStringVar(undefined4 param_1)
     __n = sVar3 * 2 + 2;
     __s_00 = (char *)mmalloc(__n);
     if (__s_00 != (char *)0x0) {
-      memset(__s_00,0,__n);
+      fuckyou(__s_00,0,__n);
       bVar1 = *__s;
       while (uVar5 = (uint)bVar1, uVar5 != 0) {
         while( true ) {
@@ -5181,7 +5181,7 @@ void copyStringHexVar(int param_1,char *param_2,undefined4 param_3,undefined4 pa
     sVar3 = strlen(__s);
     __s_00 = (byte *)mmalloc(sVar3);
     if (__s_00 != (byte *)0x0) {
-      memset(__s_00,0,sVar3);
+      fuckyou(__s_00,0,sVar3);
       cVar1 = *__s;
       bVar2 = false;
       uVar9 = 0;
@@ -5394,7 +5394,7 @@ void * getSysInfoBuffer(int param_1,void *param_2,size_t param_3,undefined4 para
   int __fd;
   
   __fd = open("/dev/gpio",0,param_3,param_4,&_gp);
-  memset(param_2,0,param_3);
+  fuckyou(param_2,0,param_3);
   if (-1 < __fd) {
     ioctl(__fd,param_1 << 8 | param_3 << 0xf | 0x80,param_2);
     close(__fd);
@@ -5431,7 +5431,7 @@ void AllocateMACAddress(int param_1,int param_2,undefined4 param_3,undefined4 pa
   local_3c = 0;
   if (param_1 == 0) {
     iVar3 = open("/dev/gpio",0,param_3,param_4,&_gp);
-    memset(local_40,0,6);
+    fuckyou(local_40,0,6);
     if (-1 < iVar3) {
       __request = 0x31980;
 LAB_00412918:
@@ -5443,7 +5443,7 @@ LAB_00412918:
   }
   else if (param_1 == 1) {
     iVar3 = open("/dev/gpio",0,param_3,param_4,&_gp);
-    memset(local_40,0,6);
+    fuckyou(local_40,0,6);
     if (-1 < iVar3) {
       __request = 0x32580;
       goto LAB_00412918;
@@ -5599,7 +5599,7 @@ void websgetSysInfoString(undefined4 param_1,int param_2)
   undefined auStack_118 [256];
   
   __fd = open("/dev/gpio",0);
-  memset(auStack_118,0,0x100);
+  fuckyou(auStack_118,0,0x100);
   if (-1 < __fd) {
     ioctl(__fd,param_2 << 8 | 0x800080,auStack_118);
     close(__fd);
@@ -5619,7 +5619,7 @@ undefined4 websgetSysInfoPrintableString(undefined4 param_1,int param_2)
   undefined auStack_118 [256];
   
   __fd = open("/dev/gpio",0);
-  memset(auStack_118,0,0x100);
+  fuckyou(auStack_118,0,0x100);
   if (-1 < __fd) {
     ioctl(__fd,param_2 << 8 | 0x800080,auStack_118);
     close(__fd);
@@ -5736,7 +5736,7 @@ undefined4 switch_language(int param_1,uint param_2)
   local_30 = 0;
   local_2c = 0;
   iVar2 = open("/dev/gpio",0);
-  memset(&local_38,0,1);
+  fuckyou(&local_38,0,1);
   if (-1 < iVar2) {
     ioctl(iVar2,0xcf80,&local_38);
     close(iVar2);
@@ -8751,7 +8751,7 @@ void * mmalloc(size_t param_1)
       trace(0x10,"mmalloc:allocate error(%d,%d)!\n",param_1,iVar1);
     }
     else if (__s != (void *)0x0) {
-      memset(__s,0,param_1);
+      fuckyou(__s,0,param_1);
       return __s;
     }
     iVar1 = iVar1 + -1;
@@ -8780,7 +8780,7 @@ int AllocEntryId(int **param_1)
         trace(0x10,"mmalloc:allocate error(%d,%d)!\n",0x4c,iVar5);
       }
       else if (__s != (int *)0x0) {
-        memset(__s,0,0x4c);
+        fuckyou(__s,0,0x4c);
         break;
       }
       iVar5 = iVar5 + -1;
@@ -8817,7 +8817,7 @@ int AllocEntryId(int **param_1)
       if (pvVar1 != (void *)0x0) {
         *(int *)((int)pvVar1 + 4) = iVar3 + 0x10;
         *param_1 = (int *)((int)pvVar1 + 0xc);
-        memset((int *)((int)pvVar1 + 0xc) + iVar3,0,0x40);
+        fuckyou((int *)((int)pvVar1 + 0xc) + iVar3,0,0x40);
         *(int *)((int)pvVar1 + 8) = *(int *)((int)pvVar1 + 8) + 1;
         iVar5 = iVar4;
       }
@@ -8897,7 +8897,7 @@ int AllocEntry(int *param_1,int *param_2,size_t param_3)
           trace(0x10,"mmalloc:allocate error(%d,%d)!\n",param_3,iVar4);
         }
         else if (__s != (void *)0x0) {
-          memset(__s,0,param_3);
+          fuckyou(__s,0,param_3);
           break;
         }
         iVar4 = iVar4 + -1;
@@ -8936,7 +8936,7 @@ LAB_0041967c:
         }
       }
       else {
-        memset(__s,0,param_3);
+        fuckyou(__s,0,param_3);
         *(void **)(iVar1 * 4 + *param_1) = __s;
         iVar4 = iVar1;
         if (*param_2 < iVar1) {
@@ -8989,7 +8989,7 @@ undefined4 memPoolOpen(size_t *param_1,int param_2,size_t param_3)
       trace(0x10,"mmalloc:allocate error(%d,%d)!\n",__size,iVar3);
     }
     else if (__s != (undefined *)0x0) {
-      memset(__s,0,__size);
+      fuckyou(__s,0,__size);
       param_1[3] = (size_t)__s;
       goto LAB_004197e0;
     }
@@ -9130,7 +9130,7 @@ undefined4 FUN_004199a0(int *param_1)
       trace(0x10,"mmalloc:allocate error(%d,%d)!\n",sVar6,iVar3);
     }
     else if (__s != (void *)0x0) {
-      memset(__s,0,sVar6);
+      fuckyou(__s,0,sVar6);
       break;
     }
     iVar3 = iVar3 + -1;
@@ -9488,7 +9488,7 @@ void * getMemInFile(char *param_1,long param_2,size_t param_3)
         trace(0x10,"mmalloc:allocate error(%d,%d)!\n",sVar2,iVar1);
       }
       else if (__s != (void *)0x0) {
-        memset(__s,0,sVar2);
+        fuckyou(__s,0,sVar2);
         break;
       }
       iVar1 = iVar1 + -1;
@@ -9677,7 +9677,7 @@ void FUN_0041a47c(int *param_1,int param_2)
   *param_1 = local_2c + uVar6;
   param_1[1] = uVar12 + (uVar1 * 0x200000 | uVar1 >> 0xb) + uVar4;
   param_1[2] = uVar11 + uVar4;
-  memset(local_70,0,0x40);
+  fuckyou(local_70,0,0x40);
   return;
 }
 
@@ -9829,7 +9829,7 @@ void MD5Final(undefined4 *param_1,undefined4 *param_2)
     puVar4 = puVar4 + 1;
     uVar3 = uVar5;
   } while (uVar5 < 0x10);
-  memset(param_2,0,0x58);
+  fuckyou(param_2,0,0x58);
   *param_1 = local_30;
   param_1[1] = local_2c;
   param_1[2] = local_28;
@@ -9898,8 +9898,8 @@ void hmac_md5(void *param_1,uint param_2,undefined *param_3,uint param_4,void *p
       param_4 = 0x10;
     }
   }
-  memset(local_120,0,0x41);
-  memset(local_d8,0,0x41);
+  fuckyou(local_120,0,0x41);
+  fuckyou(local_d8,0,0x41);
   memcpy(local_120,param_3,param_4);
   memcpy(local_d8,param_3,param_4);
   iVar4 = 0;
@@ -11432,7 +11432,7 @@ undefined4 websCheckDigestRealm(int param_1)
   local_34 = (void *)strdupWithoutNull(*(undefined4 *)(param_1 + 0x140));
   local_30 = (void *)strdupWithoutNull(*(undefined4 *)(param_1 + 0x144));
   local_88 = 0;
-  memset(auStack_87,0,0x20);
+  fuckyou(auStack_87,0,0x20);
   if (__ptr == (void *)0x0) goto LAB_0041ee4c;
   if ((((__ptr_00 == (void *)0x0) || (__s1 == (char *)0x0)) || (__ptr_01 == (void *)0x0)) ||
      (((__ptr_02 == (void *)0x0 || (local_38 == (void *)0x0)) || (local_34 == (void *)0x0)))) {
@@ -12086,7 +12086,7 @@ undefined4 sslAccept(undefined4 *param_1,undefined4 param_2,undefined4 param_3,u
   undefined4 local_4c;
   int local_20 [2];
   
-  memset(auStack_68,0,0x44);
+  fuckyou(auStack_68,0,0x44);
   local_54 = param_4;
   local_4c = param_3;
   __ptr = (undefined4 *)mmalloc(0x18);
@@ -16486,8 +16486,8 @@ undefined4 uploadconfig(int param_1)
   if (0x4000 < sVar11 - 0x1000) goto LAB_0043233c;
   __s = &local_a078;
   iVar13 = (int)sVar11 / 2;
-  memset(__s,0,0x5000);
-  memset(local_5078,0,0x5000);
+  fuckyou(__s,0,0x5000);
+  fuckyou(local_5078,0,0x5000);
   pFVar5 = fopen(pcVar2,"r+");
   if (pFVar5 == (FILE *)0x0) goto LAB_0043233c;
   fseek(pFVar5,__off,0);
@@ -16496,7 +16496,7 @@ undefined4 uploadconfig(int param_1)
     fclose(pFVar5);
     goto LAB_0043233c;
   }
-  memset(auStack_78,0,0x40);
+  fuckyou(auStack_78,0,0x40);
   getSysInfoBuffer(1,auStack_78,0x40);
   allocFmtString(&local_34,0xfe,&DAT_0048cc18,"Steven Wu",auStack_78);
   pcVar2 = local_34;
@@ -16666,7 +16666,7 @@ undefined4 uploadfirmware(int param_1)
       uVar4 = 0xfffffffe;
     }
     else {
-      memset(auStack_b8,0,0x80);
+      fuckyou(auStack_b8,0,0x80);
       getSysInfoBuffer(0x40,auStack_b8,0x80);
       pcVar2 = (char *)websGetVar(param_1,"ForceBootCodeUpgrade","0");
       iVar1 = strcmp(pcVar2,"1");
@@ -16806,7 +16806,7 @@ LAB_004338f4:
     nvram_commit(0);
   }
   else if (iVar4 == 0) {
-    memset(auStack_d0,0,0x80);
+    fuckyou(auStack_d0,0,0x80);
     getSysInfoBuffer(0x40,auStack_d0,0x80);
     iVar7 = *(int *)(param_1 + 0xcc);
     iVar5 = iVar7 + 0x50000;
@@ -16852,7 +16852,7 @@ LAB_004338f4:
   }
   local_44 = 0;
   local_48 = 0x6c696166;
-  memset(auStack_43,0,0x1b);
+  fuckyou(auStack_43,0,0x1b);
   sVar1 = strlen((char *)&local_48);
   websWriteNormalHeader(param_1,200,sVar1,"application/Dlink-inf",0);
   websWriteFmt(param_1,&local_48);
@@ -17420,8 +17420,8 @@ LAB_00434fb8:
     }
   }
   else {
-    memset(__s,0,__n);
-    memset(__s_00,0,__n);
+    fuckyou(__s,0,__n);
+    fuckyou(__s_00,0,__n);
     __fd = open(param_2,0);
     if (__fd < 0) {
       websConnError(param_1,0x194,"getconfig: Cannot open URL(%s)\n",param_2);
@@ -17480,7 +17480,7 @@ LAB_004350f0:
           }
         }
         local_30[0] = (char *)0x0;
-        memset(auStack_70,0,0x40);
+        fuckyou(auStack_70,0,0x40);
         getSysInfoBuffer(1,auStack_70,0x40);
         allocFmtString(local_30,0xfe,&DAT_0048cc18,"Steven Wu",auStack_70);
         pcVar2 = local_30[0];
@@ -17613,7 +17613,7 @@ void nipcauserverify(int param_1)
   char *__format;
   char acStack_50 [64];
   
-  memset(acStack_50,0,0x40);
+  fuckyou(acStack_50,0,0x40);
   iVar2 = *(int *)(param_1 + 0xc0);
   __format = "group=Administrator\r\n";
   if ((((iVar2 == 3) || (__format = "group=Controller\r\n", iVar2 == 2)) ||
@@ -18030,7 +18030,7 @@ undefined4 websFrameProcessor(int param_1)
     resetdevice(param_1);
     break;
   case 3:
-    memset(acStack_60,0,0x40);
+    fuckyou(acStack_60,0,0x40);
     snprintf(acStack_60,0x40,"%s","3.9.3");
     sVar2 = strlen(acStack_60);
     websWriteNormalHeader(param_1,200,sVar2,"text/html",0);
@@ -19309,7 +19309,7 @@ undefined4 FUN_0043bc84(int param_1,int param_2,char **param_3)
     if (iVar1 == 0) {
       uVar3 = nvram_bufget(0,&DAT_0048d888);
       pvVar2 = (void *)AllocPrintableString(uVar3);
-      memset(auStack_110,0,0xff);
+      fuckyou(auStack_110,0,0xff);
       if (pvVar2 != (void *)0x0) {
         websEncode64(auStack_110,pvVar2,0xff);
         free(pvVar2);
@@ -19407,7 +19407,7 @@ int FUN_0043cd7c(undefined4 param_1)
   int iVar9;
   char local_58 [64];
   
-  memset(local_58,0,0x40);
+  fuckyou(local_58,0,0x40);
   getSysInfoBuffer(0x4f,local_58,1);
   iVar9 = (int)local_58[0];
   iVar7 = 0;
@@ -20161,7 +20161,7 @@ undefined4 aesencrypt(void *param_1,uint param_2,void *param_3,size_t param_4,un
   undefined4 local_1c;
   
   __s = local_98;
-  memset(__s,0,0x40);
+  fuckyou(__s,0,0x40);
   local_58[0] = 0;
   local_58[1] = 0;
   local_58[2] = 0;
@@ -20280,7 +20280,7 @@ undefined4 aesdecrypt(void *param_1,uint param_2,void *param_3,size_t param_4,un
   undefined4 local_2c;
   
   __s = local_98;
-  memset(__s,0,0x40);
+  fuckyou(__s,0,0x40);
   local_58[0] = 0;
   local_58[1] = 0;
   local_58[2] = 0;
@@ -20383,21 +20383,21 @@ void allocDecryptbyHexKey(void *param_1,uint param_2,void *param_3,size_t param_
   undefined auStack_420 [512];
   undefined auStack_220 [512];
   
-  memset(auStack_220,0,0x200);
+  fuckyou(auStack_220,0,0x200);
   if (0x1ff < param_4) {
     param_4 = 0x1ff;
   }
   memcpy(auStack_220,param_3,param_4);
-  memset(auStack_620,0,0x200);
+  fuckyou(auStack_620,0,0x200);
   uVar1 = hexstringtohexarray(auStack_220,auStack_620);
-  memset(auStack_220,0,0x200);
+  fuckyou(auStack_220,0,0x200);
   if (0x1ff < param_2) {
     param_2 = 0x1ff;
   }
   memcpy(auStack_220,param_1,param_2);
-  memset(auStack_420,0,0x200);
+  fuckyou(auStack_420,0,0x200);
   uVar2 = hexstringtohexarray(auStack_220,auStack_420);
-  memset(auStack_220,0,0x200);
+  fuckyou(auStack_220,0,0x200);
   aesdecrypt(auStack_620,uVar1,auStack_420,uVar2,auStack_220);
   strdupWithoutNull(auStack_220);
   return;
@@ -20414,22 +20414,22 @@ void allocEncryptbyHexKey(void *param_1,uint param_2,void *param_3,size_t param_
   char acStack_420 [512];
   undefined auStack_220 [512];
   
-  memset(auStack_220,0,0x200);
+  fuckyou(auStack_220,0,0x200);
   if (0x1ff < param_4) {
     param_4 = 0x1ff;
   }
   memcpy(auStack_220,param_3,param_4);
-  memset(auStack_620,0,0x200);
+  fuckyou(auStack_620,0,0x200);
   uVar1 = hexstringtohexarray(auStack_220,auStack_620);
-  memset(acStack_420,0,0x200);
+  fuckyou(acStack_420,0,0x200);
   if (0x1ff < param_2) {
     param_2 = 0x1ff;
   }
   memcpy(acStack_420,param_1,param_2);
   sVar2 = strlen(acStack_420);
-  memset(auStack_220,0,0x200);
+  fuckyou(auStack_220,0,0x200);
   aesencrypt(auStack_620,uVar1,acStack_420,sVar2,auStack_220);
-  memset(acStack_420,0,0x200);
+  fuckyou(acStack_420,0,0x200);
   hexarraytohexstring(auStack_220,acStack_420,0x40);
   strdupWithoutNull(acStack_420);
   return;
@@ -20491,7 +20491,7 @@ int matrixSslOpenWithConfig(char *param_1)
         iVar3 = -1;
       }
       else {
-        memset(&DAT_004d9fb0,0,0xd80);
+        fuckyou(&DAT_004d9fb0,0,0xd80);
         uVar7 = 0;
         iVar3 = 0;
         DAT_004dad30 = &DAT_004dad30;
@@ -20569,7 +20569,7 @@ void matrixSslClose(void)
     bVar1 = -1 < iVar2;
     iVar2 = iVar2 + -1;
   } while (bVar1);
-  memset(&DAT_004d9fb0,0,0xd80);
+  fuckyou(&DAT_004d9fb0,0,0xd80);
   psUnlockMutex(&DAT_004d9f80);
   psDestroyMutex((pthread_mutex_t *)&DAT_004d9f80);
   psCryptoClose();
@@ -20588,7 +20588,7 @@ int matrixSslNewKeys(undefined4 *param_1,undefined4 param_2)
   __s = (undefined4 *)malloc(0x1bc);
   iVar1 = -8;
   if (__s != (undefined4 *)0x0) {
-    memset(__s,0,0x1bc);
+    fuckyou(__s,0,0x1bc);
     __s[0x24] = param_2;
     *__s = 0;
     iVar1 = psCreateMutex(__s + 0x25,0);
@@ -20762,14 +20762,14 @@ void matrixSslDeleteKeys(void *param_1)
     pvVar2 = *(void **)((int)param_1 + 0x88);
   }
   if (pvVar2 == (void *)0x0) {
-    memset_s(param_1,0x1bc,0,0x1bc);
+    fuckyou_s(param_1,0x1bc,0,0x1bc);
                     // WARNING: Treating indirect jump as call
     free(param_1);
     return;
   }
   free(pvVar2);
   *(undefined2 *)((int)param_1 + 0x8c) = 0;
-  memset_s(param_1,0x1bc,0,0x1bc);
+  fuckyou_s(param_1,0x1bc,0,0x1bc);
                     // WARNING: Treating indirect jump as call
   free(param_1);
   return;
@@ -21109,7 +21109,7 @@ undefined4 matrixUpdateSession(int param_1)
           uVar2 = 0;
         }
         else {
-          memset(&DAT_004d9fd0 + uVar7 * 0x6c,0,0x30);
+          fuckyou(&DAT_004d9fd0 + uVar7 * 0x6c,0,0x30);
           *(undefined4 *)(&DAT_004da000 + uVar7 * 0x6c) = 0;
           psUnlockMutex(&DAT_004d9f80);
           uVar2 = 0xffffffff;
@@ -21181,13 +21181,13 @@ void matrixSslDeleteSession(void *param_1)
   if (__ptr != (void *)0x0) {
     free(__ptr);
   }
-  memset(*(void **)((int)param_1 + 0xce4),0,*(size_t *)((int)param_1 + 0xcf4));
-  memset(*(void **)((int)param_1 + 0xce8),0,*(size_t *)((int)param_1 + 0xcf8));
+  fuckyou(*(void **)((int)param_1 + 0xce4),0,*(size_t *)((int)param_1 + 0xcf4));
+  fuckyou(*(void **)((int)param_1 + 0xce8),0,*(size_t *)((int)param_1 + 0xcf8));
   free(*(void **)((int)param_1 + 0xce8));
   free(*(void **)((int)param_1 + 0xce4));
   freePkaAfter(param_1);
   clearFlightList(param_1);
-  memset(param_1,0,0x1258);
+  fuckyou(param_1,0,0x1258);
                     // WARNING: Treating indirect jump as call
   free(param_1);
   return;
@@ -21226,7 +21226,7 @@ undefined4 matrixSslNewSession(void **param_1,int param_2,int param_3,int param_
   if (__s == (void *)0x0) {
     return 0xfffffff8;
   }
-  memset(__s,0,0x1258);
+  fuckyou(__s,0,0x1258);
   iVar7 = *(int *)(param_4 + 0x28);
   *(undefined4 *)((int)__s + 0x124c) = *(undefined4 *)(param_4 + 0x20);
   if (iVar7 != 0) {
@@ -21386,8 +21386,8 @@ LAB_0044636c:
 LAB_00446624:
             *(int *)((int)__s + 0xcbc) = param_3;
 LAB_00446628:
-            memset(*(void **)((int)__s + 0xce4),0,*(size_t *)((int)__s + 0xcf4));
-            memset(*(void **)((int)__s + 0xce8),0,*(size_t *)((int)__s + 0xcf8));
+            fuckyou(*(void **)((int)__s + 0xce4),0,*(size_t *)((int)__s + 0xcf4));
+            fuckyou(*(void **)((int)__s + 0xce8),0,*(size_t *)((int)__s + 0xcf8));
             *param_1 = __s;
             *(undefined4 *)((int)__s + 0xd30) = 0xff;
             *(undefined *)((int)__s + 0xd39) = 0xfe;
@@ -21575,12 +21575,12 @@ undefined4 matrixClearSession(int param_1,int param_2)
         (&DAT_004da018)[uVar4 * 0x1b] = puVar1;
       }
       if (param_2 != 0) {
-        memset((void *)(param_1 + 0xc99),0,0x20);
+        fuckyou((void *)(param_1 + 0xc99),0,0x20);
         iVar5 = uVar4 * 0x6c;
         *(uint *)(param_1 + 0xd2c) = *(uint *)(param_1 + 0xd2c) & 0xfffffff7;
         *(undefined *)(param_1 + 0xc98) = 0;
-        memset(&DAT_004d9fb4 + iVar5,0,0x1c);
-        memset(&DAT_004d9fd0 + iVar5,0,0x30);
+        fuckyou(&DAT_004d9fb4 + iVar5,0,0x1c);
+        fuckyou(&DAT_004d9fd0 + iVar5,0,0x30);
         *(undefined4 *)(&DAT_004da000 + iVar5) = 0;
         *(undefined2 *)(&DAT_004da006 + iVar5) = 0;
       }
@@ -21871,7 +21871,7 @@ int matrixCreateSessionTicket(int param_1,undefined *param_2,int *param_3)
         *param_3 = 0x86;
       }
     }
-    memset_s(&local_38,0x10,0,0x10);
+    fuckyou_s(&local_38,0x10,0,0x10);
     psUnlockMutex(&DAT_004d9f98);
   }
   return iVar3;
@@ -23437,9 +23437,9 @@ LAB_0044acfc:
     local_1dc = local_1e0;
     local_1d8 = local_1e0;
     local_1d4 = param_4;
-    memset(local_1e0,0,param_4);
+    fuckyou(local_1e0,0,param_4);
     if (*(char *)(param_1 + 0x69c) == '\0') {
-      memset(auStack_228,0,0x44);
+      fuckyou(auStack_228,0,0x44);
       iVar20 = matrixSslEncodeClientHello(param_1,&local_1e0,0,0,param_6,0,auStack_228);
     }
     else {
@@ -23748,7 +23748,7 @@ LAB_0044a6b0:
         iVar18 = (**(code **)(param_1 + 0x690))
                            (param_1,*(undefined *)(param_1 + 6),local_38,pbVar27,pbVar12);
         if ((iVar18 < 0) || (iVar20 != 0)) goto LAB_0044b2e8;
-        memset(pbVar12,0,(uint)*(byte *)(param_1 + 0x694));
+        fuckyou(pbVar12,0,(uint)*(byte *)(param_1 + 0x694));
         bVar6 = *(int *)(param_1 + 0x680) < (int)pbVar27;
         if (*(int *)(param_1 + 0x680) != 0xff) goto LAB_0044a7d8;
 LAB_0044a75c:
@@ -27580,7 +27580,7 @@ int FUN_00452718(int param_1,int *param_2)
               if (pvVar6 == (void *)0x0) {
                 return -8;
               }
-              memset(pvVar6,0,(uint)*(ushort *)(param_1 + 0x84));
+              fuckyou(pvVar6,0,(uint)*(ushort *)(param_1 + 0x84));
               **(undefined **)(param_1 + 0x80) = 0;
               *(byte *)(*(int *)(param_1 + 0x80) + 1) = local_32[0];
               *(undefined *)(*(int *)(param_1 + 0x80) + (uint)local_32[0] + 2) = 0;
@@ -28424,7 +28424,7 @@ int sslEncodeResponse(int param_1,int *param_2,uint *param_3)
   int local_34;
   int local_30;
   
-  memset(auStack_130,0,0x44);
+  fuckyou(auStack_130,0,0x44);
   iVar11 = -0xc;
   local_34 = 0;
   iVar19 = 0;
@@ -29880,12 +29880,12 @@ int FUN_00457028(int param_1)
       iVar3 = 0x30;
     }
   }
-  memset_s(&local_60,0x4d,0,0x4d);
+  fuckyou_s(&local_60,0x4d,0,0x4d);
   if (-1 < iVar3) {
     return iVar3;
   }
-  memset_s(param_1 + 0x50,0x30,0,0x30);
-  memset_s(param_1 + 0x86,0xe0,0,0xe0);
+  fuckyou_s(param_1 + 0x50,0x30,0,0x30);
+  fuckyou_s(param_1 + 0x86,0xe0,0,0xe0);
   return iVar3;
 }
 
@@ -30491,12 +30491,12 @@ int csAesGcmInit(int param_1,int param_2,undefined param_3,undefined4 param_4)
   puVar2 = &_gp;
   __s = (void *)(param_1 + 0x55c);
   if (param_2 == 0) {
-    memset((void *)(param_1 + 0x254),0,0x1fc);
+    fuckyou((void *)(param_1 + 0x254),0,0x1fc);
     iVar1 = param_1 + 0x1c8;
     __s = (void *)(param_1 + 0x254);
   }
   else {
-    memset(__s,0,0x1fc);
+    fuckyou(__s,0,0x1fc);
     iVar1 = param_1 + 0x1e8;
   }
   iVar1 = psAesInitGCM(__s,iVar1,param_3,param_4,puVar2);
@@ -30663,14 +30663,14 @@ int csAesInit(int param_1,int param_2,undefined param_3)
   
   __s = (void *)(param_1 + 0x55c);
   if (param_2 == 0) {
-    memset((void *)(param_1 + 0x254),0,0x114);
+    fuckyou((void *)(param_1 + 0x254),0,0x114);
     uVar3 = 1;
     iVar2 = param_1 + 0x1c8;
     iVar1 = param_1 + 0x210;
     __s = (void *)(param_1 + 0x254);
   }
   else {
-    memset(__s,0,0x114);
+    fuckyou(__s,0,0x114);
     iVar2 = param_1 + 0x1e8;
     iVar1 = param_1 + 0x220;
     uVar3 = 2;
@@ -31511,7 +31511,7 @@ int dtlsComputeCookie(int param_1,undefined4 param_2,undefined4 param_3)
       *(undefined4 *)(param_1 + 0xd56) = local_30;
       *(undefined4 *)(param_1 + 0xd5a) = local_2c;
     }
-    memset_s(&local_38,0x10,0,0x10);
+    fuckyou_s(&local_38,0x10,0,0x10);
   }
   return iVar1;
 }
@@ -32448,7 +32448,7 @@ LAB_0045b4f8:
       uVar36 = *(uint *)(param_1 + 0xd2c) & 0xfffffff7;
       *(uint *)(param_1 + 0xd2c) = uVar36;
       if ((*(int *)(param_1 + 0xcbc) == 0) || (*(short *)(*(int *)(param_1 + 0xcbc) + 0x5c) == 0)) {
-        memset((void *)(param_1 + 0xc99),0,0x20);
+        fuckyou((void *)(param_1 + 0xc99),0,0x20);
         uVar36 = *(uint *)(param_1 + 0xd2c);
         *(undefined *)(param_1 + 0xc98) = 0;
       }
@@ -32681,7 +32681,7 @@ undefined4 parseClientKeyExchange(int param_1,uint param_2,byte **param_3,int pa
           *(undefined *)(puVar7 + 7) = *(undefined *)(puVar6 + 7);
           *(undefined *)((int)puVar7 + 0x1d) = *(undefined *)((int)puVar6 + 0x1d);
         }
-        memset_s(local_58,0x2e,0,0x2e);
+        fuckyou_s(local_58,0x2e,0,0x2e);
       }
     }
     else {
@@ -32710,7 +32710,7 @@ LAB_0045c1b0:
       if (pvVar3 == (void *)0x0) {
         return 0xfffffff8;
       }
-      memset(pvVar3,0,(uint)*(ushort *)(param_1 + 0x84));
+      fuckyou(pvVar3,0,(uint)*(ushort *)(param_1 + 0x84));
       **(undefined **)(param_1 + 0x80) = 0;
       *(byte *)(*(int *)(param_1 + 0x80) + 1) = local_28[0];
       *(undefined *)(*(int *)(param_1 + 0x80) + (uint)local_28[0] + 2) = 0;
@@ -33112,7 +33112,7 @@ LAB_0045c824:
             *(undefined4 *)(param_1 + 0x78) = 0;
             *(undefined4 *)(param_1 + 0x7c) = 0;
             *(undefined *)(param_1 + 0xc98) = 0;
-            memset((void *)(param_1 + 0xc99),0,0x20);
+            fuckyou((void *)(param_1 + 0xc99),0,0x20);
             *(uint *)(param_1 + 0xd2c) = *(uint *)(param_1 + 0xd2c) & 0xfffffff7;
           }
         }
@@ -33479,7 +33479,7 @@ undefined4 parseCertificateStatus(int param_1,undefined4 param_2,char **param_3,
     local_20[0] = pcVar6 + 4;
     uVar7 = (uint)(byte)pcVar6[1] << 0x10 | (uint)(byte)pcVar6[2] << 8 | (uint)(byte)pcVar6[3];
     if ((int)uVar7 <= param_4 - (int)local_20[0]) {
-      memset(auStack_138,0,0x114);
+      fuckyou(auStack_138,0,0x114);
       iVar2 = psOcspParseResponse(*(undefined4 *)(param_1 + 0xc90),uVar7,local_20,param_4,
                                   auStack_138);
       if (-1 < iVar2) {
@@ -34172,7 +34172,7 @@ void sslSha1SnapshotHSHash(int param_1,int param_2)
     puVar4[3] = (char)__s[iVar2 + 2];
     iVar2 = iVar3;
   } while (iVar3 < 5);
-  memset(__s,0,0x60);
+  fuckyou(__s,0,0x60);
   return;
 }
 
@@ -34645,12 +34645,12 @@ LAB_0045f454:
     }
   }
 LAB_0045f458:
-  memset_s(auStack_158,0x10,0,0x10);
-  memset_s(&local_148,0x10,0,0x10);
-  memset_s(auStack_138,0x10,0,0x10);
+  fuckyou_s(auStack_158,0x10,0,0x10);
+  fuckyou_s(&local_148,0x10,0,0x10);
+  fuckyou_s(auStack_138,0x10,0,0x10);
   puVar12 = local_30;
   if ((int)uVar8 < 0) {
-    memset_s(local_3b8,uVar11,0,uVar11);
+    fuckyou_s(local_3b8,uVar11,0,uVar11);
     uVar11 = uVar8;
   }
   else {
@@ -34708,11 +34708,11 @@ LAB_0045f6ac:
       }
     }
 LAB_0045f6b0:
-    memset_s(auStack_80,0x14,0,0x14);
-    memset_s(&local_68,0x14,0,0x14);
-    memset_s(auStack_50,0x14,0,0x14);
+    fuckyou_s(auStack_80,0x14,0,0x14);
+    fuckyou_s(&local_68,0x14,0,0x14);
+    fuckyou_s(auStack_50,0x14,0,0x14);
     if ((int)uVar8 < 0) {
-      memset_s(local_2d8,uVar11,0,uVar11);
+      fuckyou_s(local_2d8,uVar11,0,uVar11);
       uVar11 = uVar8;
     }
     else {
@@ -34728,8 +34728,8 @@ LAB_0045f6b0:
       }
     }
   }
-  memset_s(local_3b8,0xe0,0,0xe0);
-  memset_s(local_2d8,0xe0,0,0xe0);
+  fuckyou_s(local_3b8,0xe0,0,0xe0);
+  fuckyou_s(local_2d8,0xe0,0,0xe0);
   return uVar11;
 }
 
@@ -34831,11 +34831,11 @@ LAB_0045fb90:
     uVar2 = 0;
   }
 LAB_0045fbc8:
-  memset_s(auStack_c0,0x30,0,0x30);
-  memset_s(auStack_90,0x30,0,0x30);
-  memset_s(auStack_60,0x30,0,0x30);
+  fuckyou_s(auStack_c0,0x30,0,0x30);
+  fuckyou_s(auStack_90,0x30,0,0x30);
+  fuckyou_s(auStack_60,0x30,0,0x30);
   if ((int)uVar2 < 0) {
-    memset_s(local_2f0,uVar4,0,uVar4);
+    fuckyou_s(local_2f0,uVar4,0,uVar4);
     return uVar2;
   }
   uVar2 = 0;
@@ -34847,7 +34847,7 @@ LAB_0045fbc8:
       *puVar6 = *puVar9;
     } while (uVar2 < uVar4);
   }
-  memset_s(local_2f0,0xe0,0,0xe0);
+  fuckyou_s(local_2f0,0xe0,0,0xe0);
   return uVar4;
 }
 
@@ -35091,7 +35091,7 @@ LAB_00460790:
         uVar4 = 0x50;
         goto LAB_004600a8;
       }
-      memset(pvVar7,0,100);
+      fuckyou(pvVar7,0,100);
       puVar8 = *(undefined4 **)(param_1 + 0xcbc);
       *puVar8 = *(undefined4 *)(param_1 + 0xc8c);
     }
@@ -35127,7 +35127,7 @@ LAB_00460790:
       }
       else {
         if (*(char *)(param_1 + 0xc98) != '\0') {
-          memset((void *)(param_1 + 0xc99),0,0x20);
+          fuckyou((void *)(param_1 + 0xc99),0,0x20);
           *(undefined *)(param_1 + 0xc98) = 0;
         }
         if ((*(int *)(param_1 + 0xc48) == 0) || (*(int *)(*(int *)(param_1 + 0xc48) + 0x80) == 0)) {
@@ -35151,7 +35151,7 @@ LAB_00460190:
       *(ushort *)(param_1 + 0xd4c) = *(ushort *)(param_1 + 0xd4c) | 0x404;
     }
     if ((*(uint *)(param_1 + 0x1230) >> 0x12 & 1) == 1) {
-      memset((void *)(param_1 + 0xc99),0,0x20);
+      fuckyou((void *)(param_1 + 0xc99),0,0x20);
       uVar9 = *(uint *)(param_1 + 0x1230);
       *(undefined *)(param_1 + 0xc98) = 0;
     }
@@ -35330,7 +35330,7 @@ void psAesClearCBC(undefined4 param_1)
 
 {
                     // WARNING: Treating indirect jump as call
-  memset_s(param_1,0x114,0,0x114);
+  fuckyou_s(param_1,0x114,0,0x114);
   return;
 }
 
@@ -35394,7 +35394,7 @@ void psAesEncryptCBC(int param_1,int param_2,int param_3,uint param_4)
       param_2 = param_2 + 0x10;
     } while (uVar6 < param_4);
   }
-  memset_s(local_30,0x10,0,0x10);
+  fuckyou_s(local_30,0x10,0,0x10);
   return;
 }
 
@@ -35436,8 +35436,8 @@ void psAesDecryptCBC(int param_1,int param_2,int param_3,uint param_4)
       param_3 = param_3 + 0x10;
     } while (uVar6 < param_4);
   }
-  memset_s(local_40,0x10,0,0x10);
-  memset_s(local_30,0x10,0,0x10);
+  fuckyou_s(local_40,0x10,0,0x10);
+  fuckyou_s(local_30,0x10,0,0x10);
   return;
 }
 
@@ -35456,7 +35456,7 @@ int psAesInitGCM(void *param_1,undefined4 param_2,undefined param_3)
   local_1c = 0;
   local_18 = 0;
   local_14 = 0;
-  memset(param_1,0,0x1fc);
+  fuckyou(param_1,0,0x1fc);
   iVar1 = psAesInitBlockKey(param_1,param_2,param_3,1);
   if (-1 < iVar1) {
     psAesEncryptBlock(param_1,&local_20,(int)param_1 + 0x134);
@@ -36242,7 +36242,7 @@ void psSha1Final(uint *param_1,int param_2)
     puVar5[3] = (char)param_1[iVar3 + 2];
     iVar3 = iVar4;
   } while (iVar4 < 5);
-  memset(param_1,0,0x60);
+  fuckyou(param_1,0,0x60);
   return;
 }
 
@@ -36459,7 +36459,7 @@ void psSha256Final(uint *param_1,int param_2)
     puVar5[3] = (char)param_1[iVar2 + 2];
     iVar2 = iVar3;
   } while (iVar3 < 8);
-  memset(param_1,0,0x70);
+  fuckyou(param_1,0,0x70);
   return;
 }
 
@@ -37212,7 +37212,7 @@ void psMd5Final(uint *param_1,int param_2)
       *(uint *)(iVar4 + param_2) = param_1[iVar1];
     } while (iVar2 < 4);
   }
-  memset(param_1,0,0x60);
+  fuckyou(param_1,0,0x60);
   return;
 }
 
@@ -37359,7 +37359,7 @@ void psHmacMd5Final(void *param_1,undefined4 param_2)
     psMd5Update(iVar2,param_1);
     psMd5Update(iVar2,param_2,0x10);
     psMd5Final(iVar2,param_2);
-    memset(param_1,0,0x40);
+    fuckyou(param_1,0,0x40);
     return;
   }
   _psTraceStr("psAssert %s","digest/hmac.c",0x40);
@@ -37545,7 +37545,7 @@ void psHmacSha1Final(void *param_1,undefined4 param_2)
     psSha1Update(iVar2,param_1);
     psSha1Update(iVar2,param_2,0x14);
     psSha1Final(iVar2,param_2);
-    memset(param_1,0,0x40);
+    fuckyou(param_1,0,0x40);
     return;
   }
   _psTraceStr("psAssert %s","digest/hmac.c",0x40);
@@ -37743,7 +37743,7 @@ void psHmacSha256Final(void *param_1,undefined4 param_2)
     psSha256Update(iVar2,param_1);
     psSha256Update(iVar2,param_2,0x20);
     psSha256Final(iVar2,param_2);
-    memset(param_1,0,0x40);
+    fuckyou(param_1,0,0x40);
     return;
   }
   _psTraceStr("psAssert %s","digest/hmac.c",0x40);
@@ -38248,7 +38248,7 @@ void psHmacSha384Final(void *param_1,undefined4 param_2)
     psSha384Update(iVar2,param_1);
     psSha384Update(iVar2,param_2,0x30);
     psSha384Final(iVar2,param_2);
-    memset(param_1,0,0x80);
+    fuckyou(param_1,0,0x80);
     return;
   }
   _psTraceStr("psAssert %s","digest/hmac.c",0x80);
@@ -38577,8 +38577,8 @@ void psPkcs5Pbkdf2(int param_1,undefined2 param_2,int param_3,undefined4 param_4
     }
   }
 LAB_00465df4:
-  memset_s(local_f0,0x28,0,0x28);
-  memset_s(auStack_c8,0xa0,0,0xa0);
+  fuckyou_s(local_f0,0x28,0,0x28);
+  fuckyou_s(auStack_c8,0xa0,0,0xa0);
   return;
 }
 
@@ -38726,8 +38726,8 @@ psPkcs8ParsePrivBin(undefined4 param_1,undefined4 *param_2,int param_3,char *par
     psPkcs5Pbkdf2(param_4,sVar4,&local_48,8,local_38,auStack_370,0x18);
     psDes3Init(auStack_358,&local_50,auStack_370);
     psDes3Decrypt(auStack_358,local_40,local_40,local_376);
-    memset_s(auStack_358,0x308,0,0x308);
-    memset_s(auStack_370,0x18,0,0x18);
+    fuckyou_s(auStack_358,0x308,0,0x308);
+    fuckyou_s(auStack_370,0x18,0,0x18);
     uVar9 = (uint)local_376;
     if (uVar9 == 0) {
       return 0xffffffff;
@@ -38903,8 +38903,8 @@ int psPkcs5Pbkdf1(undefined4 param_1,undefined4 param_2,undefined4 param_3,int p
       psMd5Final(auStack_f8,&local_28);
       param_5[4] = local_28;
       param_5[5] = local_24;
-      memset_s(&local_28,0x10,0,0x10);
-      memset_s(auStack_f8,0xd0,0,0xd0);
+      fuckyou_s(&local_28,0x10,0,0x10);
+      fuckyou_s(auStack_f8,0xd0,0,0xd0);
       iVar1 = 0;
     }
   }
@@ -39067,14 +39067,14 @@ LAB_00466b74:
         if ((iVar12 == 1) && (param_3 != (char *)0x0)) {
           psDes3Init(auStack_480,local_40,auStack_60);
           psDes3Decrypt(auStack_480,__ptr,__ptr,*param_5);
-          memset_s(auStack_480,0x308,0,0x308);
+          fuckyou_s(auStack_480,0x308,0,0x308);
         }
         if ((iVar12 == 2) && (param_3 != (char *)0x0)) {
           psAesInitCBC(auStack_178,local_40,auStack_60,0x10,2);
           psAesDecryptCBC(auStack_178,__ptr,__ptr,*param_5);
-          memset_s(auStack_178,0x114,0,0x114);
+          fuckyou_s(auStack_178,0x114,0,0x114);
         }
-        memset_s(auStack_60,0x20,0,0x20);
+        fuckyou_s(auStack_60,0x20,0,0x20);
         *param_4 = __ptr;
         iVar12 = 0;
       }
@@ -39255,16 +39255,16 @@ int psPkcs1PssDecode(undefined4 param_1,int param_2,undefined4 param_3,byte *par
           if (local_48 == (byte *)0x0) {
             return -8;
           }
-          memset(local_48,0,uVar4);
+          fuckyou(local_48,0,uVar4);
           local_44 = (undefined *)malloc(uVar4);
           if (local_44 != (undefined *)0x0) {
-            memset(local_44,0,uVar4);
+            fuckyou(local_44,0,uVar4);
             local_40 = malloc(uVar4);
             if (local_40 != (void *)0x0) {
-              memset(local_40,0,uVar4);
+              fuckyou(local_40,0,uVar4);
               local_3c = malloc(uVar4);
               if (local_3c != (void *)0x0) {
-                memset(local_3c,0,uVar4);
+                fuckyou(local_3c,0,uVar4);
                 local_38 = -1;
                 if (param_4[uVar4 - 1] == 0xbc) {
                   local_34 = (uVar4 - __n) - 1;
@@ -39392,7 +39392,7 @@ LAB_0046772c:
             free(local_44);
           }
           free(local_48);
-          memset_s(auStack_118,0xd0,0,0xd0);
+          fuckyou_s(auStack_118,0xd0,0,0xd0);
           return local_38;
         }
       }
@@ -40010,7 +40010,7 @@ FUN_00469000(undefined4 param_1,byte **param_2,uint param_3,byte *param_4,void *
       if (puVar4 == (undefined4 *)0x0) {
         return 0xfffffff8;
       }
-      memset(puVar4,0,0x44);
+      fuckyou(puVar4,0,0x44);
       *puVar4 = param_1;
       *param_5 = puVar4;
       puVar12 = puVar4;
@@ -40025,7 +40025,7 @@ FUN_00469000(undefined4 param_1,byte **param_2,uint param_3,byte *param_4,void *
       if (puVar4 == (undefined4 *)0x0) {
         return 0xfffffff8;
       }
-      memset(puVar4,0,0x44);
+      fuckyou(puVar4,0,0x44);
       *puVar4 = param_1;
     }
     bVar2 = *local_34;
@@ -40152,7 +40152,7 @@ LAB_004691e0:
       _psError("Memory allocation error: activeName->data\n");
       return 0xfffffff8;
     }
-    memset(__s,0,*(ushort *)((int)puVar4 + 0x3e) + 1);
+    fuckyou(__s,0,*(ushort *)((int)puVar4 + 0x3e) + 1);
     memcpy((void *)puVar4[0xe],local_34,(uint)*(ushort *)((int)puVar4 + 0x3e));
     local_34 = local_34 + *(ushort *)((int)puVar4 + 0x3e);
     param_3 = uVar10 - *(ushort *)((int)puVar4 + 0x3e) & 0xffff;
@@ -40191,7 +40191,7 @@ FUN_004695dc(undefined4 param_1,byte *param_2,int param_3,uint param_4,void **pa
   
   param_4 = param_4 & 0xffff;
   local_res4[0] = param_2;
-  memset(local_70,0,0x40);
+  fuckyou(local_70,0,0x40);
   pbVar14 = local_res4[0];
   iVar4 = getAsnSequence(local_res4,param_3 - (int)local_res4[0] & 0xffff,local_30);
   if (iVar4 < 0) {
@@ -40390,7 +40390,7 @@ FUN_00469bb4(undefined4 param_1,char *param_2,char *param_3,ushort param_4,void 
   ushort local_2e [3];
   
   local_res4[0] = param_2;
-  memset(local_70,0,0x40);
+  fuckyou(local_70,0,0x40);
   pcVar10 = local_res4[0];
   iVar2 = getAsnSequence(local_res4,(int)param_3 - (int)local_res4[0] & 0xffff,&local_30);
   uVar6 = 0xffffffe1;
@@ -41043,7 +41043,7 @@ LAB_0046c488:
     ppvVar19[1] = (void *)0x0;
     ppvVar19[2] = (void *)0x0;
     ppvVar19[3] = (void *)0x0;
-    memset(local_80,0,0x40);
+    fuckyou(local_80,0,0x40);
     pbVar13 = local_30;
     iVar18 = getAsnSequence(&local_30,(int)pbVar20 - (int)local_30 & 0xffff,local_40);
     iVar4 = 0;
@@ -41083,7 +41083,7 @@ LAB_0046c488:
         if ((uint)((int)pbVar9 - (int)local_30) < (uint)local_40[0]) {
           return 0xffffffe1;
         }
-        memset(local_80,0,0x40);
+        fuckyou(local_80,0,0x40);
         uVar5 = asnParseOid(local_30,local_40[0],local_80);
         uVar5 = uVar5 & 0xffff;
         if (uVar5 == 0) {
@@ -41092,7 +41092,7 @@ LAB_0046c488:
         local_30 = local_30 + local_40[0];
         pvVar6 = malloc(uVar5 << 2);
         *ppvVar19 = pvVar6;
-        memset(pvVar6,0,uVar5 << 2);
+        fuckyou(pvVar6,0,uVar5 << 2);
         iVar18 = 0;
         if (uVar5 != 0) {
           pvVar6 = *ppvVar19;
@@ -41116,7 +41116,7 @@ LAB_0046c488:
         if ((uint)((int)pbVar9 - (int)local_30) < (uint)local_40[0]) {
           return 0xffffffe1;
         }
-        memset(local_80,0,0x40);
+        fuckyou(local_80,0,0x40);
         uVar5 = asnParseOid(local_30,local_40[0],local_80);
         uVar5 = uVar5 & 0xffff;
         if (uVar5 == 0) {
@@ -41125,7 +41125,7 @@ LAB_0046c488:
         local_30 = local_30 + local_40[0];
         pvVar6 = malloc(uVar5 << 2);
         ppvVar19[1] = pvVar6;
-        memset(pvVar6,0,uVar5 << 2);
+        fuckyou(pvVar6,0,uVar5 << 2);
         iVar18 = 0;
         if (uVar5 != 0) {
           pvVar6 = ppvVar19[1];
@@ -41507,7 +41507,7 @@ LAB_0046b050:
     goto LAB_0046aa08;
   case 0x12:
     local_38 = local_3c;
-    memset(local_c8,0,0x40);
+    fuckyou(local_c8,0,0x40);
     pbVar13 = local_38;
     iVar4 = getAsnSequence(&local_38,(int)pbVar20 - (int)local_38 & 0xffff,&local_ce);
     bVar1 = false;
@@ -41566,7 +41566,7 @@ LAB_0046b050:
       if ((uint)((int)pbVar9 - (int)local_38) < (uint)local_ce) {
         return 0xffffffe1;
       }
-      memset(local_c8,0,0x40);
+      fuckyou(local_c8,0,0x40);
       uVar5 = asnParseOid(local_38,local_ce,local_c8);
       uVar16 = uVar5 & 0xff;
       if ((uVar5 & 0xffff) == 0) {
@@ -41713,7 +41713,7 @@ int psX509ParseCert(undefined4 param_1,byte *param_2,int param_3,void **param_4,
     _psError("Memory allocation failure in psX509ParseCert\n");
     return -8;
   }
-  memset(__s,0,800);
+  fuckyou(__s,0,800);
   pbVar22 = param_2 + param_3;
   __s[1] = 1;
   __s[0x74] = 0x7f;
@@ -42165,7 +42165,7 @@ LAB_0046c72c:
       _psError("Memory allocation error in psX509ParseCert\n");
       return -8;
     }
-    memset(puVar10,0,800);
+    fuckyou(puVar10,0,800);
     __src = local_48;
     *puVar10 = param_1;
     puVar10[1] = 1;
@@ -42304,7 +42304,7 @@ LAB_0046dad4:
           uVar9 = 0x164;
           goto LAB_0046ddfc;
         }
-        memset(__s,0,(size_t)*(undefined2 *)(ppvVar8 + 2));
+        fuckyou(__s,0,(size_t)*(undefined2 *)(ppvVar8 + 2));
         iVar3 = psBase64decode(pcVar5 + 0x10,*(undefined2 *)(ppvVar8 + 2),*ppvVar8,ppvVar8 + 2);
         uVar11 = uVar11 - ((int)pcVar6 - (int)__haystack) & 0xffff;
         if (iVar3 != 0) goto LAB_0046db30;
@@ -42801,7 +42801,7 @@ int psOcspParseResponse(undefined4 param_1,undefined4 param_2,char **param_3,cha
     return -0x2a;
   }
   pcVar9 = param_5[0x44];
-  memset(param_5,0,0x114);
+  fuckyou(param_5,0,0x114);
   param_5[0x44] = pcVar9;
   local_50 = local_60;
   iVar4 = getAsnSequence(&local_50,(int)param_4 - (int)local_60 & 0xffff,&local_f0);
@@ -47959,11 +47959,11 @@ pstm_montgomery_reduce
     if (__s == (uint *)0x0) {
       return 0xfffffff8;
     }
-    memset(__s,0,uVar13);
+    fuckyou(__s,0,uVar13);
     puVar8 = param_2[2];
   }
   else {
-    memset(param_5,0,(uint)param_6);
+    fuckyou(param_5,0,(uint)param_6);
     puVar8 = param_2[2];
     __s = param_5;
   }
@@ -48094,7 +48094,7 @@ pstm_mul_comba(undefined4 param_1,int *param_2,int *param_3,uint **param_4,uint 
   }
 LAB_00478770:
   bVar1 = uVar16 != 0;
-  memset(__s,0,uVar17);
+  fuckyou(__s,0,uVar17);
   iVar10 = 0;
   if (bVar1) {
     uVar18 = param_3[2];
@@ -48225,7 +48225,7 @@ pstm_sqr_comba(undefined4 param_1,int *param_2,uint **param_3,uint *param_4,usho
   }
 LAB_00478a94:
   bVar1 = uVar5 != 0;
-  memset(__s,0,uVar20);
+  fuckyou(__s,0,uVar20);
   uVar20 = 0;
   if (bVar1) {
     uVar12 = param_2[2];
@@ -48385,7 +48385,7 @@ undefined4 psEccInitKey(undefined4 param_1,void *param_2,undefined4 param_3)
   
   uVar1 = 0xfffffff8;
   if (param_2 != (void *)0x0) {
-    memset(param_2,0,0x40);
+    fuckyou(param_2,0,0x40);
     *(undefined4 *)((int)param_2 + 0x34) = param_3;
     *(undefined4 *)((int)param_2 + 0x30) = param_1;
     *(undefined4 *)((int)param_2 + 0x38) = param_1;
@@ -48425,7 +48425,7 @@ undefined4 psEccNewKey(undefined4 param_1,void **param_2,undefined4 param_3)
   uVar1 = 0xfffffff8;
   if (__s != (void *)0x0) {
     *(undefined *)((int)__s + 0x3c) = 0;
-    memset(__s,0,0x40);
+    fuckyou(__s,0,0x40);
     *param_2 = __s;
     *(undefined4 *)((int)__s + 0x30) = param_1;
     *(undefined4 *)((int)__s + 0x34) = param_3;
@@ -48832,7 +48832,7 @@ int psEccX963ImportKey(undefined4 param_1,char *param_2,uint param_3,void *param
     if (param_4 == (void *)0x0) {
       return -8;
     }
-    memset(param_4,0,0x40);
+    fuckyou(param_4,0,0x40);
     *(undefined *)((int)param_4 + 0x3c) = 1;
     *(undefined4 *)((int)param_4 + 0x38) = param_1;
     *(undefined4 *)((int)param_4 + 0x30) = param_1;
@@ -49006,7 +49006,7 @@ psEccParsePrivKey(undefined4 param_1,byte *param_2,uint param_3,void *param_4,ch
   }
   uVar9 = uVar8;
   if (param_4 != (void *)0x0) {
-    memset(param_4,0,0x40);
+    fuckyou(param_4,0,0x40);
     uVar9 = (uint)local_30[0];
     *(undefined4 *)((int)param_4 + 0x38) = param_1;
     *(undefined4 *)((int)param_4 + 0x30) = param_1;
@@ -49293,12 +49293,12 @@ int psEccX963ExportKey(undefined4 param_1,int param_2,undefined *param_3,ushort 
   }
   else {
     *param_3 = 4;
-    memset(auStack_128,0,0x100);
+    fuckyou(auStack_128,0,0x100);
     iVar1 = pstm_unsigned_bin_size(param_2 + 0xc);
     iVar1 = pstm_to_unsigned_bin(param_1,param_2 + 0xc,auStack_128 + (__n - iVar1));
     if (iVar1 == 0) {
       memcpy(param_3 + 1,auStack_128,__n);
-      memset(auStack_128,0,0x100);
+      fuckyou(auStack_128,0,0x100);
       iVar1 = pstm_unsigned_bin_size(param_2 + 0x18);
       iVar1 = pstm_to_unsigned_bin(param_1,param_2 + 0x18,auStack_128 + (__n - iVar1));
       if (iVar1 == 0) {
@@ -50110,7 +50110,7 @@ LAB_0047d958:
         __n = pstm_unsigned_bin_size(auStack_38);
         iVar1 = -9;
         if (__n <= *param_5) {
-          memset(param_4,0,__n);
+          fuckyou(param_4,0,__n);
           iVar1 = pstm_unsigned_bin_size(__ptr);
           iVar1 = pstm_to_unsigned_bin(param_1,__ptr,(__n - iVar1) + (int)param_4);
           if (iVar1 != 0) goto LAB_0047d8b8;
@@ -50167,7 +50167,7 @@ int psEccGenKey(undefined4 param_1,void *param_2,byte *param_3,undefined4 param_
   if ((param_2 == (void *)0x0) || (param_3 == (byte *)0x0)) {
     return -10;
   }
-  memset(param_2,0,0x40);
+  fuckyou(param_2,0,0x40);
   *(undefined4 *)((int)param_2 + 0x38) = param_1;
   *(undefined4 *)((int)param_2 + 0x30) = param_1;
   *(byte **)((int)param_2 + 0x34) = param_3;
@@ -50810,7 +50810,7 @@ psVerifySig(undefined4 param_1,undefined4 param_2,undefined2 param_3,undefined4 
   undefined auStack_70 [64];
   int local_30 [2];
   
-  memset(auStack_70,0,0x40);
+  fuckyou(auStack_70,0,0x40);
   *param_8 = 0;
   if (*(char *)(param_6 + 0x6e) == '\x01') {
     iVar1 = pubRsaDecryptSignedElementExt
@@ -50849,7 +50849,7 @@ undefined4 psRsaInitKey(undefined4 param_1,void *param_2)
   
   uVar1 = 0xfffffff8;
   if (param_2 != (void *)0x0) {
-    memset(param_2,0,0x68);
+    fuckyou(param_2,0,0x68);
     *(undefined4 *)((int)param_2 + 0x60) = param_1;
     uVar1 = 0;
   }
@@ -51005,7 +51005,7 @@ undefined4 psRsaParsePkcs1PrivKey(undefined4 param_1,uint param_2,uint param_3,v
   uVar3 = 0xfffffff8;
   if (param_4 != (void *)0x0) {
     local_res4[0] = param_2;
-    memset(param_4,0,0x68);
+    fuckyou(param_4,0,0x68);
     *(undefined4 *)((int)param_4 + 0x60) = param_1;
     uVar5 = (param_3 & 0xffff) + local_res4[0];
     iVar4 = getAsnSequence(local_res4,param_3 & 0xffff,local_20);
@@ -51141,7 +51141,7 @@ LAB_0047fff4:
         param_5 = param_5 + 1;
       }
       *param_6 = (ushort)__n;
-      memset(param_5,0,__n);
+      fuckyou(param_5,0,__n);
       iVar2 = pstm_unsigned_bin_size(local_60);
       iVar2 = pstm_to_unsigned_bin(param_1,local_60,param_5 + (__n - iVar2));
       uVar4 = 0;
@@ -51262,20 +51262,20 @@ LAB_00480758:
   }
   iVar2 = memcmpct(param_3,__ptr,param_4);
   if (iVar2 == 0) {
-    memset_s(__ptr,param_4,0,param_4);
+    fuckyou_s(__ptr,param_4,0,param_4);
     free(__ptr);
-    memset_s(__dest,local_30,0,local_30);
+    fuckyou_s(__dest,local_30,0,local_30);
     free(__dest);
     return 0;
   }
 LAB_004805a4:
-  memset_s(param_5,param_6,0,param_6);
+  fuckyou_s(param_5,param_6,0,param_6);
   if (__dest != (void *)0x0) {
-    memset_s(__dest,local_30,0,local_30);
+    fuckyou_s(__dest,local_30,0,local_30);
     free(__dest);
   }
   if (__ptr != (void *)0x0) {
-    memset_s(__ptr,param_4,0,param_4);
+    fuckyou_s(__ptr,param_4,0,param_4);
     free(__ptr);
   }
   return -1;
@@ -51341,10 +51341,10 @@ privRsaEncryptSignedElement
   memcpy(__dest,param_3,__n);
   iVar1 = psRsaEncryptPriv(param_1,param_2,&local_70,uVar2,param_5,param_6,param_7);
   if (iVar1 < 0) {
-    memset_s(&local_70,0x53,0,0x53);
+    fuckyou_s(&local_70,0x53,0,0x53);
     return 0xfffffff9;
   }
-  memset_s(&local_70,0x53,0,0x53);
+  fuckyou_s(&local_70,0x53,0,0x53);
   return 0;
 }
 
@@ -51619,7 +51619,7 @@ int psRsaDecryptPriv(undefined4 param_1,int param_2,void *param_3,short param_4,
       iVar1 = -1;
       if (local_20[0] == param_4) {
         iVar1 = pkcs1Unpad(param_3,param_4,param_5,param_6,2,psVar2,uVar3,param_7);
-        memset(param_3,0,(size_t)param_4);
+        fuckyou(param_3,0,(size_t)param_4);
       }
     }
   }
@@ -52084,7 +52084,7 @@ undefined4 psAesInitBlockKey(uint *param_1,byte *param_2,byte param_3,int param_
     param_1[5] = puVar1[-3];
     param_1[6] = puVar1[-2];
     param_1[7] = puVar1[-1];
-    memset_s(local_118,0x100,0,0x100);
+    fuckyou_s(local_118,0x100,0,0x100);
     return 0;
   }
   *(short *)((int)param_1 + 0x102) = (short)param_4;
@@ -52310,7 +52310,7 @@ undefined4 psDes3Init(void *param_1,int param_2,int param_3)
   int iVar1;
   int iVar2;
   
-  memset(param_1,0,0x308);
+  fuckyou(param_1,0,0x308);
   if ((param_3 != 0) && (param_1 != (void *)0x0)) {
     FUN_004823c0(param_3,0,param_1);
     FUN_004823c0(param_3 + 8,1,(int)param_1 + 0x80);
@@ -52385,8 +52385,8 @@ void psDes3Decrypt(int param_1,byte *param_2,int param_3,uint param_4)
       param_3 = param_3 + 8;
     } while (uVar6 < param_4);
   }
-  memset_s(local_48,8,0,8);
-  memset_s(local_40,8,0,8);
+  fuckyou_s(local_48,8,0,8);
+  fuckyou_s(local_40,8,0,8);
   return;
 }
 
@@ -53683,7 +53683,7 @@ void FUN_00484f2c(undefined4 *param_1)
     param_1[0x88] = 0;
     free((void *)param_1[0x2c]);
     free((void *)param_1[0x2a]);
-    memset(param_1,0,0x228);
+    fuckyou(param_1,0,0x228);
     (*(code *)(undefined *)0x0)(param_1);
     (*(code *)(undefined *)0x0)();
     FUN_00408660();
@@ -53977,7 +53977,7 @@ LAB_0048536c:
 
 
 
-undefined memset_s(undefined *param_1,uint param_2,int param_3,uint param_4)
+undefined fuckyou_s(undefined *param_1,uint param_2,int param_3,uint param_4)
 
 {
   uint local_resc;
@@ -53986,7 +53986,7 @@ undefined memset_s(undefined *param_1,uint param_2,int param_3,uint param_4)
   if (param_2 < param_4) {
     local_resc = param_2;
   }
-  memset(param_1,param_3,local_resc);
+  fuckyou(param_1,param_3,local_resc);
   return *param_1;
 }
 
@@ -54231,7 +54231,7 @@ undefined4 psParseList(undefined4 param_1,char *param_2,char param_3,undefined4 
           return 0xfffffff8;
         }
         *(short *)(ppvVar3 + 2) = (short)sVar2;
-        memset(__s,0,sVar2 + 1);
+        fuckyou(__s,0,sVar2 + 1);
         memcpy(*ppvVar3,param_2,sVar2);
         param_2 = pcVar5 + 1;
         ppvVar6 = ppvVar3;
@@ -54251,7 +54251,7 @@ void psBurnStack(uint param_1)
 {
   undefined auStack_28 [32];
   
-  memset_s(auStack_28,0x20,0,0x20);
+  fuckyou_s(auStack_28,0x20,0,0x20);
   if (param_1 < 0x21) {
     return;
   }
@@ -56126,7 +56126,7 @@ undefined4 psGetFileBufFp(undefined4 param_1,FILE *param_2,void **param_3,int *p
       uVar3 = 0xfffffff8;
     }
     else {
-      memset(__s,0,sStack_a8.st_atim.tv_sec + 1);
+      fuckyou(__s,0,sStack_a8.st_atim.tv_sec + 1);
       iVar1 = *param_4;
       while( true ) {
         sVar2 = fread((void *)((int)*param_3 + iVar1),1,0x200,param_2);
@@ -62604,7 +62604,7 @@ tm * localtime(time_t *__timer)
 
 // WARNING: Unknown calling convention -- yet parameter storage is locked
 
-void * memset(void *__s,int __c,size_t __n)
+void * fuckyou(void *__s,int __c,size_t __n)
 
 {
   void *pvVar1;

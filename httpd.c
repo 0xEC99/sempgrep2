@@ -2551,7 +2551,7 @@ undefined4 FUN_00403ec4(void)
   char acStack_fb0 [4004];
   
   puVar4 = &_gp;
-  memset(acStack_fb0,0,4000);
+  fuckyou(acStack_fb0,0,4000);
   local_fc0 = 0;
   local_fbe = 0;
   local_fbc = 0;
@@ -2729,7 +2729,7 @@ undefined4 http_inetd_initSSLCtx(void)
   local_fc4 = 0;
   local_fc0 = 0;
   local_fbc = 0;
-  memset(acStack_fb8,0,4000);
+  fuckyou(acStack_fb8,0,4000);
   local_fcc = 0;
   local_fd0 = (char *)0x0;
   if (DAT_00431fe0 != (SSL_CTX *)0x0) {
@@ -2852,8 +2852,8 @@ undefined4 http_inetd_init(void)
     *puVar1 = 0;
     puVar1 = puVar1 + 1;
   } while (puVar1 != &DAT_00432064);
-  memset(&DAT_00432064,0,0x70);
-  memset(&DAT_004320d4,0,0x144b0);
+  fuckyou(&DAT_00432064,0,0x70);
+  fuckyou(&DAT_004320d4,0,0x144b0);
   iVar3 = 0;
   puVar1 = (undefined4 *)PTR_LOOP_004313d4;
   do {
@@ -3659,7 +3659,7 @@ bool FUN_004068a4(char *param_1)
   local_235a = 0;
   local_2358 = 0;
   local_2370 = 0;
-  memset(acStack_2354,0,0x400);
+  fuckyou(acStack_2354,0,0x400);
   iVar1 = strncmp(param_1,"Basic ",6);
   bVar4 = false;
   if (iVar1 == 0) {
@@ -3667,8 +3667,8 @@ bool FUN_004068a4(char *param_1)
     DAT_00447502 = 1;
     sVar2 = strlen(local_10);
     b64_decode(acStack_2354,0x400,local_10,sVar2);
-    memset(acStack_1f54,0,4000);
-    memset(acStack_fb4,0,4000);
+    fuckyou(acStack_1f54,0,4000);
+    fuckyou(acStack_fb4,0,4000);
     strcpy(acStack_fb4,"adminName\nadminPwd\n");
     iVar1 = rdp_getObj(0,"USER_CFG",&local_2364,acStack_fb4);
     if (iVar1 == 0) {
@@ -3680,8 +3680,8 @@ bool FUN_004068a4(char *param_1)
         return true;
       }
     }
-    memset(acStack_1f54,0,4000);
-    memset(acStack_fb4,0,4000);
+    fuckyou(acStack_1f54,0,4000);
+    fuckyou(acStack_fb4,0,4000);
     strcpy(acStack_fb4,"userName\nuserPwd\n");
     iVar1 = rdp_getObj(0,"USER_CFG",&local_2364,acStack_fb4);
     bVar4 = false;
@@ -3894,7 +3894,7 @@ void http_parser_makeHeader(int *param_1,uint param_2)
   local_1014 = 0;
   local_1010 = 0;
   local_100c = 0;
-  memset(acStack_fd4,0,4000);
+  fuckyou(acStack_fd4,0,4000);
   if (param_1[0xb] == 1) {
     return;
   }
@@ -3994,7 +3994,7 @@ LAB_0040734c:
     }
     uVar3 = atoi(local_1020);
     pcVar7 = (char *)(uVar3 & 0xffff);
-    memset(acStack_1008,0,0x32);
+    fuckyou(acStack_1008,0,0x32);
     pcVar8 = strchr(&DAT_00446694,0x3a);
     if (pcVar8 == (char *)0x0) {
       pcVar8 = (char *)0x32;
@@ -4153,9 +4153,9 @@ void FUN_00407764(uint param_1,int *param_2)
   int aiStack_320 [64];
   char acStack_220 [516];
   
-  memset(acStack_220,0,0x200);
-  memset(auStack_4a0,0,0x40);
-  memset(auStack_420,0,0x100);
+  fuckyou(acStack_220,0,0x200);
+  fuckyou(auStack_4a0,0,0x40);
+  fuckyou(auStack_420,0,0x100);
   iVar5 = *param_2;
   if (param_1 == 3) {
     if ((param_2[0xd] == 1) || (uVar6 = 1, param_2[0xd] != 2)) {
@@ -4432,7 +4432,7 @@ undefined4 http_auth_setEntry(int param_1,char *param_2,char *param_3)
   undefined local_11;
   
   local_30 = '\0';
-  memset(auStack_2f,0,0x1f);
+  fuckyou(auStack_2f,0,0x1f);
   if (*param_2 != '\0') {
     cstr_strncpy(&local_30,param_2,0x10);
     strcat(&local_30,":");
@@ -4483,8 +4483,8 @@ undefined4 http_auth_doAuth_login(undefined4 param_1,char *param_2,int param_3)
   undefined local_49;
   char acStack_48 [48];
   
-  memset(acStack_68,0,0x20);
-  memset(acStack_48,0,0x2e);
+  fuckyou(acStack_68,0,0x20);
+  fuckyou(acStack_48,0,0x2e);
   cstr_strncpy(acStack_68,param_1,0x10);
   __s1 = &DAT_00446d20;
   strcat(acStack_68,":");
@@ -4515,7 +4515,7 @@ undefined4 http_auth_init(void)
   
   __s = &DAT_00446d20;
   do {
-    memset(__s,0xff,0xf);
+    fuckyou(__s,0xff,0xf);
     __s[0xf] = 0;
     __s = __s + 0x2d;
   } while (__s != (undefined *)0x446dd4);
@@ -4990,7 +4990,7 @@ undefined4 http_file_rpmRep(int *param_1,char *param_2,char *param_3,undefined4 
   
   memcpy(acStack_1138,"/var/tmp/pc/web/",0x11);
   __fd = -1;
-  memset(auStack_1127,0,0x6f);
+  fuckyou(auStack_1127,0,0x6f);
   strncat(acStack_1138,param_2 + 5,0x74);
   iVar1 = stat(acStack_1138,&sStack_10b8);
   if ((iVar1 == 0) && ((sStack_10b8.st_nlink & 0xf000) == 0x8000)) {
@@ -5066,7 +5066,7 @@ void http_file_main(int param_1)
   char acStack_8c [132];
   
   puVar4 = &_gp;
-  memset(&aStack_ac,0,0x20);
+  fuckyou(&aStack_ac,0,0x20);
   aStack_ac.ai_family = 2;
   pcVar1 = strstr(*(char **)(param_1 + 0xc),"domain-redirect.htm");
   if (pcVar1 != (char *)0x0) {
@@ -5399,7 +5399,7 @@ undefined4 FUN_0040b3b0(int *param_1)
                           param_1[0x21] + 0x41,0,0);
   param_1[6] = iVar2;
   http_parser_makeHeader(param_1,0);
-  memset(acStack_828,0,0x800);
+  fuckyou(acStack_828,0,0x800);
   __stream = fopen("/var/tmp/enMenu","r");
   if (__stream != (FILE *)0x0) goto LAB_0040b5f8;
   pcVar4 = "Open MENU_EN_TMP_FILE %s Error \n";
@@ -5606,7 +5606,7 @@ int http_rpm_softerr(int param_1,undefined4 param_2,undefined4 param_3,undefined
   
   puVar6 = &_gp;
   local_810 = '\0';
-  memset(auStack_80f,0,0x7ff);
+  fuckyou(auStack_80f,0,0x7ff);
   uVar1 = DAT_00446e90;
   *(undefined4 *)(param_1 + 0x1c) = 0;
   sprintf(&local_810,"$.ret=%d;\n",uVar1,param_4,puVar6);
@@ -5803,7 +5803,7 @@ int http_rpm_conferr(int param_1,undefined4 param_2,undefined4 param_3,undefined
   
   puVar6 = &_gp;
   local_810 = '\0';
-  memset(auStack_80f,0,0x7ff);
+  fuckyou(auStack_80f,0,0x7ff);
   uVar1 = DAT_00446ea0;
   *(undefined4 *)(param_1 + 0x1c) = 0;
   sprintf(&local_810,"$.ret=%d;\n",uVar1,param_4,puVar6);
@@ -5856,7 +5856,7 @@ undefined4 http_rpm_confencode(int *param_1)
     local_28 = (uint)(local_30[0] * 7) / 5;
     pcVar5 = (char *)malloc(local_28);
     if (pcVar5 != (char *)0x0) {
-      memset(pcVar5,0,local_28);
+      fuckyou(pcVar5,0,local_28);
       param_1[0xf] = (int)g_http_file_pTypeDefault;
       cen_base64Encode(iVar1,iVar3,pcVar5);
       sVar2 = strlen(pcVar5);
@@ -5947,15 +5947,15 @@ int http_rpm_log_main(int *param_1)
   local_201e = 0;
   local_201c = 0;
   local_17c4 = '\0';
-  memset(auStack_17c3,0,0x7ff);
+  fuckyou(auStack_17c3,0,0x7ff);
   memcpy(acStack_fc4,"logHeadPos\nlogTailPos\n",0x17);
-  memset(auStack_fad,0,0xf89);
+  fuckyou(auStack_fad,0,0xf89);
   local_202c = 0;
   local_2030 = 1;
   local_2034 = (undefined *)0x0;
   local_1fc4 = '\0';
   iVar11 = *param_1;
-  memset(auStack_1fc3,0,0x7ff);
+  fuckyou(auStack_1fc3,0,0x7ff);
   __ptr = (undefined4 *)malloc(8);
   *__ptr = 0;
   __ptr[1] = 0;
@@ -6075,7 +6075,7 @@ LAB_0040cb68:
                               param_1[0x21] + 0x41,local_2034 + uVar3 + 1,iVar4 - uVar3);
       param_1[6] = iVar4;
       http_parser_makeHeader(param_1,0);
-      memset(&local_1fc4,0,0x800);
+      fuckyou(&local_1fc4,0,0x800);
       pFVar7 = fopen("/var/tmp/enlog","r");
       if (pFVar7 != (FILE *)0x0) {
         cdbg_printf(8,"http_rpm_log_main",0xe8,"Open LOG_EN_TMP_FILE %s Error \n","/var/tmp/enlog");
@@ -6116,7 +6116,7 @@ LAB_0040d0a8:
                         ("/var/tmp/enlog",__ptr,param_1[0x21] + 0x20,param_1[0x21] + 0x41);
       param_1[6] = iVar4;
       http_parser_makeHeader(param_1,0);
-      memset(&local_1fc4,0,0x800);
+      fuckyou(&local_1fc4,0,0x800);
       pFVar7 = fopen("/var/tmp/enlog","r");
       if (pFVar7 != (FILE *)0x0) {
         cdbg_printf(8,"http_rpm_log_main",0x10e,"Open LOG_EN_TMP_FILE %s Error \n","/var/tmp/enlog")
@@ -6813,7 +6813,7 @@ int http_rpm_auth_main(int param_1)
   char *local_18;
   
   local_17b8[0] = '\0';
-  memset(local_17b8 + 1,0,0x7ff);
+  fuckyou(local_17b8 + 1,0,0x7ff);
   local_1810 = 0;
   local_1814 = 0;
   local_1818 = (char *)0x0;
@@ -7048,7 +7048,7 @@ int http_rpm_lanMac(int param_1)
   local_17de = 0;
   local_17dc = 0;
   local_fc8 = '\0';
-  memset(auStack_fc7,0,3999);
+  fuckyou(auStack_fc7,0,3999);
   iVar7 = 4;
   pcVar1 = (char *)http_parser_getEnv(&DAT_0041dccc);
   if (pcVar1 != (char *)0x0) {
@@ -7195,8 +7195,8 @@ undefined4 FUN_0040f370(void)
   char acStack_1f58 [4000];
   char acStack_fb8 [4004];
   
-  memset(acStack_fb8,0,4000);
-  memset(acStack_1f58,0,4000);
+  fuckyou(acStack_fb8,0,4000);
+  fuckyou(acStack_1f58,0,4000);
   local_1f68 = 0;
   local_1f66 = 0;
   local_1f64 = 0;
@@ -7269,10 +7269,10 @@ undefined4 http_rpm_routeTbl(int *param_1)
   
   iVar6 = *param_1;
   local_1830 = '\0';
-  memset(auStack_182f,0,0x7ff);
+  fuckyou(auStack_182f,0,0x7ff);
   __stream = fopen("/proc/net/route","r");
   __s = fopen("/var/tmp/route","w+");
-  memset(acStack_1030,0,0x1000);
+  fuckyou(acStack_1030,0,0x1000);
   if ((__stream == (FILE *)0x0) || (__s == (FILE *)0x0)) {
     cdbg_printf(8,"http_rpm_routeTbl",0xe2,"fopen failed, %s(0x%x), %s(0x%x)","/proc/net/route",
                 __stream,"/var/tmp/route",__s);
@@ -7286,7 +7286,7 @@ undefined4 http_rpm_routeTbl(int *param_1)
   iVar5 = 0;
   do {
     if (iVar4 == -1) break;
-    memset(acStack_1870,0,0x40);
+    fuckyou(acStack_1870,0,0x40);
     iVar4 = fscanf(__stream,"%63s%lx%lx%X%d%d%d%lx%d%d%d\n",acStack_18b0,&local_18d0,&local_18d4,
                    &local_18b4,auStack_18b8,auStack_18bc,auStack_18c0,&local_18d8,auStack_18c4,
                    auStack_18c8,auStack_18cc);
@@ -7364,7 +7364,7 @@ LAB_0040f978:
   }
   http_parser_makeHeader(param_1,0);
   if (iVar5 != 0) {
-    memset(acStack_1030,0,0x1000);
+    fuckyou(acStack_1030,0,0x1000);
     __stream_00 = fopen("/var/tmp/enroute","r");
     if (__stream_00 == (FILE *)0x0) {
       cdbg_printf(8,"http_rpm_routeTbl",0x11d,"Open TMP_EN_ROUTE_TBL %s Error \n","/var/tmp/enroute"
@@ -7411,10 +7411,10 @@ undefined4 FUN_0040fc00(int *param_1)
   char acStack_1018 [2048];
   char acStack_818 [2048];
   
-  memset(acStack_818,0,0x800);
+  fuckyou(acStack_818,0,0x800);
   iVar4 = *param_1;
-  memset(acStack_1018,0,0x800);
-  memset(acStack_1098,0,0x80);
+  fuckyou(acStack_1018,0,0x800);
+  fuckyou(acStack_1098,0,0x80);
   snprintf(acStack_1098,0x80,"ifconfig %s",&DAT_0041f6dc);
   __stream = popen(acStack_1098,"r");
   sVar1 = 0;
@@ -7469,10 +7469,10 @@ undefined4 http_rpm_updateWlThroughput(int *param_1)
   char acStack_1018 [2048];
   char acStack_818 [2048];
   
-  memset(acStack_818,0,0x800);
+  fuckyou(acStack_818,0,0x800);
   iVar4 = *param_1;
-  memset(acStack_1018,0,0x800);
-  memset(acStack_1098,0,0x80);
+  fuckyou(acStack_1018,0,0x800);
+  fuckyou(acStack_1098,0,0x80);
   snprintf(acStack_1098,0x80,"ifconfig %s",&DAT_0041f6dc);
   __stream = popen(acStack_1098,"r");
   sVar1 = 0;
@@ -7666,15 +7666,15 @@ undefined4 FUN_0041032c(int *param_1)
   iVar5 = param_1[0x21];
   iVar3 = *param_1;
   ppvVar4 = *(void ***)(iVar5 + 0x1c);
-  memset(auStack_5cc,0,0x21);
-  memset(auStack_5a8,0,0x181);
+  fuckyou(auStack_5cc,0,0x21);
+  fuckyou(auStack_5a8,0,0x181);
   __n = ppvVar4[3];
   local_5d0 = 0;
   __src = *ppvVar4;
   if (0x17f < (int)__n) {
     memcpy(auStack_5cc,(void *)(iVar5 + 0xf0),0x20);
     for (; 0x180 < (int)__n; __n = (void *)((int)__n + -0x180)) {
-      memset(auStack_424,0,0x401);
+      fuckyou(auStack_424,0,0x401);
       local_5d0 = 0x180;
       aes_cbc_encrypt_intface(__src,auStack_5a8,&local_5d0,param_1[0x21] + 0x20,auStack_5cc,1);
       uVar1 = b64_encode(auStack_424,0x400,auStack_5a8,local_5d0);
@@ -7697,18 +7697,18 @@ undefined4 FUN_0041032c(int *param_1)
       }
       __src = (void *)((int)__src + 0x180);
       (*pcVar6)(uVar1,&DAT_0041d1b0,auStack_424);
-      memset(auStack_5a8,0,0x181);
+      fuckyou(auStack_5a8,0,0x181);
     }
     __size = (int)__n + 1;
     __s = malloc(__size);
-    memset(__s,0,__size);
+    fuckyou(__s,0,__size);
     memcpy(__s,__src,(size_t)__n);
     gdpr_cleanOutBuff(param_1[0x21]);
     memcpy(*ppvVar4,__s,(size_t)__n);
     ppvVar4[1] = __n;
     ppvVar4[3] = __n;
-    memset(auStack_424,0,0x401);
-    memset(__s,0,__size);
+    fuckyou(auStack_424,0,0x401);
+    fuckyou(__s,0,__size);
     free(__s);
     memcpy((void *)(param_1[0x21] + 0xf0),auStack_5cc,0x20);
   }
@@ -7773,10 +7773,10 @@ undefined4 FUN_004107b4(int *param_1)
   
   iVar2 = *param_1;
   ppvVar3 = *(void ***)(param_1[0x21] + 0x1c);
-  memset(auStack_428,0,0x401);
-  memset(auStack_774,0,0x21);
-  memset(auStack_5bc,0,0x191);
-  memset(auStack_750,0,0x191);
+  fuckyou(auStack_428,0,0x401);
+  fuckyou(auStack_774,0,0x21);
+  fuckyou(auStack_5bc,0,0x191);
+  fuckyou(auStack_750,0,0x191);
   local_778 = (void *)0x0;
   if (ppvVar3[3] != (void *)0x0) {
     FUN_0041032c(param_1);
@@ -7786,7 +7786,7 @@ undefined4 FUN_004107b4(int *param_1)
     local_778 = __n;
     memcpy(auStack_774,(void *)(iVar4 + 0xf0),0x20);
     if (__n != (void *)0x0) {
-      memset(auStack_428,0,0x401);
+      fuckyou(auStack_428,0,0x401);
       memcpy(auStack_5bc,__src,(size_t)__n);
       aes_tmp_encrypt_buf_nopadding_new(auStack_5bc,auStack_750,&local_778,iVar4 + 0x20,auStack_774)
       ;
@@ -7810,7 +7810,7 @@ undefined4 FUN_004107b4(int *param_1)
       }
       (*pcVar5)(uVar1,&DAT_0041d1b0,auStack_428);
     }
-    memset(auStack_428,0,0x401);
+    fuckyou(auStack_428,0,0x401);
     if (*(int *)(iVar2 + 0xc) == 0) {
       fwrite("0\r\n\r\n",1,5,*(FILE **)(iVar2 + 0x1024));
     }
@@ -7876,7 +7876,7 @@ undefined4 FUN_00410b18(undefined4 param_1,char *param_2,char *param_3,int *para
   char acStack_73 [67];
   char *local_30;
   
-  memset(&local_74,0,0x40);
+  fuckyou(&local_74,0,0x40);
   iVar1 = FUN_00410a2c(param_1,&local_74,0x40);
   if (iVar1 < 1) {
     pcVar4 = "#Msg: ini header io error or no content left\n";
@@ -8038,8 +8038,8 @@ undefined4 http_cgi_gdpr_main(int *param_1)
   iVar14 = *(int *)(param_1[0x21] + 0x1c);
   param_1[8] = 1;
   param_1[0xf] = (int)puVar3;
-  memset(&local_2038,0,0x1000);
-  memset(local_1038,0,0x1000);
+  fuckyou(&local_2038,0,0x1000);
+  fuckyou(local_1038,0,0x1000);
   iVar10 = FUN_0040fe90(*param_1,&local_2038);
   if (iVar10 < 1) {
 LAB_004111e8:
@@ -8072,8 +8072,8 @@ LAB_004112f4:
     else {
       iVar10 = FUN_00410044(param_1,local_1038);
       if (iVar10 == 0) {
-        memset(&local_2038,0,0x1000);
-        memset(local_1038,0,0x1000);
+        fuckyou(&local_2038,0,0x1000);
+        fuckyou(local_1038,0,0x1000);
         iVar10 = FUN_0040fe90(*param_1,local_1038);
         if (iVar10 < 1) goto LAB_004111e8;
         local_30dc = (void *)((int)local_30dc - iVar10);
@@ -8101,7 +8101,7 @@ LAB_004112f4:
           pcVar9 = "#Msg: 2 pData->pGDPREntry->SeqMatchFlag == HTTP_FALSE\n";
           goto LAB_004112f4;
         }
-        memset(local_1038,0,0x1000);
+        fuckyou(local_1038,0,0x1000);
         if (*(int *)(iVar13 + 4) == 2) {
           iVar10 = aes_tmp_decrypt_buf_nopadding_new
                              (&local_2038,local_1038,&local_30e8,iVar13 + 0x20,iVar13 + 0x41);
@@ -8113,7 +8113,7 @@ LAB_004113cc:
 LAB_00411f9c:
               local_30dc = ppvVar15[3];
               *(undefined4 *)param_1[0x21] = 1;
-              memset(local_3098,0,0x40);
+              fuckyou(local_3098,0,0x40);
               iVar10 = FUN_00410a2c(ppvVar15,local_3098,0x40);
               local_34 = 0;
               local_30dc = (void *)((int)local_30dc - iVar10);
@@ -8369,7 +8369,7 @@ LAB_00411464:
   uVar11 = 0x191;
   fflush(_stderr);
 LAB_00411e58:
-  memset(local_3098,0,0x40);
+  fuckyou(local_3098,0,0x40);
   if ((param_1[0x21] != 0) &&
      (gdpr_cleanBuff(), *(int *)(*(int *)(param_1[0x21] + 0x1c) + 0xc) != 0)) {
     fputs("#Msg: gdpr_cleanBuff Error \n",_stderr);
@@ -8484,7 +8484,7 @@ undefined4 updateString(void *param_1,void *param_2,size_t param_3)
     uVar1 = 0xffffffff;
   }
   else {
-    memset(param_1,0,param_3);
+    fuckyou(param_1,0,param_3);
     memcpy(param_1,param_2,param_3);
     uVar1 = 0;
   }
@@ -8508,7 +8508,7 @@ undefined4 gdpr_cleanOutBuff(int param_1)
   else {
     ppvVar1[3] = (void *)0x0;
     ppvVar1[1] = (void *)0x0;
-    memset(*ppvVar1,0,(size_t)ppvVar1[2]);
+    fuckyou(*ppvVar1,0,(size_t)ppvVar1[2]);
     uVar2 = 0;
   }
   return uVar2;
@@ -8531,7 +8531,7 @@ undefined4 FUN_00412220(int param_1)
   else {
     ppvVar1[3] = (void *)0x0;
     ppvVar1[1] = (void *)0x0;
-    memset(*ppvVar1,0,(size_t)ppvVar1[2]);
+    fuckyou(*ppvVar1,0,(size_t)ppvVar1[2]);
     uVar2 = 0;
   }
   return uVar2;
@@ -8564,13 +8564,13 @@ undefined4 FUN_00412310(int param_1)
   int iVar1;
   
   if ((param_1 != 0) && (iVar1 = gdpr_cleanBuff(), iVar1 == 0)) {
-    memset((void *)(param_1 + 0x20),0,0x21);
-    memset((void *)(param_1 + 0x41),0,0x21);
-    memset((void *)(param_1 + 0x62),0,0x21);
-    memset((void *)(param_1 + 0x88),0,0x21);
-    memset((void *)(param_1 + 0xa9),0,0x21);
-    memset((void *)(param_1 + 0xca),0,0x21);
-    memset((void *)(param_1 + 0xf0),0,0x21);
+    fuckyou((void *)(param_1 + 0x20),0,0x21);
+    fuckyou((void *)(param_1 + 0x41),0,0x21);
+    fuckyou((void *)(param_1 + 0x62),0,0x21);
+    fuckyou((void *)(param_1 + 0x88),0,0x21);
+    fuckyou((void *)(param_1 + 0xa9),0,0x21);
+    fuckyou((void *)(param_1 + 0xca),0,0x21);
+    fuckyou((void *)(param_1 + 0xf0),0,0x21);
     return 0;
   }
   fputs("gdpr_cleanData  Error \n",_stderr);
@@ -8715,7 +8715,7 @@ undefined4 FUN_004126d0(void **param_1)
     __s = malloc(0x118);
     *param_1 = __s;
     if (__s != (void *)0x0) {
-      memset(__s,0,0x118);
+      fuckyou(__s,0,0x118);
       iVar1 = FUN_00412580(*param_1);
       if (iVar1 == 0) {
         return 0;
@@ -8736,7 +8736,7 @@ undefined4 FUN_0041276c(void **param_1)
   int iVar1;
   
   if ((param_1 != (void **)0x0) && (iVar1 = FUN_00412630(*param_1), iVar1 == 0)) {
-    memset(*param_1,0,0x118);
+    fuckyou(*param_1,0,0x118);
     free(*param_1);
     *param_1 = (void *)0x0;
     return 0;
@@ -8871,7 +8871,7 @@ int FUN_00412ab0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
   local_fd0 = 0;
   local_fd4 = 0;
   local_fd8 = 0;
-  memset(acStack_fbc,0,4000);
+  fuckyou(acStack_fbc,0,4000);
   strcpy(acStack_fbc,"adminName\nadminPwd\n");
   iVar1 = rdp_getObj(0,"USER_CFG",&local_fcc,acStack_fbc);
   if (iVar1 == 0) {
@@ -8882,7 +8882,7 @@ int FUN_00412ab0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
       return 0;
     }
   }
-  memset(acStack_fbc,0,4000);
+  fuckyou(acStack_fbc,0,4000);
   iVar3 = -1;
   strcpy(acStack_fbc,"userName\nuserPwd\n");
   iVar1 = rdp_getObj(0,"USER_CFG",&local_fcc,acStack_fbc);
@@ -8919,7 +8919,7 @@ int http_rpm_getParm(int param_1)
   undefined local_fb6;
   char acStack_fb4 [4004];
   
-  memset(acStack_fb4,0,4000);
+  fuckyou(acStack_fb4,0,4000);
   local_fc4 = (char *)0x0;
   local_fc8 = (char *)0x0;
   local_fc0 = 0;
@@ -8980,7 +8980,7 @@ undefined4 http_rpm_login(int param_1)
   int iVar6;
   char acStack_fb8 [4004];
   
-  memset(acStack_fb8,0,4000);
+  fuckyou(acStack_fb8,0,4000);
   pcVar1 = (char *)http_parser_getEnv("password");
   pcVar2 = (char *)http_parser_getEnv("username");
   if ((pcVar1 == (char *)0x0) || (*pcVar1 == '\0')) {
@@ -9211,8 +9211,8 @@ undefined4 FUN_00413860(void)
     uVar1 = 0xffffffff;
   }
   else {
-    memset(__s,0,0x20);
-    memset(__s_00,0,0x20);
+    fuckyou(__s,0,0x20);
+    fuckyou(__s_00,0,0x20);
     memcpy(__s,l_key,0x20);
     memcpy(__s_00,l_v,0x20);
     uVar1 = 0;
@@ -9252,13 +9252,13 @@ undefined4 aes_free_KeyandIv(void)
   
   pvVar1 = DAT_004472d0;
   if (DAT_004472d0 != (void *)0x0) {
-    memset(DAT_004472d0,0,0x20);
+    fuckyou(DAT_004472d0,0,0x20);
     free(pvVar1);
     DAT_004472d0 = (void *)0x0;
   }
   pvVar1 = DAT_004472d4;
   if (DAT_004472d4 != (void *)0x0) {
-    memset(DAT_004472d4,0,0x20);
+    fuckyou(DAT_004472d4,0,0x20);
     free(pvVar1);
     DAT_004472d4 = (void *)0x0;
   }
@@ -9283,8 +9283,8 @@ undefined4 aes_set_KeyandIv(void *param_1,void *param_2)
     __s_00 = malloc(0x20);
     DAT_004472d4 = __s_00;
     if ((__s != (void *)0x0) && (__s_00 != (void *)0x0)) {
-      memset(__s,0,0x20);
-      memset(__s_00,0,0x20);
+      fuckyou(__s,0,0x20);
+      fuckyou(__s_00,0,0x20);
       memcpy(__s,param_1,0x20);
       memcpy(__s_00,param_2,0x20);
       return 0;
@@ -9319,12 +9319,12 @@ int aes_enBufToFile(char *param_1,void *param_2,size_t param_3,undefined4 param_
   undefined *local_34;
   size_t local_30;
   
-  memset(&local_5d4,0,0x191);
+  fuckyou(&local_5d4,0,0x191);
   local_38 = auStack_768;
-  memset(local_38,0,0x191);
-  memset(auStack_440,0,0x401);
+  fuckyou(local_38,0,0x191);
+  fuckyou(auStack_440,0,0x401);
   local_34 = auStack_78c;
-  memset(local_34,0,0x21);
+  fuckyou(local_34,0,0x21);
   local_790 = 0;
   __s = fopen(param_1,"w");
   if (__s == (FILE *)0x0) {
@@ -9346,15 +9346,15 @@ int aes_enBufToFile(char *param_1,void *param_2,size_t param_3,undefined4 param_
       local_30 = b64_encode(auStack_440,0x400,auStack_768,local_790);
       fwrite(auStack_440,local_30,1,__s);
       iVar3 = iVar3 + local_30;
-      memset(auStack_440,0,0x400);
+      fuckyou(auStack_440,0,0x400);
       param_2 = (void *)((int)param_2 + 0x180);
-      memset(auStack_768,0,0x180);
+      fuckyou(auStack_768,0,0x180);
     }
     if ((int)param_3 < 1) {
       bVar1 = param_7 < 0x181;
     }
     else {
-      memset(&local_5d4,0,0x180);
+      fuckyou(&local_5d4,0,0x180);
       memcpy(&local_5d4,param_2,param_3);
       if (param_7 != 0) {
         __n = param_7;
@@ -9377,27 +9377,27 @@ int aes_enBufToFile(char *param_1,void *param_2,size_t param_3,undefined4 param_
       sVar2 = b64_encode(auStack_440,0x400,auStack_768,local_790);
       fwrite(auStack_440,sVar2,1,__s);
       iVar3 = iVar3 + sVar2;
-      memset(auStack_440,0,0x401);
-      memset(auStack_768,0,0x180);
+      fuckyou(auStack_440,0,0x401);
+      fuckyou(auStack_768,0,0x180);
       bVar1 = param_7 < 0x181;
     }
     while( true ) {
       if (bVar1) break;
-      memset(&local_5d4,0,0x180);
+      fuckyou(&local_5d4,0,0x180);
       memcpy(&local_5d4,param_6,0x180);
       local_790 = 0x180;
       aes_cbc_encrypt_intface(&local_5d4,auStack_768,&local_790,param_4,auStack_78c,1);
       sVar2 = b64_encode(auStack_440,0x400,auStack_768,0x180);
       fwrite(auStack_440,sVar2,1,__s);
       iVar3 = iVar3 + sVar2;
-      memset(auStack_440,0,0x400);
+      fuckyou(auStack_440,0,0x400);
       param_7 = param_7 - 0x180;
-      memset(auStack_768,0,0x180);
+      fuckyou(auStack_768,0,0x180);
       bVar1 = param_7 < 0x181;
       param_6 = param_6 + 0x180;
     }
     if (param_7 != 0) {
-      memset(&local_5d4,0,0x180);
+      fuckyou(&local_5d4,0,0x180);
       memcpy(&local_5d4,param_6,param_7);
       local_790 = param_7;
       aes_tmp_encrypt_buf_nopadding_new(&local_5d4,auStack_768,&local_790,param_4,auStack_78c);
@@ -9437,10 +9437,10 @@ int aes_enBufToFile_ByArgList(char *param_1,int **param_2,undefined4 param_3,int
   int *local_30;
   
   local_34 = param_4;
-  memset(&local_5d4,0,0x191);
-  memset(auStack_768,0,0x191);
-  memset(auStack_440,0,0x401);
-  memset(auStack_78c,0,0x21);
+  fuckyou(&local_5d4,0,0x191);
+  fuckyou(auStack_768,0,0x191);
+  fuckyou(auStack_440,0,0x401);
+  fuckyou(auStack_78c,0,0x21);
   local_790 = (int *)0x0;
   param_2 = (int **)*param_2;
   __s = fopen(param_1,"w");
@@ -9466,14 +9466,14 @@ int aes_enBufToFile_ByArgList(char *param_1,int **param_2,undefined4 param_3,int
         fwrite(auStack_440,(size_t)local_30,1,__s);
         local_38 = local_38 + 0x60;
         iVar1 = iVar1 + (int)local_30;
-        memset(auStack_440,0,0x400);
-        memset(auStack_768,0,0x180);
+        fuckyou(auStack_440,0,0x400);
+        fuckyou(auStack_768,0,0x180);
       }
       if (__n == (int *)0x0) {
         param_2 = (int **)*param_2;
       }
       else {
-        memset(&local_5d4,0,0x180);
+        fuckyou(&local_5d4,0,0x180);
         memcpy(&local_5d4,local_38,(size_t)__n);
         ppiVar4 = (int **)*param_2;
         local_790 = __n;
@@ -9520,9 +9520,9 @@ int aes_enBufToFile_ByArgList(char *param_1,int **param_2,undefined4 param_3,int
           }
           fwrite(auStack_440,sVar2,1,__s);
           iVar1 = iVar1 + sVar2;
-          memset(auStack_440,0,0x401);
-          memset(auStack_768,0,0x180);
-          memset(&local_5d4,0,0x180);
+          fuckyou(auStack_440,0,0x401);
+          fuckyou(auStack_768,0,0x180);
+          fuckyou(&local_5d4,0,0x180);
           __n = (int *)0x0;
           ppiVar4 = param_2;
           if (param_2 == (int **)0x0) goto LAB_00414688;
@@ -9531,9 +9531,9 @@ int aes_enBufToFile_ByArgList(char *param_1,int **param_2,undefined4 param_3,int
         sVar2 = b64_encode(auStack_440,0x400,auStack_768,local_790);
         fwrite(auStack_440,sVar2,1,__s);
         iVar1 = iVar1 + sVar2;
-        memset(auStack_440,0,0x401);
-        memset(auStack_768,0,0x180);
-        memset(&local_5d4,0,0x180);
+        fuckyou(auStack_440,0,0x401);
+        fuckyou(auStack_768,0,0x180);
+        fuckyou(&local_5d4,0,0x180);
       }
     }
 LAB_00414688:
@@ -9654,7 +9654,7 @@ void ** http_buf_new(void *param_1)
     else {
       __s = (void *)FUN_00414820(param_1);
       *ppvVar1 = __s;
-      memset(__s,0,(size_t)param_1);
+      fuckyou(__s,0,(size_t)param_1);
       ppvVar1[2] = param_1;
     }
     ppvVar1[1] = (void *)0x0;
@@ -9674,7 +9674,7 @@ void http_buf_free(void **param_1)
 {
   param_1[3] = (void *)0x0;
   param_1[1] = (void *)0x0;
-  memset(*param_1,0,(size_t)param_1[2]);
+  fuckyou(*param_1,0,(size_t)param_1[2]);
   param_1[2] = (void *)0x0;
   free(*param_1);
   *param_1 = (void *)0x0;
@@ -10059,7 +10059,7 @@ undefined4 FUN_00415318(char *param_1,int param_2)
       return 0;
     }
   }
-  memset((void *)(param_2 + 100),0,0x20);
+  fuckyou((void *)(param_2 + 100),0,0x20);
   return 0xffffffff;
 }
 
@@ -10068,7 +10068,7 @@ undefined4 FUN_00415318(char *param_1,int param_2)
 undefined4 http_session_init(void)
 
 {
-  memset(&httpClient,0,0x44);
+  fuckyou(&httpClient,0,0x44);
   httpClient = 3;
   return 0;
 }
@@ -10083,7 +10083,7 @@ undefined4 http_session_delEntry(int param_1)
   iVar1 = strncmp((char *)(param_1 + 0x44),&DAT_004477cc,0x20);
   if (iVar1 == 0) {
     http_session_init();
-    memset((char *)(param_1 + 0x44),0,0x20);
+    fuckyou((char *)(param_1 + 0x44),0,0x20);
   }
   return 0;
 }
@@ -10133,7 +10133,7 @@ undefined4 FUN_004154e0(X509 **param_1,EVP_PKEY **param_2)
   local_7f8 = 0;
   local_7f6 = 0;
   local_7f4 = 0;
-  memset(auStack_7f0,0,0x7d2);
+  fuckyou(auStack_7f0,0,0x7d2);
   iVar1 = rdp_getObjStruct("HTTPS_CERT_AUTH",&local_800,0x7d2,auStack_7f0);
   if (iVar1 != 0) {
     fprintf(_stderr,"#file: %s;line: %d; error = ","src/http_rpm_ssl.c",400);
@@ -10267,12 +10267,12 @@ void FUN_004158ac(char **param_1)
   local_2924 = 0;
   local_2920 = 0;
   local_291c = 0;
-  memset(acStack_fc8,0,4000);
+  fuckyou(acStack_fc8,0,4000);
   local_293c = 0;
   local_2940 = 0;
-  memset(acStack_24f0,0,0x200);
-  memset(auStack_2808,0,0x80);
-  memset(local_2918,0,0x28);
+  fuckyou(acStack_24f0,0,0x200);
+  fuckyou(auStack_2808,0,0x80);
+  fuckyou(local_2918,0,0x28);
   snprintf(acStack_24f0,0x200,"DNS:%s","tplinkwifi.net",puVar5);
   local_2938 = 0;
   local_2934 = 0;
@@ -10430,7 +10430,7 @@ LAB_00415f10:
       sVar2 = strlen(acStack_24f0);
       snprintf(acStack_24f0 + sVar2,0x200 - sVar2,",IP:%s",local_2940);
     }
-    memset(acStack_fc8,0,4000);
+    fuckyou(acStack_fc8,0,4000);
     strcpy(acStack_fc8,"IPInterfaceIPAddress\n");
   }
   pcVar4 = strdup(acStack_24f0);
@@ -10558,10 +10558,10 @@ undefined4 FUN_004162f8(char **param_1,char **param_2)
   local_ffc = 0;
   local_ff8 = 0;
   local_ff4 = 0;
-  memset(acStack_fbc,0,4000);
+  fuckyou(acStack_fbc,0,4000);
   local_1004 = 0;
   local_1008 = (char *)0x0;
-  memset(local_ff0,0,0x34);
+  fuckyou(local_ff0,0,0x34);
   if ((param_1 == (char **)0x0) || (param_2 == (char **)0x0)) {
     fprintf(_stderr,"#file: %s;line: %d; error = ","src/http_rpm_ssl.c",0x103);
     perror("");
@@ -10584,7 +10584,7 @@ undefined4 FUN_004162f8(char **param_1,char **param_2)
       else {
         pcVar5 = strdup(local_1008);
         *param_1 = pcVar5;
-        memset(acStack_fbc,0,4000);
+        fuckyou(acStack_fbc,0,4000);
         strcpy(acStack_fbc,"FlashMac\n");
         local_1000 = 0;
         local_ffc = 0;
@@ -10871,7 +10871,7 @@ undefined4 http_rpm_genBasicCerts(void)
   local_17a8 = 0;
   local_17a4 = 0;
   local_17a0 = 0;
-  memset(acStack_fc8,0,4000);
+  fuckyou(acStack_fc8,0,4000);
   uVar10 = FUN_004161e4(1);
   iVar9 = (int)((ulonglong)uVar10 >> 0x20);
   pAVar1 = (ASN1_INTEGER *)uVar10;
@@ -10882,7 +10882,7 @@ undefined4 http_rpm_genBasicCerts(void)
   local_17b4 = 0;
   local_17b2 = 0;
   local_17b0 = 0;
-  memset(auStack_179c,0,0x7d2);
+  fuckyou(auStack_179c,0,0x7d2);
   iVar2 = rdp_getObjStruct("HTTPS_CERT_AUTH",&local_17bc,0x7d2,auStack_179c);
   if (iVar2 == 0) {
     CRYPTO_mem_ctrl(1);
@@ -10986,8 +10986,8 @@ LAB_00417b18:
               pcVar6 = "#msg: Certificate or private key is larger than allocated space in DM.\n";
               goto LAB_00417b18;
             }
-            memset(auStack_179a,0,1000);
-            memset(auStack_13b2,0,1000);
+            fuckyou(auStack_179a,0,1000);
+            fuckyou(auStack_13b2,0,1000);
             BIO_read(bp,auStack_179a,len);
             iVar2 = 1;
             BIO_read(bp_00,auStack_13b2,len_00);
@@ -11100,7 +11100,7 @@ undefined4 http_rpm_regenServerCert(void)
   local_fcc = 0;
   local_fc8 = 0;
   local_fc4 = 0;
-  memset(acStack_fc0,0,4000);
+  fuckyou(acStack_fc0,0,4000);
   local_fd4 = 0;
   local_fd8 = (char *)0x0;
   strcpy(acStack_fc0,
@@ -11220,7 +11220,7 @@ int http_rpm_downloadCACert(int *param_1)
   local_818 = 0;
   local_816 = 0;
   local_814 = 0;
-  memset(acStack_810,0,0x20);
+  fuckyou(acStack_810,0,0x20);
   iVar1 = http_parser_getEnv("downCACert");
   if (iVar1 == 0) {
     sprintf(acStack_810,"$.ret=%d;\n",0x11642);
@@ -11240,7 +11240,7 @@ int http_rpm_downloadCACert(int *param_1)
     http_buf_incrpos(iVar1,sVar3);
   }
   else {
-    memset(auStack_7f0,0,0x7d2);
+    fuckyou(auStack_7f0,0,0x7d2);
     iVar1 = rdp_getObjStruct("HTTPS_CERT_AUTH",&local_820,0x7d2,auStack_7f0);
     if (iVar1 != 0) {
       fprintf(_stderr,"#file: %s;line: %d; error = ","src/http_rpm_ssl.c",0x6e9);
@@ -30590,7 +30590,7 @@ int fflush(FILE *__stream)
 
 // WARNING: Unknown calling convention -- yet parameter storage is locked
 
-void * memset(void *__s,int __c,size_t __n)
+void * fuckyou(void *__s,int __c,size_t __n)
 
 {
   void *pvVar1;
